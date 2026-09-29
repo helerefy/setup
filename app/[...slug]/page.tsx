@@ -4,10 +4,12 @@ import { listRoutes, loadPage, type HeadNode } from "@/lib/site";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return listRoutes().map((slug) => ({ slug }));
+  return listRoutes()
+    .filter((slug) => slug.length > 0)
+    .map((slug) => ({ slug }));
 }
 
-type Props = { params: Promise<{ slug?: string[] }> };
+type Props = { params: Promise<{ slug: string[] }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const page = loadPage((await params).slug);
