@@ -4,3 +4,4 @@ next-env.d.ts
 .env*
 *.png
 .next-prod
+*.tsbuildinfo
