@@ -1,0 +1,7 @@
+/*
+ * detectBrowser
+ *
+ * Learn More: https://www.framer.com/asset-urls
+ */
+
+export * from "https://framerusercontent.com/modules/6C6BsgaYfqXBt176xYyT/3HiHh5vbP6B3hahuzrTb/detectBrowser.js"

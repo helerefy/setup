@@ -1,0 +1,7 @@
+/*
+ * detectDevice
+ *
+ * Learn More: https://www.framer.com/asset-urls
+ */
+
+export * from "https://framerusercontent.com/modules/aXVw0AVLwQsWihfmtOwL/p5iZzo5myucpk8vgsp3Q/detectDevice.js"

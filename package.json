@@ -1,12 +1,19 @@
 {
-  "name": "vo-technology-2026",
+  "name": "state-of-ai-design",
   "private": true,
   "scripts": {
-    "extract": "node scripts/extract.mjs",
     "dev": "next dev -p 3000 -H 0.0.0.0",
     "build": "next build",
     "start": "next start -p 3000"
   },
-  "dependencies": { "next": "15.5.4", "react": "19.1.1", "react-dom": "19.1.1" },
-  "devDependencies": { "typescript": "5.9.2", "@types/react": "19.1.13", "@types/node": "22.18.6" }
+  "dependencies": {
+    "next": "15.5.4",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "typescript": "5.9.2",
+    "@types/react": "19.1.13",
+    "@types/node": "22.18.6"
+  }
 }
