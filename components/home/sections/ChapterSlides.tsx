@@ -31,7 +31,7 @@ export default function ChapterSlides() {
                         </div>
                         <div className="framer-1b5336w" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                            AI usage has surged, but the toolstack is still in flux. Designers are using double the number of off-the-shelf tools than they did in 2025, and they’re building custom software with AI that matches how they like to work. As everyone rushes to keep up with new releases, reliable output quality remains the largest area for improvement. 
+                            AI usage has surged, but the toolstack is still in flux. Designers are using double the number of off-the-shelf tools than they did in 2025, and they’re building custom software with AI that matches how they like to work. As everyone rushes to keep up with new releases, reliable output quality remains the largest area for improvement.{" "}
                           </p>
                         </div>
                       </div>
@@ -139,7 +139,7 @@ export default function ChapterSlides() {
                         </div>
                         <div className="framer-1b5336w" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                           <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                            AI usage has surged, but the toolstack is still in flux. Designers are using double the number of off-the-shelf tools than they did in 2025, and they’re building custom software with AI that matches how they like to work. As everyone rushes to keep up with new releases, reliable output quality remains the largest area for improvement. 
+                            AI usage has surged, but the toolstack is still in flux. Designers are using double the number of off-the-shelf tools than they did in 2025, and they’re building custom software with AI that matches how they like to work. As everyone rushes to keep up with new releases, reliable output quality remains the largest area for improvement.{" "}
                           </p>
                         </div>
                       </div>
@@ -250,7 +250,7 @@ export default function ChapterSlides() {
                       </div>
                       <div className="framer-1b5336w" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                          AI usage has surged, but the toolstack is still in flux. Designers are using double the number of off-the-shelf tools than they did in 2025, and they’re building custom software with AI that matches how they like to work. As everyone rushes to keep up with new releases, reliable output quality remains the largest area for improvement. 
+                          AI usage has surged, but the toolstack is still in flux. Designers are using double the number of off-the-shelf tools than they did in 2025, and they’re building custom software with AI that matches how they like to work. As everyone rushes to keep up with new releases, reliable output quality remains the largest area for improvement.{" "}
                         </p>
                       </div>
                     </div>
@@ -360,7 +360,7 @@ export default function ChapterSlides() {
                       </div>
                       <div className="framer-1b5336w" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                          AI usage has surged, but the toolstack is still in flux. Designers are using double the number of off-the-shelf tools than they did in 2025, and they’re building custom software with AI that matches how they like to work. As everyone rushes to keep up with new releases, reliable output quality remains the largest area for improvement. 
+                          AI usage has surged, but the toolstack is still in flux. Designers are using double the number of off-the-shelf tools than they did in 2025, and they’re building custom software with AI that matches how they like to work. As everyone rushes to keep up with new releases, reliable output quality remains the largest area for improvement.{" "}
                         </p>
                       </div>
                     </div>
@@ -962,7 +962,9 @@ export default function ChapterSlides() {
                               <div className="framer-e3diru-container">
                                 <div className="framer-gS2rC framer-8hAYJ framer-lyt9qj framer-v-lyt9qj" data-border="true" data-framer-name="Variant 1" style={{ "--border-bottom-width": "1px", "--border-color": "rgba(0, 0, 0, 0.4)", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "0px", width: "100%" }}>
                                   <div className="framer-ux9e3l" data-framer-name="item-text" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                                    <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">What hiring managers are now looking for </p>
+                                    <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
+                                      What hiring managers are now looking for{" "}
+                                    </p>
                                   </div>
                                 </div>
                               </div>
@@ -1070,7 +1072,9 @@ export default function ChapterSlides() {
                               <div className="framer-e3diru-container">
                                 <div className="framer-gS2rC framer-8hAYJ framer-lyt9qj framer-v-lyt9qj" data-border="true" data-framer-name="Variant 1" style={{ "--border-bottom-width": "1px", "--border-color": "rgba(0, 0, 0, 0.4)", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "0px", width: "100%" }}>
                                   <div className="framer-ux9e3l" data-framer-name="item-text" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                                    <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">What hiring managers are now looking for </p>
+                                    <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
+                                      What hiring managers are now looking for{" "}
+                                    </p>
                                   </div>
                                 </div>
                               </div>
@@ -1181,7 +1185,9 @@ export default function ChapterSlides() {
                             <div className="framer-e3diru-container">
                               <div className="framer-gS2rC framer-8hAYJ framer-lyt9qj framer-v-lyt9qj" data-border="true" data-framer-name="Variant 1" style={{ "--border-bottom-width": "1px", "--border-color": "rgba(0, 0, 0, 0.4)", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "0px", width: "100%" }}>
                                 <div className="framer-ux9e3l" data-framer-name="item-text" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                                  <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">What hiring managers are now looking for </p>
+                                  <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
+                                    What hiring managers are now looking for{" "}
+                                  </p>
                                 </div>
                               </div>
                             </div>
@@ -1291,7 +1297,9 @@ export default function ChapterSlides() {
                             <div className="framer-e3diru-container">
                               <div className="framer-gS2rC framer-8hAYJ framer-lyt9qj framer-v-lyt9qj" data-border="true" data-framer-name="Variant 1" style={{ "--border-bottom-width": "1px", "--border-color": "rgba(0, 0, 0, 0.4)", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "0px", width: "100%" }}>
                                 <div className="framer-ux9e3l" data-framer-name="item-text" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                                  <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">What hiring managers are now looking for </p>
+                                  <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
+                                    What hiring managers are now looking for{" "}
+                                  </p>
                                 </div>
                               </div>
                             </div>

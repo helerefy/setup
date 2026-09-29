@@ -20,7 +20,7 @@ export default function PrefaceBottomQuote() {
                       </div>
                       <div className="framer-191mkls" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                          We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives. 
+                          We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives.{" "}
                         </p>
                       </div>
                       <div className="framer-baanb5" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
@@ -30,7 +30,7 @@ export default function PrefaceBottomQuote() {
                       </div>
                       <div className="framer-1c7ghiv" data-framer-name="p" style={{ transform: "none" }}>
                         <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                          Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer. 
+                          Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer.{" "}
                           <a className="framer-text framer-styles-preset-1irpjtw" href="/#scroll-to-subscribe">Sign up for new releases.</a>
                         </p>
                       </div>
@@ -54,7 +54,7 @@ export default function PrefaceBottomQuote() {
                       </div>
                       <div className="framer-191mkls" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                          We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives. 
+                          We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives.{" "}
                         </p>
                       </div>
                       <div className="framer-baanb5" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
@@ -64,7 +64,7 @@ export default function PrefaceBottomQuote() {
                       </div>
                       <div className="framer-1c7ghiv" data-framer-name="p" style={{ transform: "none" }}>
                         <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                          Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer. 
+                          Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer.{" "}
                           <a className="framer-text framer-styles-preset-1irpjtw" href="/#scroll-to-subscribe">Sign up for new releases.</a>
                         </p>
                       </div>
@@ -91,7 +91,7 @@ export default function PrefaceBottomQuote() {
                     </div>
                     <div className="framer-191mkls" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                       <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                        We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives. 
+                        We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives.{" "}
                       </p>
                     </div>
                     <div className="framer-baanb5" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
@@ -101,7 +101,7 @@ export default function PrefaceBottomQuote() {
                     </div>
                     <div className="framer-1c7ghiv" data-framer-name="p" style={{ transform: "none" }}>
                       <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                        Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer. 
+                        Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer.{" "}
                         <a className="framer-text framer-styles-preset-1irpjtw" href="/#scroll-to-subscribe">Sign up for new releases.</a>
                       </p>
                     </div>
@@ -126,7 +126,7 @@ export default function PrefaceBottomQuote() {
                     </div>
                     <div className="framer-191mkls" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                       <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                        We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives. 
+                        We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives.{" "}
                       </p>
                     </div>
                     <div className="framer-baanb5" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
@@ -136,7 +136,7 @@ export default function PrefaceBottomQuote() {
                     </div>
                     <div className="framer-1c7ghiv" data-framer-name="p" style={{ transform: "none" }}>
                       <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                        Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer. 
+                        Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer.{" "}
                         <a className="framer-text framer-styles-preset-1irpjtw" href="/#scroll-to-subscribe">Sign up for new releases.</a>
                       </p>
                     </div>

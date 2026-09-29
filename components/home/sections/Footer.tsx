@@ -1,5 +1,6 @@
 // Ported from the captured stateofaidesign.com home page markup.
 import { m, ms } from "@/lib/media";
+import CountUp from "../fx/CountUp";
 
 export default function Footer() {
   return (
@@ -54,11 +55,11 @@ export default function Footer() {
                 </form>
                 <div className="framer-uw7b1c" data-framer-name="We'll send occasional updates on future research. Unsubscribe anytime." style={{ "--extracted-r6o4lv": "rgb(255, 255, 255)", "--framer-paragraph-spacing": "0px", transform: "none" }}>
                   <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBSZWd1bGFy", "--framer-font-family": "\"Beausite Classic Regular\", \"Beausite Classic Regular Placeholder\", sans-serif", "--framer-font-size": "14px", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "140%", "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, rgb(255, 255, 255))" }}>
-                    By subscribing, you agree to receive communications from 
+                    By subscribing, you agree to receive communications from{" "}
                     <a className="framer-text framer-styles-preset-minbjw" href="https://designerfund.com/privacy" target="_blank" rel="">Designer Fund</a>
-                     and 
+                    {" "}and{" "}
                     <a className="framer-text framer-styles-preset-minbjw" href="https://foundationcapital.com/privacy-policy" target="_blank" rel="">Foundation Capital</a>
-                     in accordance with their privacy policies.
+                    {" "}in accordance with their privacy policies.
                   </p>
                 </div>
               </div>
@@ -86,7 +87,7 @@ export default function Footer() {
                   <div className="framer-g6vko8" data-border="true" data-framer-name="2" style={{ "--border-bottom-width": "1px", "--border-color": "rgb(255, 255, 255)", "--border-left-width": "0px", "--border-right-width": "1px", "--border-style": "solid", "--border-top-width": "1px" }}>
                     <div className="framer-1y97zwv-container">
                       <div style={{ display: "inline-flex", alignItems: "baseline", color: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
-                        <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }}>0</span>
+                        <CountUp end={906} style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }} />
                       </div>
                     </div>
                     <div className="framer-16s1soe" data-framer-name="Survey responses" style={{ justifyContent: "center", "--extracted-1w1cjl5": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(247, 246, 244))", "--framer-paragraph-spacing": "0px", transform: "none" }}>
@@ -96,7 +97,7 @@ export default function Footer() {
                   <div className="framer-duhixq" data-border="true" data-framer-name="3" style={{ "--border-bottom-width": "1px", "--border-color": "rgb(255, 255, 255)", "--border-left-width": "0px", "--border-right-width": "1px", "--border-style": "solid", "--border-top-width": "1px" }}>
                     <div className="framer-1ph8p8w-container">
                       <div style={{ display: "inline-flex", alignItems: "baseline", color: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
-                        <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }}>0</span>
+                        <CountUp end={25} style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }} />
                         <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em", marginLeft: "0" }}>+</span>
                       </div>
                     </div>
@@ -107,7 +108,7 @@ export default function Footer() {
                   <div className="framer-o8jyh4" data-border="true" data-framer-name="4" style={{ "--border-bottom-width": "1px", "--border-color": "rgb(255, 255, 255)", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "1px" }}>
                     <div className="framer-14xh5rz-container">
                       <div style={{ display: "inline-flex", alignItems: "baseline", color: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
-                        <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }}>0</span>
+                        <CountUp end={50} style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }} />
                         <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em", marginLeft: "0" }}>+</span>
                       </div>
                     </div>
@@ -298,11 +299,11 @@ export default function Footer() {
                 </form>
                 <div className="framer-uw7b1c" data-framer-name="We'll send occasional updates on future research. Unsubscribe anytime." style={{ "--extracted-r6o4lv": "rgb(255, 255, 255)", "--framer-paragraph-spacing": "0px", transform: "none" }}>
                   <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBSZWd1bGFy", "--framer-font-family": "\"Beausite Classic Regular\", \"Beausite Classic Regular Placeholder\", sans-serif", "--framer-font-size": "14px", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "140%", "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, rgb(255, 255, 255))" }}>
-                    By subscribing, you agree to receive communications from 
+                    By subscribing, you agree to receive communications from{" "}
                     <a className="framer-text framer-styles-preset-minbjw" href="https://designerfund.com/privacy" target="_blank" rel="">Designer Fund</a>
-                     and 
+                    {" "}and{" "}
                     <a className="framer-text framer-styles-preset-minbjw" href="https://foundationcapital.com/privacy-policy" target="_blank" rel="">Foundation Capital</a>
-                     in accordance with their privacy policies.
+                    {" "}in accordance with their privacy policies.
                   </p>
                 </div>
               </div>
@@ -331,7 +332,7 @@ export default function Footer() {
                   <div className="framer-g6vko8" data-border="true" data-framer-name="2" style={{ "--border-bottom-width": "1px", "--border-color": "rgb(255, 255, 255)", "--border-left-width": "0px", "--border-right-width": "1px", "--border-style": "solid", "--border-top-width": "1px" }}>
                     <div className="framer-1y97zwv-container">
                       <div style={{ display: "inline-flex", alignItems: "baseline", color: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
-                        <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "85px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }}>0</span>
+                        <CountUp end={906} style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "85px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }} />
                       </div>
                     </div>
                     <div className="framer-16s1soe" data-framer-name="Survey responses" style={{ justifyContent: "center", "--extracted-1w1cjl5": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(247, 246, 244))", "--framer-paragraph-spacing": "0px", transform: "none" }}>
@@ -341,7 +342,7 @@ export default function Footer() {
                   <div className="framer-duhixq" data-border="true" data-framer-name="3" style={{ "--border-bottom-width": "1px", "--border-color": "rgb(255, 255, 255)", "--border-left-width": "0px", "--border-right-width": "1px", "--border-style": "solid", "--border-top-width": "1px" }}>
                     <div className="framer-1ph8p8w-container">
                       <div style={{ display: "inline-flex", alignItems: "baseline", color: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
-                        <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "85px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }}>0</span>
+                        <CountUp end={25} style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "85px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }} />
                         <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "85px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em", marginLeft: "0" }}>+</span>
                       </div>
                     </div>
@@ -352,7 +353,7 @@ export default function Footer() {
                   <div className="framer-o8jyh4" data-border="true" data-framer-name="4" style={{ "--border-bottom-width": "1px", "--border-color": "rgb(255, 255, 255)", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "1px" }}>
                     <div className="framer-14xh5rz-container">
                       <div style={{ display: "inline-flex", alignItems: "baseline", color: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
-                        <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "85px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }}>0</span>
+                        <CountUp end={50} style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "85px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }} />
                         <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "85px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em", marginLeft: "0" }}>+</span>
                       </div>
                     </div>
@@ -543,15 +544,17 @@ export default function Footer() {
                 </form>
                 <div className="framer-uw7b1c" data-framer-name="We'll send occasional updates on future research. Unsubscribe anytime." style={{ "--extracted-r6o4lv": "rgb(255, 255, 255)", "--framer-paragraph-spacing": "0px", "--extracted-3sq8v0": "var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65))", "--extracted-dqhihp": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))", "--extracted-hl0iuy": "var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65))", transform: "none" }}>
                   <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBSZWd1bGFy", "--framer-font-family": "\"Beausite Classic Regular\", \"Beausite Classic Regular Placeholder\", sans-serif", "--framer-font-size": "14px", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "140%", "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, rgb(255, 255, 255))" }}>
-                    By subscribing, you agree to receive communications from 
+                    By subscribing, you agree to receive communications from{" "}
                     <a className="framer-text framer-styles-preset-minbjw" href="https://www.designerfund.com/privacy" target="_blank" rel="">
-                      <span className="framer-text" style={{ "--framer-text-color": "var(--extracted-hl0iuy, var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65)))" }}>Designer </span>
+                      <span className="framer-text" style={{ "--framer-text-color": "var(--extracted-hl0iuy, var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65)))" }}>
+                        Designer{" "}
+                      </span>
                       <span className="framer-text" style={{ "--framer-text-color": "var(--extracted-dqhihp, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>Fund</span>
                     </a>
                     <span className="framer-text" style={{ "--framer-text-color": "var(--extracted-3sq8v0, var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65)))" }} />
-                    and 
+                    and{" "}
                     <a className="framer-text framer-styles-preset-minbjw" href="https://foundationcapital.com/privacy-policy/" target="_blank" rel="">Foundation Capital</a>
-                     in accordance with their privacy policies.
+                    {" "}in accordance with their privacy policies.
                   </p>
                 </div>
               </div>
@@ -577,7 +580,7 @@ export default function Footer() {
                   <div className="framer-g6vko8" data-border="true" data-framer-name="2" style={{ "--border-bottom-width": "1px", "--border-color": "rgb(255, 255, 255)", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "1px" }}>
                     <div className="framer-1y97zwv-container">
                       <div style={{ display: "inline-flex", alignItems: "baseline", color: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
-                        <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "72px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }}>0</span>
+                        <CountUp end={906} style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "72px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }} />
                       </div>
                     </div>
                     <div className="framer-16s1soe" data-framer-name="Survey responses" style={{ justifyContent: "center", "--extracted-1w1cjl5": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(247, 246, 244))", "--framer-paragraph-spacing": "0px", transform: "none" }}>
@@ -587,7 +590,7 @@ export default function Footer() {
                   <div className="framer-duhixq" data-border="true" data-framer-name="3" style={{ "--border-bottom-width": "1px", "--border-color": "rgb(255, 255, 255)", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "1px" }}>
                     <div className="framer-1ph8p8w-container">
                       <div style={{ display: "inline-flex", alignItems: "baseline", color: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
-                        <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "72px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }}>0</span>
+                        <CountUp end={25} style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "72px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }} />
                         <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "72px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em", marginLeft: "0" }}>+</span>
                       </div>
                     </div>
@@ -598,7 +601,7 @@ export default function Footer() {
                   <div className="framer-o8jyh4" data-border="true" data-framer-name="4" style={{ "--border-bottom-width": "1px", "--border-color": "rgb(255, 255, 255)", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "1px" }}>
                     <div className="framer-14xh5rz-container">
                       <div style={{ display: "inline-flex", alignItems: "baseline", color: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
-                        <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "72px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }}>0</span>
+                        <CountUp end={50} style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "72px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }} />
                         <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "72px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em", marginLeft: "0" }}>+</span>
                       </div>
                     </div>
@@ -789,11 +792,11 @@ export default function Footer() {
                 </form>
                 <div className="framer-uw7b1c" data-framer-name="We'll send occasional updates on future research. Unsubscribe anytime." style={{ "--extracted-r6o4lv": "rgb(255, 255, 255)", "--framer-paragraph-spacing": "0px", transform: "none" }}>
                   <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBSZWd1bGFy", "--framer-font-family": "\"Beausite Classic Regular\", \"Beausite Classic Regular Placeholder\", sans-serif", "--framer-font-size": "14px", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "140%", "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, rgb(255, 255, 255))" }}>
-                    By subscribing, you agree to receive communications from 
+                    By subscribing, you agree to receive communications from{" "}
                     <a className="framer-text framer-styles-preset-minbjw" href="https://designerfund.com/privacy" target="_blank" rel="">Designer Fund</a>
-                     and 
+                    {" "}and{" "}
                     <a className="framer-text framer-styles-preset-minbjw" href="https://foundationcapital.com/privacy-policy" target="_blank" rel="">Foundation Capital</a>
-                     in accordance with their privacy policies.
+                    {" "}in accordance with their privacy policies.
                   </p>
                 </div>
               </div>
@@ -821,7 +824,7 @@ export default function Footer() {
                   <div className="framer-g6vko8" data-border="true" data-framer-name="2" style={{ "--border-bottom-width": "1px", "--border-color": "rgb(255, 255, 255)", "--border-left-width": "0px", "--border-right-width": "1px", "--border-style": "solid", "--border-top-width": "1px" }}>
                     <div className="framer-1y97zwv-container">
                       <div style={{ display: "inline-flex", alignItems: "baseline", color: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
-                        <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }}>0</span>
+                        <CountUp end={906} style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }} />
                       </div>
                     </div>
                     <div className="framer-16s1soe" data-framer-name="Survey responses" style={{ justifyContent: "center", "--extracted-1w1cjl5": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(247, 246, 244))", "--framer-paragraph-spacing": "0px", transform: "none" }}>
@@ -831,7 +834,7 @@ export default function Footer() {
                   <div className="framer-duhixq" data-border="true" data-framer-name="3" style={{ "--border-bottom-width": "1px", "--border-color": "rgb(255, 255, 255)", "--border-left-width": "0px", "--border-right-width": "1px", "--border-style": "solid", "--border-top-width": "1px" }}>
                     <div className="framer-1ph8p8w-container">
                       <div style={{ display: "inline-flex", alignItems: "baseline", color: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
-                        <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }}>0</span>
+                        <CountUp end={25} style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }} />
                         <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em", marginLeft: "0" }}>+</span>
                       </div>
                     </div>
@@ -842,7 +845,7 @@ export default function Footer() {
                   <div className="framer-o8jyh4" data-border="true" data-framer-name="4" style={{ "--border-bottom-width": "1px", "--border-color": "rgb(255, 255, 255)", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "1px" }}>
                     <div className="framer-14xh5rz-container">
                       <div style={{ display: "inline-flex", alignItems: "baseline", color: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
-                        <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }}>0</span>
+                        <CountUp end={50} style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em" }} />
                         <span style={{ fontFamily: "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", fontSize: "120px", fontStyle: "normal", fontWeight: "500", letterSpacing: "0em", lineHeight: "1em", marginLeft: "0" }}>+</span>
                       </div>
                     </div>

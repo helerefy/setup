@@ -25,6 +25,10 @@ type Props = {
   layout?: boolean;
   /** content injected into nodes carrying a `data-slot` attribute */
   slots?: Record<string, ReactNode>;
+  /** per-subtree transitions: the first rule whose class token matches a node applies to it and its descendants */
+  transitions?: [string, Transition][];
+  /** replace the rendering of specific nodes (return undefined to keep the default) */
+  replace?: (node: MorphNode, key?: string) => ReactNode | undefined;
 };
 
 const cache = new Map<string, unknown>();
@@ -36,6 +40,11 @@ function motionTag(tag: string) {
 function render(n: MorphNode | string, p: Omit<Props, "node">, key?: string): ReactNode {
   if (typeof n === "string") return n;
   if (n.t === "style") return <style key={key} dangerouslySetInnerHTML={{ __html: n.h ?? "" }} />;
+  const replaced = p.replace?.(n, key);
+  if (replaced !== undefined) return replaced;
+  const tokens = (n.c ?? "").split(" ");
+  const rule = p.transitions?.find(([cls]) => tokens.includes(cls));
+  if (rule) p = { ...p, transition: rule[1] };
   const style: Record<string, string> = {};
   const animate: Record<string, string | number> = {};
   let template: string | undefined;

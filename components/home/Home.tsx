@@ -1,4 +1,4 @@
-import NavContainer from "./sections/NavContainer";
+import NavContainer from "./nav/NavContainer";
 import HeroWrapper from "./hero/HeroWrapper";
 import Partners from "./sections/Partners";
 import PrefaceTop from "./sections/PrefaceTop";
@@ -11,6 +11,8 @@ import CasesHighlight from "./sections/CasesHighlight";
 import PageFill from "./sections/PageFill";
 import Footer from "./sections/Footer";
 import SvgTemplates from "@/components/SvgTemplates";
+import HomeEffects from "./fx/HomeEffects";
+import ScrollEffects from "./fx/ScrollEffects";
 
 export default function Home() {
   return (
@@ -32,6 +34,8 @@ export default function Home() {
         <Footer />
       </div>
       <SvgTemplates />
+      <HomeEffects />
+      <ScrollEffects />
     </div>
   );
 }

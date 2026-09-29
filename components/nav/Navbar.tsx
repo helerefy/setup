@@ -11,7 +11,7 @@ import { navbar_mob } from "@/components/home/data/navbar_mob";
 
 type NavState = "collapsed" | "chapters" | "cases" | "menu";
 const STATES: Record<Breakpoint, MorphNode[]> = { dsk: navbar_dsk, tab: navbar_tab, mob: navbar_mob };
-const MENU_TRANSITION: Transition = { duration: 0.4, ease: [0.59, 0, 0.38, 1] };
+const MENU_TRANSITION: Transition = { duration: 0.5, ease: [0.59, 0, 0.38, 1] };
 
 export function navbarNode(bp: Breakpoint, state: NavState): MorphNode {
   const list = STATES[bp] as (MorphNode & { name?: string })[];
