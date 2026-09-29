@@ -13,8 +13,7 @@ import { heroNav_dsk } from "../data/heroNav_dsk";
 import { heroNav_tab } from "../data/heroNav_tab";
 import { heroNav_mob } from "../data/heroNav_mob";
 
-type HeroState = MorphNode & { nav: number };
-const HERO: Record<Breakpoint, HeroState[]> = { dsk: hero_dsk as HeroState[], tab: hero_tab as HeroState[], mob: hero_mob as HeroState[] };
+const HERO: Record<Breakpoint, MorphNode[]> = { dsk: hero_dsk, tab: hero_tab, mob: hero_mob };
 const NAV: Record<Breakpoint, MorphNode[]> = { dsk: heroNav_dsk, tab: heroNav_tab, mob: heroNav_mob };
 
 const ease = [0.68, 0, 0.36, 1] as const;
@@ -24,16 +23,16 @@ const t = (duration: number): Transition => ({ duration, ease: [...ease] });
  * Timings/easings come from the original HeroIntro + NavContainer components; the first step waits
  * as long as the original page does before its intro starts. */
 const TIMELINE: Record<Breakpoint, [number, Transition][]> = {
-  dsk: [[0, t(0)], [980, t(1)], [2513, t(1)], [2513, t(1)], [4051, t(1)], [4051, t(1)], [4997, t(0.2)]],
-  tab: [[0, t(0)], [980, t(1)], [2544, t(1)], [2544, t(1)], [4091, t(1)], [4091, t(1)], [4967, t(0.3)]],
-  mob: [[0, t(0)], [980, t(1)], [2519, t(1)], [4077, t(1)], [4134, t(0.2)], [4134, t(0.2)], [4134, t(0.2)]],
+  dsk: [[0, t(0)], [980, t(1)], [2513, t(1)], [4051, t(1)], [4997, t(0.2)]],
+  tab: [[0, t(0)], [980, t(1)], [2544, t(1)], [4091, t(1)], [4967, t(0.3)]],
+  mob: [[0, t(0)], [980, t(1)], [2519, t(1)], [4077, t(1)], [4134, t(0.2)]],
 };
 
-/** The intro navbar (NavContainer) runs on its own clock: [start ms, captured state, transition]. */
-const NAV_TIMELINE: Record<Breakpoint, [number, number, Transition][]> = {
-  dsk: [[0, 0, t(0)], [4000, 3, t(0.7)], [4696, 5, t(0)]],
-  tab: [[0, 0, t(0)], [4190, 3, t(0.7)], [4890, 5, t(0)]],
-  mob: [[0, 0, t(0)], [4340, 5, t(0.7)], [5040, 6, t(0)]],
+/** The intro navbar (NavContainer) runs on its own clock: [start ms, transition] per captured state. */
+const NAV_TIMELINE: Record<Breakpoint, [number, Transition][]> = {
+  dsk: [[0, t(0)], [4000, t(0.7)], [4696, t(0)]],
+  tab: [[0, t(0)], [4190, t(0.7)], [4890, t(0)]],
+  mob: [[0, t(0)], [4340, t(0.7)], [5040, t(0)]],
 };
 
 /** The intro plays once per page lifetime (the original skips it on in-app navigation). */
@@ -71,7 +70,7 @@ export default function HeroIntro({ bp }: { bp: Breakpoint }) {
   }, [step, last, navStep, navLast]);
 
   const hero = states[step];
-  const [, navState, navTransition] = NAV_TIMELINE[bp][navStep];
+  const navTransition = NAV_TIMELINE[bp][navStep][1];
   const done = navStep === navLast;
   // menu interactions start after the final intro step has been applied
   const [interactive, setInteractive] = useState(false);
@@ -80,7 +79,7 @@ export default function HeroIntro({ bp }: { bp: Breakpoint }) {
     const id = requestAnimationFrame(() => setInteractive(true));
     return () => cancelAnimationFrame(id);
   }, [done]);
-  const navContainer = NAV[bp][HERO[bp][navState].nav];
+  const navContainer = NAV[bp][navStep];
   const nav = useMemo(() => (interactive ? withNavbar(navContainer, navbar.node) : navContainer), [interactive, navContainer, navbar.node]);
   const transition = TIMELINE[bp][step][1];
 

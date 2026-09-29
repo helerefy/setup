@@ -22,6 +22,17 @@ export default function HomeEffects() {
       { threshold: 0 },
     );
     videos.forEach((v) => io.observe(v));
+    // the hero's looping background behaves like a GIF: it never stays paused
+    const keepPlaying = (e: Event) => {
+      const v = e.target as HTMLVideoElement;
+      if (v instanceof HTMLVideoElement && v.loop && v.autoplay && !document.hidden) v.play().catch(() => {});
+    };
+    const resume = () => {
+      if (document.hidden) return;
+      document.querySelectorAll<HTMLVideoElement>("#main video[loop][autoplay]").forEach((v) => v.paused && v.play().catch(() => {}));
+    };
+    document.addEventListener("pause", keepPlaying, true);
+    document.addEventListener("visibilitychange", resume);
     const onClick = (e: MouseEvent) => {
       // YouTube facade: the thumbnail + play button turn into the autoplaying player
       const yt = (e.target as HTMLElement).closest<HTMLElement>("article[role=presentation]");
@@ -60,6 +71,8 @@ export default function HomeEffects() {
       stopCarousels();
       mq.removeEventListener("change", onResize);
       io.disconnect();
+      document.removeEventListener("pause", keepPlaying, true);
+      document.removeEventListener("visibilitychange", resume);
       document.removeEventListener("click", onClick);
       document.removeEventListener("submit", onSubmit);
       document.removeEventListener("input", onInput);
