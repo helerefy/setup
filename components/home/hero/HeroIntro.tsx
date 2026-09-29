@@ -6,7 +6,7 @@ import type { Transition } from "motion/react";
 import MorphTree from "@/components/morph/MorphTree";
 import type { MorphNode } from "@/components/morph/types";
 import type { Breakpoint } from "@/lib/breakpoint";
-import { useNavbar } from "@/components/nav/Navbar";
+import VONav from "@/components/nav/VONav";
 import { hero_dsk } from "../data/hero_dsk";
 import { hero_tab } from "../data/hero_tab";
 import { hero_mob } from "../data/hero_mob";
@@ -56,22 +56,12 @@ function continuous(n: MorphNode): MorphNode {
 /** The intro plays once per page lifetime (the original skips it on in-app navigation). */
 let introShown = false;
 
-/** Swaps the navbar inside the intro nav container for the interactive navbar state. */
-function withNavbar(container: MorphNode, navbar: MorphNode): MorphNode {
-  const swap = (n: MorphNode): MorphNode => {
-    if ((n.c ?? "").includes("framer-g5d54")) return { ...navbar, k: n.k };
-    return n.ch ? { ...n, ch: n.ch.map((c) => (typeof c === "string" ? c : swap(c))) } : n;
-  };
-  return swap(container);
-}
-
 export default function HeroIntro({ bp }: { bp: Breakpoint }) {
   const states = HERO[bp];
   const last = states.length - 1;
   const navLast = NAV_TIMELINE[bp].length - 1;
   const [step, setStep] = useState(() => (introShown ? last : 0));
   const [navStep, setNavStep] = useState(() => (introShown ? navLast : 0));
-  const navbar = useNavbar(bp);
 
   useEffect(() => {
     if (step === last) return;
@@ -115,7 +105,7 @@ export default function HeroIntro({ bp }: { bp: Breakpoint }) {
     return () => cancelAnimationFrame(id);
   }, [done]);
   const navContainer = NAV[bp][navStep];
-  const nav = useMemo(() => (interactive ? withNavbar(navContainer, navbar.node) : navContainer), [interactive, navContainer, navbar.node]);
+  const nav = navContainer;
   const transition = TIMELINE[bp][step][1];
 
   return (
@@ -124,7 +114,7 @@ export default function HeroIntro({ bp }: { bp: Breakpoint }) {
       <MorphTree
       node={hero}
       transition={transition}
-        slots={{ nav: <MorphTree node={nav} transition={interactive ? navbar.transition : navTransition} bind={interactive ? navbar.bind : undefined} /> }}
+        slots={{ nav: interactive ? <VONav /> : <MorphTree node={nav} transition={navTransition} /> }}
       />
     </>
   );

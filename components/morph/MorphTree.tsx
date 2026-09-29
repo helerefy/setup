@@ -4,6 +4,8 @@ import { createElement, type ReactNode } from "react";
 import { motion, type Transition } from "motion/react";
 import { m, ms } from "@/lib/media";
 import type { MorphNode } from "./types";
+import { useLocale } from "@/components/LocaleProvider";
+import { hr, tr, type Locale } from "@/lib/i18n";
 
 /** Style properties animated between states; everything else is applied as-is. */
 const ANIMATED = new Set(["opacity", "background-color", "color"]);
@@ -37,8 +39,8 @@ function motionTag(tag: string) {
   return cache.get(tag) as React.ElementType;
 }
 
-function render(n: MorphNode | string, p: Omit<Props, "node">, key?: string): ReactNode {
-  if (typeof n === "string") return n;
+function render(n: MorphNode | string, p: Omit<Props, "node"> & { l: Locale }, key?: string): ReactNode {
+  if (typeof n === "string") return tr(p.l, n);
   if (n.t === "style") return <style key={key} dangerouslySetInnerHTML={{ __html: n.h ?? "" }} />;
   const replaced = p.replace?.(n, key);
   if (replaced !== undefined) return replaced;
@@ -59,6 +61,7 @@ function render(n: MorphNode | string, p: Omit<Props, "node">, key?: string): Re
     if (BOOL.has(k)) props[name] = true;
     else if (k === "src" || k === "poster") props[name] = m(v);
     else if (k === "srcset") props[name] = ms(v);
+    else if (k === "href") props[name] = hr(p.l, v);
     else props[name] = v;
   }
   if (n.t === "video") {
@@ -103,5 +106,6 @@ function render(n: MorphNode | string, p: Omit<Props, "node">, key?: string): Re
 /** Renders one captured component state; switching `node` between states of the same
  * component animates layout/style differences the way the original site does. */
 export default function MorphTree({ node, ...rest }: Props) {
-  return <>{render(node, rest, node.k ?? "root")}</>;
+  const l = useLocale();
+  return <>{render(node, { ...rest, l }, node.k ?? "root")}</>;
 }

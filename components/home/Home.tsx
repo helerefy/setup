@@ -1,3 +1,4 @@
+import type { Locale } from "@/lib/i18n";
 import NavContainer from "./nav/NavContainer";
 import HeroWrapper from "./hero/HeroWrapper";
 import Partners from "./sections/Partners";
@@ -8,31 +9,29 @@ import PrefaceGridSection from "./sections/PrefaceGridSection";
 import PrefaceBottomQuote from "./sections/PrefaceBottomQuote";
 import ChapterSlides from "./sections/ChapterSlides";
 import CasesHighlight from "./sections/CasesHighlight";
-import PageFill from "./sections/PageFill";
-import Footer from "./sections/Footer";
+import VOFooter from "@/components/vo/VOFooter";
 import SvgTemplates from "@/components/SvgTemplates";
 import HomeEffects from "./fx/HomeEffects";
 import ScrollEffects from "./fx/ScrollEffects";
 import HoverEffects from "./fx/HoverEffects";
 
-export default function Home() {
+export default function Home({ l }: { l: Locale }) {
   return (
     <div id="main">
       <div className="framer-WgHH7 framer-1ti4ff8" style={{ minHeight: "100vh", width: "auto" }}>
         <div className="framer-HiGHW framer-72rtr7" style={{ minHeight: "100vh", width: "auto", display: "contents" }}>
           <NavContainer />
           <HeroWrapper />
-          <Partners />
-          <PrefaceTop />
-          <PrefaceTop2 />
-          <PrefaceTop3 />
-          <PrefaceGridSection />
-          <PrefaceBottomQuote />
-          <ChapterSlides />
-          <CasesHighlight />
+          <Partners l={l} />
+          <PrefaceTop l={l} />
+          <PrefaceTop2 l={l} />
+          <PrefaceTop3 l={l} />
+          <PrefaceGridSection l={l} />
+          <PrefaceBottomQuote l={l} />
+          <ChapterSlides l={l} />
+          <CasesHighlight l={l} />
         </div>
-        <PageFill />
-        <Footer />
+        <VOFooter l={l} />
       </div>
       <SvgTemplates />
       <HomeEffects />

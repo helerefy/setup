@@ -1,3 +1,0 @@
-export function isIOS(){if(typeof window==="undefined")return false;const ua=window.navigator.userAgent;const platform=window.navigator.platform;const isIOSDevice=/iPhone|iPad|iPod/i.test(ua);const isIPadOS=platform==="MacIntel"&&navigator.maxTouchPoints>1;return isIOSDevice||isIPadOS;}
-export const __FramerMetadata__ = {"exports":{"isIOS":{"type":"function","annotations":{"framerContractVersion":"1"}},"__FramerMetadata__":{"type":"variable"}}}
-//# sourceMappingURL=./detectDevice.map

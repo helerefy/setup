@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
-import Navbar from "@/components/nav/Navbar";
+import VONav from "@/components/nav/VONav";
 import { useBreakpoint } from "@/lib/breakpoint";
 import { scrollProgress } from "@/lib/scrollTarget";
 
@@ -38,23 +38,7 @@ export default function NavContainer() {
 
   return (
     <motion.div className="framer-3azmvu" data-framer-name="Nav Container" style={{ y, opacity: 1, willChange: "transform" }}>
-      <div className="framer-wy04pl-container">
-        {(bp === null || bp === "dsk") && (
-          <div className="ssr-variant hidden-t69d6d hidden-12sschj">
-            <Navbar bp="dsk" />
-          </div>
-        )}
-        {(bp === null || bp === "tab") && (
-          <div className="ssr-variant hidden-72rtr7 hidden-12sschj hidden-miin9m">
-            <Navbar bp="tab" />
-          </div>
-        )}
-        {(bp === null || bp === "mob") && (
-          <div className="ssr-variant hidden-t69d6d hidden-72rtr7 hidden-miin9m">
-            <Navbar bp="mob" />
-          </div>
-        )}
-      </div>
+      <div className="framer-wy04pl-container"><VONav /></div>
     </motion.div>
   );
 }

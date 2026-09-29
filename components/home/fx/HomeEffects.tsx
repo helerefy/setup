@@ -2,12 +2,14 @@
 
 import { useEffect } from "react";
 import { setupCarousels } from "@/lib/carousel";
+import { products, local } from "@/content/vo";
+import type { Locale } from "@/lib/i18n";
 
 /** Page-level behaviours of the original runtime that the ported markup needs:
  *  - videos without autoplay play while visible (Framer Video "play in view")
  *  - non-anchor elements with data-href act as links
  *  - case-study carousels (drag + arrows)
- *  - the YouTube facade in the highlight section */
+ *  - the VO consultant teaser in the highlight section */
 export default function HomeEffects() {
   useEffect(() => {
     const videos = [...document.querySelectorAll<HTMLVideoElement>("#main video")].filter((v) => !v.autoplay);
@@ -34,13 +36,20 @@ export default function HomeEffects() {
     document.addEventListener("pause", keepPlaying, true);
     document.addEventListener("visibilitychange", resume);
     const onClick = (e: MouseEvent) => {
-      // YouTube facade: the thumbnail + play button turn into the autoplaying player
-      const yt = (e.target as HTMLElement).closest<HTMLElement>("article[role=presentation]");
-      const frame = yt?.querySelector<HTMLIFrameElement>("iframe[title='Youtube Video']");
-      if (yt && frame) {
-        frame.src = frame.src.replace("autoplay=0", "autoplay=1");
-        frame.style.display = "block";
-        yt.querySelectorAll("img, button").forEach((n) => n.remove());
+      const card = (e.target as HTMLElement).closest<HTMLAnchorElement>("a.framer-1oGtc");
+      if (card && (card.href.includes("#scroll-to-subscribe") || card.href.includes("#case-studies"))) {
+        const locale: Locale = window.location.pathname.startsWith("/ar") ? "ar" : "en";
+        const product = products.find((p) => card.textContent?.includes(local(locale, p.name)));
+        if (product) {
+          e.preventDefault();
+          window.location.href = `/${locale}/solutions-products/${product.id}`;
+          return;
+        }
+      }
+      // The old video teaser now links to VO's consultant page.
+      const teaser = (e.target as HTMLElement).closest<HTMLElement>("article[role=presentation]");
+      if (teaser) {
+        window.location.href = `/${window.location.pathname.split("/")[1]}/get-consultant`;
         return;
       }
       const el = (e.target as HTMLElement).closest<HTMLElement>("[data-href]");
@@ -51,10 +60,10 @@ export default function HomeEffects() {
     // newsletter form: submit, then show the confirmation page (as the original does)
     const onSubmit = async (e: SubmitEvent) => {
       const form = e.target as HTMLFormElement;
-      if (!form.closest("#main")) return;
+      if (!form.matches(".framer-13asb5g")) return;
       e.preventDefault();
       const res = await fetch("/api/subscribe", { method: "POST", body: new FormData(form) }).catch(() => null);
-      if (res?.ok) window.location.href = "/confirmation-page";
+      if (res?.ok) window.location.href = `/${window.location.pathname.split("/")[1]}/confirmation-page`;
     };
     document.addEventListener("submit", onSubmit);
     const onInput = (e: Event) => {

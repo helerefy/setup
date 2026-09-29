@@ -1,7 +1,8 @@
 // Ported from the captured stateofaidesign.com home page markup.
 import { m, ms } from "@/lib/media";
+import { tr, hr, type Locale } from "@/lib/i18n";
 
-export default function PrefaceBottomQuote() {
+export default function PrefaceBottomQuote({ l }: { l: Locale }) {
   return (
     <div className="framer-q9pd2f" data-framer-name="z-2">
       <div className="ssr-variant hidden-t69d6d hidden-12sschj">
@@ -15,23 +16,23 @@ export default function PrefaceBottomQuote() {
                     <div className="framer-jwzphc" data-framer-name="col-right">
                       <div className="framer-p48l1e" data-framer-name="title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <p className="framer-text framer-styles-preset-3rit1n" dir="auto">
-                          AI in Design 2026 aims to capture how AI is transforming tech design across designers’ desks and within their teams.
+                          {tr(l, "AI in Design 2026 aims to capture how AI is transforming tech design across designers’ desks and within their teams.")}
                         </p>
                       </div>
                       <div className="framer-191mkls" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                          We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives.{" "}
+                          {tr(l, "We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives.")}{" "}
                         </p>
                       </div>
                       <div className="framer-baanb5" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                          The answers come from over 900 designers at startups, enterprises, and agencies who work across disciplines like product design, brand design, research, and design engineering. We also conducted over 20 interviews with leaders at companies actively navigating this shift.
+                          {tr(l, "The answers come from over 900 designers at startups, enterprises, and agencies who work across disciplines like product design, brand design, research, and design engineering. We also conducted over 20 interviews with leaders at companies actively navigating this shift.")}
                         </p>
                       </div>
                       <div className="framer-1c7ghiv" data-framer-name="p" style={{ transform: "none" }}>
                         <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                          Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer.{" "}
-                          <a className="framer-text framer-styles-preset-1irpjtw" href="/#scroll-to-subscribe">Sign up for new releases.</a>
+                          {tr(l, "Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer.")}{" "}
+                          <a className="framer-text framer-styles-preset-1irpjtw" href={hr(l, "/ask")}>{tr(l, "Sign up for new releases.")}</a>
                         </p>
                       </div>
                     </div>
@@ -49,23 +50,23 @@ export default function PrefaceBottomQuote() {
                     <div className="framer-jwzphc" data-framer-name="col-right">
                       <div className="framer-p48l1e" data-framer-name="title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <h3 className="framer-text framer-styles-preset-3rit1n" dir="auto">
-                          AI in Design 2026 aims to capture how AI is transforming tech design across designers’ desks and within their teams.
+                          {tr(l, "AI in Design 2026 aims to capture how AI is transforming tech design across designers’ desks and within their teams.")}
                         </h3>
                       </div>
                       <div className="framer-191mkls" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                          We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives.{" "}
+                          {tr(l, "We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives.")}{" "}
                         </p>
                       </div>
                       <div className="framer-baanb5" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                          The answers come from over 900 designers at startups, enterprises, and agencies who work across disciplines like product design, brand design, research, and design engineering. We also conducted over 20 interviews with leaders at companies actively navigating this shift.
+                          {tr(l, "The answers come from over 900 designers at startups, enterprises, and agencies who work across disciplines like product design, brand design, research, and design engineering. We also conducted over 20 interviews with leaders at companies actively navigating this shift.")}
                         </p>
                       </div>
                       <div className="framer-1c7ghiv" data-framer-name="p" style={{ transform: "none" }}>
                         <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                          Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer.{" "}
-                          <a className="framer-text framer-styles-preset-1irpjtw" href="/#scroll-to-subscribe">Sign up for new releases.</a>
+                          {tr(l, "Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer.")}{" "}
+                          <a className="framer-text framer-styles-preset-1irpjtw" href={hr(l, "/ask")}>{tr(l, "Sign up for new releases.")}</a>
                         </p>
                       </div>
                     </div>
@@ -86,23 +87,23 @@ export default function PrefaceBottomQuote() {
                   <div className="framer-jwzphc" data-framer-name="col-right">
                     <div className="framer-p48l1e" data-framer-name="title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                       <p className="framer-text framer-styles-preset-3rit1n" dir="auto">
-                        AI in Design 2026 aims to capture how AI is transforming tech design across designers’ desks and within their teams.
+                        {tr(l, "AI in Design 2026 aims to capture how AI is transforming tech design across designers’ desks and within their teams.")}
                       </p>
                     </div>
                     <div className="framer-191mkls" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                       <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                        We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives.{" "}
+                        {tr(l, "We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives.")}{" "}
                       </p>
                     </div>
                     <div className="framer-baanb5" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                       <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                        The answers come from over 900 designers at startups, enterprises, and agencies who work across disciplines like product design, brand design, research, and design engineering. We also conducted over 20 interviews with leaders at companies actively navigating this shift.
+                        {tr(l, "The answers come from over 900 designers at startups, enterprises, and agencies who work across disciplines like product design, brand design, research, and design engineering. We also conducted over 20 interviews with leaders at companies actively navigating this shift.")}
                       </p>
                     </div>
                     <div className="framer-1c7ghiv" data-framer-name="p" style={{ transform: "none" }}>
                       <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                        Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer.{" "}
-                        <a className="framer-text framer-styles-preset-1irpjtw" href="/#scroll-to-subscribe">Sign up for new releases.</a>
+                        {tr(l, "Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer.")}{" "}
+                        <a className="framer-text framer-styles-preset-1irpjtw" href={hr(l, "/ask")}>{tr(l, "Sign up for new releases.")}</a>
                       </p>
                     </div>
                   </div>
@@ -121,23 +122,23 @@ export default function PrefaceBottomQuote() {
                   <div className="framer-jwzphc" data-framer-name="col-right">
                     <div className="framer-p48l1e" data-framer-name="title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                       <p className="framer-text framer-styles-preset-gi5c92" dir="auto">
-                        AI in Design 2026 aims to capture how AI is transforming tech design across designers’ desks and within their teams.
+                        {tr(l, "AI in Design 2026 aims to capture how AI is transforming tech design across designers’ desks and within their teams.")}
                       </p>
                     </div>
                     <div className="framer-191mkls" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                       <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                        We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives.{" "}
+                        {tr(l, "We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives.")}{" "}
                       </p>
                     </div>
                     <div className="framer-baanb5" data-framer-name="p" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                       <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                        The answers come from over 900 designers at startups, enterprises, and agencies who work across disciplines like product design, brand design, research, and design engineering. We also conducted over 20 interviews with leaders at companies actively navigating this shift.
+                        {tr(l, "The answers come from over 900 designers at startups, enterprises, and agencies who work across disciplines like product design, brand design, research, and design engineering. We also conducted over 20 interviews with leaders at companies actively navigating this shift.")}
                       </p>
                     </div>
                     <div className="framer-1c7ghiv" data-framer-name="p" style={{ transform: "none" }}>
                       <p className="framer-text framer-styles-preset-1el2jdx" dir="auto">
-                        Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer.{" "}
-                        <a className="framer-text framer-styles-preset-1irpjtw" href="/#scroll-to-subscribe">Sign up for new releases.</a>
+                        {tr(l, "Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer.")}{" "}
+                        <a className="framer-text framer-styles-preset-1irpjtw" href={hr(l, "/ask")}>{tr(l, "Sign up for new releases.")}</a>
                       </p>
                     </div>
                   </div>
@@ -171,10 +172,10 @@ export default function PrefaceBottomQuote() {
                         </div>
                         <div className="framer-emfloz" data-framer-name="author-info" style={{ willChange: "transform", opacity: "0", transform: "translateY(80px)" }}>
                           <div className="framer-13sae3n" data-framer-name="author-name" style={{ "--extracted-r6o4lv": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))", "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                            <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>Katie Dill</p>
+                            <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>{tr(l, "Katie Dill")}</p>
                           </div>
                           <div className="framer-1qtus3q" data-framer-name="author-title" style={{ "--extracted-r6o4lv": "rgba(255, 255, 255, 0.6)", "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                            <p dir="auto" className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, rgba(255, 255, 255, 0.6))", "--framer-text-transform": "uppercase" }}>Head of Design, STRIPE</p>
+                            <p dir="auto" className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, rgba(255, 255, 255, 0.6))", "--framer-text-transform": "uppercase" }}>{tr(l, "Head of Design, STRIPE")}</p>
                           </div>
                         </div>
                       </div>
@@ -182,7 +183,7 @@ export default function PrefaceBottomQuote() {
                     <div className="framer-9x42cj" data-framer-name="col-right" style={{ backgroundColor: "var(--token-dc58878c-6871-4081-9b9a-81f0df31eb6a, rgb(209, 221, 211))" }}>
                       <div className="framer-1ht2ocw" style={{ "--extracted-1eung3n": "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <h4 className="framer-text framer-styles-preset-l4cs3" dir="auto" style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0)))" }}>
-                          AI is sparking a creative renaissance in design. With new instruments, it’s our chance to compose wholly new music.
+                          {tr(l, "AI is sparking a creative renaissance in design. With new instruments, it’s our chance to compose wholly new music.")}
                         </h4>
                       </div>
                     </div>
@@ -217,10 +218,10 @@ export default function PrefaceBottomQuote() {
                         </div>
                         <div className="framer-emfloz" data-framer-name="author-info" style={{ willChange: "transform", opacity: "0", transform: "translateY(80px)" }}>
                           <div className="framer-13sae3n" data-framer-name="author-name" style={{ "--extracted-r6o4lv": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))", "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                            <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>Katie Dill</p>
+                            <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>{tr(l, "Katie Dill")}</p>
                           </div>
                           <div className="framer-1qtus3q" data-framer-name="author-title" style={{ "--extracted-r6o4lv": "rgba(255, 255, 255, 0.6)", "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                            <p dir="auto" className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, rgba(255, 255, 255, 0.6))", "--framer-text-transform": "uppercase" }}>Head of Design, STRIPE</p>
+                            <p dir="auto" className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, rgba(255, 255, 255, 0.6))", "--framer-text-transform": "uppercase" }}>{tr(l, "Head of Design, STRIPE")}</p>
                           </div>
                         </div>
                       </div>
@@ -228,7 +229,7 @@ export default function PrefaceBottomQuote() {
                     <div className="framer-9x42cj" data-framer-name="col-right" style={{ backgroundColor: "var(--token-dc58878c-6871-4081-9b9a-81f0df31eb6a, rgb(209, 221, 211))" }}>
                       <div className="framer-1ht2ocw" style={{ "--extracted-1eung3n": "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <h4 className="framer-text framer-styles-preset-l4cs3" dir="auto" style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0)))" }}>
-                          AI is sparking a creative renaissance in design. With new instruments, it’s our chance to compose wholly new music.
+                          {tr(l, "AI is sparking a creative renaissance in design. With new instruments, it’s our chance to compose wholly new music.")}
                         </h4>
                       </div>
                     </div>
@@ -255,10 +256,10 @@ export default function PrefaceBottomQuote() {
                         </div>
                         <div className="framer-emfloz" data-framer-name="author-info" style={{ willChange: "transform", opacity: "0", transform: "translateY(80px)" }}>
                           <div className="framer-13sae3n" data-framer-name="author-name" style={{ "--extracted-r6o4lv": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))", "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                            <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>Katie Dill</p>
+                            <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>{tr(l, "Katie Dill")}</p>
                           </div>
                           <div className="framer-1qtus3q" data-framer-name="author-title" style={{ "--extracted-r6o4lv": "rgba(255, 255, 255, 0.6)", "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                            <p dir="auto" className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, rgba(255, 255, 255, 0.6))", "--framer-text-transform": "uppercase" }}>Head of Design, STRIPE</p>
+                            <p dir="auto" className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, rgba(255, 255, 255, 0.6))", "--framer-text-transform": "uppercase" }}>{tr(l, "Head of Design, STRIPE")}</p>
                           </div>
                         </div>
                       </div>
@@ -266,7 +267,7 @@ export default function PrefaceBottomQuote() {
                     <div className="framer-9x42cj" data-framer-name="col-right" style={{ backgroundColor: "var(--token-dc58878c-6871-4081-9b9a-81f0df31eb6a, rgb(209, 221, 211))" }}>
                       <div className="framer-1ht2ocw" style={{ "--extracted-1eung3n": "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                         <h4 className="framer-text framer-styles-preset-l4cs3" dir="auto" style={{ "--framer-text-color": "var(--extracted-1eung3n, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0)))" }}>
-                          AI is sparking a creative renaissance in design. With new instruments, it’s our chance to compose wholly new music.
+                          {tr(l, "AI is sparking a creative renaissance in design. With new instruments, it’s our chance to compose wholly new music.")}
                         </h4>
                       </div>
                       <div className="framer-sg6gko" data-framer-name="mobile-icon-wrapper">

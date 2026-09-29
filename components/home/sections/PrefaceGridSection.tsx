@@ -1,9 +1,10 @@
 // Ported from the captured stateofaidesign.com home page markup.
 import { m, ms } from "@/lib/media";
 import CountUp from "../fx/CountUp";
+import { tr, hr, type Locale } from "@/lib/i18n";
 import PrefaceGrid from "../preface/PrefaceGrid";
 
-export default function PrefaceGridSection() {
+export default function PrefaceGridSection({ l }: { l: Locale }) {
   return (
     <div className="framer-t1rymp" data-framer-name="wrapper">
       <div className="framer-fwat8b" data-framer-name="triggers">
