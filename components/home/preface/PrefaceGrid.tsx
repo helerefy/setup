@@ -11,8 +11,9 @@ import { prefaceGrid_tab } from "../data/prefaceGrid_tab";
 import { prefaceGrid_mob } from "../data/prefaceGrid_mob";
 
 const STATES: Record<Breakpoint, MorphNode[]> = { dsk: prefaceGrid_dsk, tab: prefaceGrid_tab, mob: prefaceGrid_mob };
-const tween = (duration: number, ease: number[], delay = 0): Transition => ({ duration, ease, delay });
-const EASE = [0.59, 0.01, 0.29, 0.99];
+type Bezier = [number, number, number, number];
+const tween = (duration: number, ease: Bezier, delay = 0): Transition => ({ duration, ease, delay });
+const EASE: Bezier = [0.59, 0.01, 0.29, 0.99];
 
 /** Transitions of the original HO-PrefaceGrid when switching to its expanded state. */
 const EXPAND: [string, Transition][] = [

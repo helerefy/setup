@@ -9,7 +9,7 @@ import { navbar_dsk } from "@/components/home/data/navbar_dsk";
 import { navbar_tab } from "@/components/home/data/navbar_tab";
 import { navbar_mob } from "@/components/home/data/navbar_mob";
 
-type NavState = "collapsed" | "chapters" | "cases" | "menu";
+type NavState = "collapsed" | "chapters" | "cases" | "menu" | "menuChapters" | "menuCases";
 const STATES: Record<Breakpoint, MorphNode[]> = { dsk: navbar_dsk, tab: navbar_tab, mob: navbar_mob };
 const MENU_TRANSITION: Transition = { duration: 0.5, ease: [0.59, 0, 0.38, 1] };
 
@@ -41,7 +41,14 @@ export function useNavbar(bp: Breakpoint) {
       if (c.includes("framer-alTDd") && /Case Studies/.test(text(n))) return click("cases");
       if (c.includes("framer-bg6jc3")) return { onClick: () => setState("collapsed") };
     } else {
-      if (c.includes("framer-pq78dt")) return click("menu");
+      const go = (s: NavState) => ({
+        onClick: (e: React.MouseEvent) => { e.preventDefault(); e.stopPropagation(); setState(s); },
+        style: { cursor: "pointer" },
+      });
+      if (c.includes("framer-pq78dt")) return go(state === "collapsed" ? "menu" : "collapsed");
+      if (c.includes("framer-108duzj-container")) return go("menuChapters");
+      if (c.includes("framer-iqp5fg-container")) return go("menuCases");
+      if (c.includes("framer-1rbqwms-container") || c.includes("framer-n30z0i")) return go("menu");
     }
     return undefined;
   };

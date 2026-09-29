@@ -551,7 +551,9 @@ export default function Footer() {
                       </span>
                       <span className="framer-text" style={{ "--framer-text-color": "var(--extracted-dqhihp, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>Fund</span>
                     </a>
-                    <span className="framer-text" style={{ "--framer-text-color": "var(--extracted-3sq8v0, var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65)))" }} />
+                    <span className="framer-text" style={{ "--framer-text-color": "var(--extracted-3sq8v0, var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65)))" }}>
+                      {" "}
+                    </span>
                     and{" "}
                     <a className="framer-text framer-styles-preset-minbjw" href="https://foundationcapital.com/privacy-policy/" target="_blank" rel="">Foundation Capital</a>
                     {" "}in accordance with their privacy policies.

@@ -38,7 +38,7 @@ const TARGET_FX: TargetFX[] = [
   },
 ];
 
-const TEXT_EASE = [0.67, 0.03, 0.2, 0.97];
+const TEXT_EASE: [number, number, number, number] = [0.67, 0.03, 0.2, 0.97];
 /** Text "appear" effects (once, when half visible). */
 const REVEAL_FX: RevealFX[] = [
   { selector: ".framer-10nd62r > .framer-text", from: { y: 112 }, to: { y: 0 }, amount: 0.5, transition: { duration: 1, ease: TEXT_EASE, delay: 0.08 } },

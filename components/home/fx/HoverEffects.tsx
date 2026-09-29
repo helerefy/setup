@@ -6,9 +6,9 @@ import { flip } from "@/lib/flip";
 import DIFFS from "@/lib/hover-diffs.json";
 
 type Diff = { path: number[]; style: Record<string, [string | null, string | null]>; class?: [string, string]; href?: [string, string] };
-const HOVER = DIFFS as Record<string, Diff[]>;
+const HOVER = DIFFS as unknown as Record<string, Diff[]>;
 
-const ease = (duration: number, e = [0.12, 0.23, 0.5, 1]): Transition => ({ duration, ease: e });
+const ease = (duration: number, e: [number, number, number, number] = [0.12, 0.23, 0.5, 1]): Transition => ({ duration, ease: e });
 /** Hover transitions of the original components, by component class. */
 const TRANSITIONS: [string, Transition][] = [
   ["framer-alTDd", { duration: 0.4, ease: [0.59, 0, 0.38, 1] }],
