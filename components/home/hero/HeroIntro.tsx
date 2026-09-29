@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { m } from "@/lib/media";
 import type { Transition } from "motion/react";
 import MorphTree from "@/components/morph/MorphTree";
 import type { MorphNode } from "@/components/morph/types";
@@ -34,6 +35,23 @@ const NAV_TIMELINE: Record<Breakpoint, [number, Transition][]> = {
   tab: [[0, t(0)], [4190, t(0.7)], [4890, t(0)]],
   mob: [[0, t(0)], [4340, t(0.7)], [5040, t(0)]],
 };
+
+const INTRO = "framer-6fryqe-container";
+const LOOP = "framer-1tmdk75-container";
+const LOOP_CLIP: Record<Breakpoint, string> = {
+  dsk: "https://framerusercontent.com/assets/60TSo4WrKzA27Mp4KCDTmVbhc.webm",
+  tab: "https://framerusercontent.com/assets/60TSo4WrKzA27Mp4KCDTmVbhc.webm",
+  mob: "https://framerusercontent.com/assets/Egmkpbap1BsPBzttkhndGBGHLQ.webm",
+};
+
+/** Once the intro clip has ended its element keeps playing the looping clip, so the hero video never
+ * stands still; the separate loop layer is then not needed. */
+function continuous(n: MorphNode): MorphNode {
+  const cls = n.c ?? "";
+  if (cls.includes(INTRO)) return { ...n, s: { ...n.s, opacity: "1" } };
+  if (cls.includes(LOOP)) return { ...n, s: { ...n.s, opacity: "0" } };
+  return n.ch ? { ...n, ch: n.ch.map((c) => (typeof c === "string" ? c : continuous(c))) } : n;
+}
 
 /** The intro plays once per page lifetime (the original skips it on in-app navigation). */
 let introShown = false;
@@ -69,7 +87,24 @@ export default function HeroIntro({ bp }: { bp: Breakpoint }) {
     if (step === last && navStep === navLast) introShown = true;
   }, [step, last, navStep, navLast]);
 
-  const hero = states[step];
+  // intro clip -> looping clip hand-over inside the same <video>
+  const root = useRef<HTMLSpanElement>(null);
+  const [looping, setLooping] = useState(false);
+  useEffect(() => {
+    const video = root.current?.parentElement?.querySelector<HTMLVideoElement>(`.${INTRO} video`);
+    if (!video) return;
+    const toLoop = () => {
+      video.src = m(LOOP_CLIP[bp]);
+      video.loop = true;
+      video.play().catch(() => {});
+      setLooping(true);
+    };
+    if (video.ended) toLoop();
+    video.addEventListener("ended", toLoop);
+    return () => video.removeEventListener("ended", toLoop);
+  }, [bp]);
+
+  const hero = useMemo(() => (looping ? continuous(states[step]) : states[step]), [looping, states, step]);
   const navTransition = NAV_TIMELINE[bp][navStep][1];
   const done = navStep === navLast;
   // menu interactions start after the final intro step has been applied
@@ -84,10 +119,13 @@ export default function HeroIntro({ bp }: { bp: Breakpoint }) {
   const transition = TIMELINE[bp][step][1];
 
   return (
-    <MorphTree
+    <>
+      <span ref={root} hidden />
+      <MorphTree
       node={hero}
       transition={transition}
-      slots={{ nav: <MorphTree node={nav} transition={interactive ? navbar.transition : navTransition} bind={interactive ? navbar.bind : undefined} /> }}
-    />
+        slots={{ nav: <MorphTree node={nav} transition={interactive ? navbar.transition : navTransition} bind={interactive ? navbar.bind : undefined} /> }}
+      />
+    </>
   );
 }

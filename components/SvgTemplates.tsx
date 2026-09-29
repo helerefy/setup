@@ -9,7 +9,7 @@ export default function SvgTemplates() {
     <div
       id="svg-templates"
       aria-hidden="true"
-      style={{ position: "absolute", overflow: "hidden", bottom: 0, left: 0, width: 0, height: 0, zIndex: 0, contain: "strict" }}
+      style={{ position: "absolute", overflow: "hidden", bottom: 0, left: 0, width: 0, height: 0, zIndex: 0 }}
       dangerouslySetInnerHTML={{ __html: templates }}
     />
   );
