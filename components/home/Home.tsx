@@ -13,6 +13,7 @@ import Footer from "./sections/Footer";
 import SvgTemplates from "@/components/SvgTemplates";
 import HomeEffects from "./fx/HomeEffects";
 import ScrollEffects from "./fx/ScrollEffects";
+import HoverEffects from "./fx/HoverEffects";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
       <SvgTemplates />
       <HomeEffects />
       <ScrollEffects />
+      <HoverEffects />
     </div>
   );
 }

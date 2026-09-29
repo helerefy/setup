@@ -23,7 +23,7 @@ export default function Footer() {
                 <form className="framer-13asb5g">
                   <label className="framer-1ry0ftx">
                     <div className="framer-form-text-input framer-form-input-wrapper framer-1m89f5k" style={{ "--framer-input-background": "rgb(255, 255, 255)", "--framer-input-border-bottom-width": "1px", "--framer-input-border-color": "rgba(136, 136, 136, 0.1)", "--framer-input-border-left-width": "1px", "--framer-input-border-right-width": "1px", "--framer-input-border-style": "solid", "--framer-input-border-top-width": "1px", "--framer-input-font-color": "rgb(0, 0, 0)", "--framer-input-icon-mask-image": "none", "--framer-input-placeholder-color": "rgb(0, 0, 0)" }}>
-                      <input type="email" required placeholder="Your email" className="framer-form-input framer-form-input-empty" defaultValue="" />
+                      <input type="email" required name="email" placeholder="Your email" className="framer-form-input framer-form-input-empty" defaultValue="" />
                     </div>
                   </label>
                   <div className="framer-xovsgk-container">
@@ -41,17 +41,17 @@ export default function Footer() {
                       </div>
                     </button>
                   </div>
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="website" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="company" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="message" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="subject" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="title" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="description" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="feedback" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="notes" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="details" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="remarks" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="comments" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
                 </form>
                 <div className="framer-uw7b1c" data-framer-name="We'll send occasional updates on future research. Unsubscribe anytime." style={{ "--extracted-r6o4lv": "rgb(255, 255, 255)", "--framer-paragraph-spacing": "0px", transform: "none" }}>
                   <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBSZWd1bGFy", "--framer-font-family": "\"Beausite Classic Regular\", \"Beausite Classic Regular Placeholder\", sans-serif", "--framer-font-size": "14px", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "140%", "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, rgb(255, 255, 255))" }}>
@@ -267,7 +267,7 @@ export default function Footer() {
                 <form className="framer-13asb5g">
                   <label className="framer-1ry0ftx">
                     <div className="framer-form-text-input framer-form-input-wrapper framer-1m89f5k" style={{ "--framer-input-background": "rgb(255, 255, 255)", "--framer-input-border-bottom-width": "1px", "--framer-input-border-color": "rgba(136, 136, 136, 0.1)", "--framer-input-border-left-width": "1px", "--framer-input-border-right-width": "1px", "--framer-input-border-style": "solid", "--framer-input-border-top-width": "1px", "--framer-input-font-color": "rgb(0, 0, 0)", "--framer-input-icon-mask-image": "none", "--framer-input-placeholder-color": "rgb(0, 0, 0)" }}>
-                      <input type="email" required placeholder="Your email" className="framer-form-input framer-form-input-empty" defaultValue="" />
+                      <input type="email" required name="email" placeholder="Your email" className="framer-form-input framer-form-input-empty" defaultValue="" />
                     </div>
                   </label>
                   <div className="framer-xovsgk-container">
@@ -285,17 +285,17 @@ export default function Footer() {
                       </div>
                     </button>
                   </div>
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="website" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="company" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="message" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="subject" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="title" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="description" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="feedback" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="notes" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="details" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="remarks" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="comments" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
                 </form>
                 <div className="framer-uw7b1c" data-framer-name="We'll send occasional updates on future research. Unsubscribe anytime." style={{ "--extracted-r6o4lv": "rgb(255, 255, 255)", "--framer-paragraph-spacing": "0px", transform: "none" }}>
                   <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBSZWd1bGFy", "--framer-font-family": "\"Beausite Classic Regular\", \"Beausite Classic Regular Placeholder\", sans-serif", "--framer-font-size": "14px", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "140%", "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, rgb(255, 255, 255))" }}>
@@ -512,7 +512,7 @@ export default function Footer() {
                 <form className="framer-13asb5g">
                   <label className="framer-1ry0ftx">
                     <div className="framer-form-text-input framer-form-input-wrapper framer-1m89f5k" style={{ "--framer-input-background": "rgb(255, 255, 255)", "--framer-input-border-bottom-width": "1px", "--framer-input-border-color": "rgba(136, 136, 136, 0.1)", "--framer-input-border-left-width": "1px", "--framer-input-border-right-width": "1px", "--framer-input-border-style": "solid", "--framer-input-border-top-width": "1px", "--framer-input-font-color": "rgb(0, 0, 0)", "--framer-input-icon-mask-image": "none", "--framer-input-placeholder-color": "rgb(0, 0, 0)" }}>
-                      <input type="email" required placeholder="Your email" className="framer-form-input framer-form-input-empty" defaultValue="" />
+                      <input type="email" required name="email" placeholder="Your email" className="framer-form-input framer-form-input-empty" defaultValue="" />
                     </div>
                   </label>
                   <div className="framer-xovsgk-container">
@@ -530,17 +530,17 @@ export default function Footer() {
                       </div>
                     </button>
                   </div>
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="website" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="company" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="message" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="subject" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="title" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="description" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="feedback" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="notes" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="details" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="remarks" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="comments" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
                 </form>
                 <div className="framer-uw7b1c" data-framer-name="We'll send occasional updates on future research. Unsubscribe anytime." style={{ "--extracted-r6o4lv": "rgb(255, 255, 255)", "--framer-paragraph-spacing": "0px", "--extracted-3sq8v0": "var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65))", "--extracted-dqhihp": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))", "--extracted-hl0iuy": "var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65))", transform: "none" }}>
                   <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBSZWd1bGFy", "--framer-font-family": "\"Beausite Classic Regular\", \"Beausite Classic Regular Placeholder\", sans-serif", "--framer-font-size": "14px", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "140%", "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, rgb(255, 255, 255))" }}>
@@ -760,7 +760,7 @@ export default function Footer() {
                 <form className="framer-13asb5g">
                   <label className="framer-1ry0ftx">
                     <div className="framer-form-text-input framer-form-input-wrapper framer-1m89f5k" style={{ "--framer-input-background": "rgb(255, 255, 255)", "--framer-input-border-bottom-width": "1px", "--framer-input-border-color": "rgba(136, 136, 136, 0.1)", "--framer-input-border-left-width": "1px", "--framer-input-border-right-width": "1px", "--framer-input-border-style": "solid", "--framer-input-border-top-width": "1px", "--framer-input-font-color": "rgb(0, 0, 0)", "--framer-input-icon-mask-image": "none", "--framer-input-placeholder-color": "rgb(0, 0, 0)" }}>
-                      <input type="email" required placeholder="Your email" className="framer-form-input framer-form-input-empty" defaultValue="" />
+                      <input type="email" required name="email" placeholder="Your email" className="framer-form-input framer-form-input-empty" defaultValue="" />
                     </div>
                   </label>
                   <div className="framer-xovsgk-container">
@@ -778,17 +778,17 @@ export default function Footer() {
                       </div>
                     </button>
                   </div>
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
-                  <input type="text" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="website" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="company" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="message" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="subject" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="title" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="description" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="feedback" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="notes" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="details" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="remarks" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
+                  <input type="text" name="comments" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" style={{ position: "absolute", transform: "scale(0)" }} defaultValue="" />
                 </form>
                 <div className="framer-uw7b1c" data-framer-name="We'll send occasional updates on future research. Unsubscribe anytime." style={{ "--extracted-r6o4lv": "rgb(255, 255, 255)", "--framer-paragraph-spacing": "0px", transform: "none" }}>
                   <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBSZWd1bGFy", "--framer-font-family": "\"Beausite Classic Regular\", \"Beausite Classic Regular Placeholder\", sans-serif", "--framer-font-size": "14px", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "140%", "--framer-text-alignment": "center", "--framer-text-color": "var(--extracted-r6o4lv, rgb(255, 255, 255))" }}>

@@ -1,0 +1,558 @@
+{
+"framer-alTDd framer-jww1ag framer-v-1broumv framer-1srcqa9": [
+{
+"path": [],
+"style": {
+"opacity": [
+null,
+"1"
+]
+},
+"class": [
+"framer-alTDd framer-jww1ag framer-v-1broumv framer-1srcqa9",
+"framer-alTDd framer-jww1ag framer-v-14jucl6 framer-1srcqa9"
+]
+},
+{
+"path": [
+1
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+}
+],
+"framer-alTDd framer-jww1ag framer-v-jww1ag framer-1srcqa9": [
+{
+"path": [],
+"style": {
+"opacity": [
+null,
+"1"
+]
+},
+"class": [
+"framer-alTDd framer-jww1ag framer-v-jww1ag framer-1srcqa9",
+"framer-alTDd framer-jww1ag framer-v-zmm2tm framer-1srcqa9"
+]
+},
+{
+"path": [
+0
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+},
+{
+"path": [
+0,
+0
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+},
+{
+"path": [
+0,
+1
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+},
+{
+"path": [
+1
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+}
+],
+"framer-vE4nx framer-1303cca framer-v-1303cca": [
+{
+"path": [],
+"style": {
+"opacity": [
+null,
+"1"
+]
+},
+"class": [
+"framer-vE4nx framer-1303cca framer-v-1303cca",
+"framer-vE4nx framer-1303cca framer-v-1303cca hover"
+]
+},
+{
+"path": [
+0
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+},
+{
+"path": [
+0,
+0
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+},
+{
+"path": [
+0,
+0,
+0
+],
+"style": {
+"--extracted-r6o4lv": [
+null,
+"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))"
+]
+}
+},
+{
+"path": [
+0,
+0,
+0,
+0
+],
+"style": {
+"--framer-text-color": [
+null,
+"var(--extracted-r6o4lv, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0)))"
+]
+}
+},
+{
+"path": [
+0,
+0,
+1
+],
+"style": {
+"--extracted-r6o4lv": [
+null,
+"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))"
+]
+}
+},
+{
+"path": [
+0,
+0,
+1,
+0
+],
+"style": {
+"--framer-text-color": [
+null,
+"var(--extracted-r6o4lv, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0)))"
+]
+}
+},
+{
+"path": [
+0,
+1
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+},
+{
+"path": [
+0,
+1,
+0
+],
+"style": {
+"--1gkvthi": [
+"rgb(0, 0, 0)",
+"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))"
+],
+"opacity": [
+null,
+"1"
+]
+}
+},
+{
+"path": [
+1
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+},
+{
+"path": [
+1,
+0
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+},
+{
+"path": [
+1,
+1
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+}
+],
+"framer-CFeAC framer-8hAYJ framer-1oo4msq framer-v-1oo4msq framer-4h0qop": [
+{
+"path": [],
+"style": {},
+"class": [
+"framer-CFeAC framer-8hAYJ framer-1oo4msq framer-v-1oo4msq framer-4h0qop",
+"framer-CFeAC framer-8hAYJ framer-1oo4msq framer-v-1oo4msq hover framer-4h0qop"
+]
+},
+{
+"path": [
+0,
+0
+],
+"style": {
+"--extracted-r6o4lv": [
+"var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))",
+"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))"
+]
+}
+},
+{
+"path": [
+0,
+0,
+0
+],
+"style": {
+"--framer-text-color": [
+"var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))",
+"var(--extracted-r6o4lv, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0)))"
+]
+}
+},
+{
+"path": [
+0,
+1,
+0,
+0,
+0
+],
+"style": {},
+"href": [
+"#svg225739573_492",
+"#svg-58419231_482"
+]
+},
+{
+"path": [
+1,
+0
+],
+"style": {
+"opacity": [
+"1",
+null
+]
+}
+},
+{
+"path": [
+1,
+1
+],
+"style": {
+"opacity": [
+"1",
+null
+]
+}
+}
+],
+"framer-1oGtc framer-AMlM6 framer-1tqs2oy framer-v-ctiw9z framer-151pi0i": [
+{
+"path": [],
+"style": {},
+"class": [
+"framer-1oGtc framer-AMlM6 framer-1tqs2oy framer-v-ctiw9z framer-151pi0i",
+"framer-1oGtc framer-AMlM6 framer-1tqs2oy framer-v-1tqs2oy framer-151pi0i"
+]
+},
+{
+"path": [
+0,
+1
+],
+"style": {
+"background-color": [
+"var(--token-54653423-a788-4b87-99d2-f130e2af5148, rgb(205, 171, 254))",
+"rgb(254, 113, 65)"
+]
+}
+}
+],
+"framer-1oGtc framer-AMlM6 framer-1tqs2oy framer-v-v5ghas framer-151pi0i": [
+{
+"path": [],
+"style": {},
+"class": [
+"framer-1oGtc framer-AMlM6 framer-1tqs2oy framer-v-v5ghas framer-151pi0i",
+"framer-1oGtc framer-AMlM6 framer-1tqs2oy framer-v-h7uarr framer-151pi0i"
+]
+},
+{
+"path": [
+0,
+2
+],
+"style": {
+"background-color": [
+"var(--token-54653423-a788-4b87-99d2-f130e2af5148, rgb(205, 171, 254))",
+"rgb(254, 113, 65)"
+]
+}
+},
+{
+"path": [
+1,
+0,
+2,
+0
+],
+"style": {},
+"class": [
+"framer-AkUGB framer-18jqmey framer-v-18jqmey",
+"framer-AkUGB framer-18jqmey framer-v-11iyqh9"
+]
+}
+],
+"framer-AkUGB framer-18jqmey framer-v-18jqmey": [
+{
+"path": [],
+"style": {},
+"class": [
+"framer-AkUGB framer-18jqmey framer-v-18jqmey",
+"framer-AkUGB framer-18jqmey framer-v-11iyqh9"
+]
+}
+],
+"framer-NvcHQ framer-1lw5vky framer-v-1lw5vky": [
+{
+"path": [],
+"style": {
+"opacity": [
+null,
+"1"
+]
+},
+"class": [
+"framer-NvcHQ framer-1lw5vky framer-v-1lw5vky",
+"framer-NvcHQ framer-1lw5vky framer-v-1lw5vky hover"
+]
+},
+{
+"path": [
+0
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+},
+{
+"path": [
+0,
+0
+],
+"style": {
+"--extracted-r6o4lv": [
+"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))",
+"var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))"
+]
+}
+},
+{
+"path": [
+0,
+0,
+0
+],
+"style": {
+"--framer-text-color": [
+"var(--extracted-r6o4lv, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0)))",
+"var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))"
+]
+}
+},
+{
+"path": [
+0,
+1
+],
+"style": {
+"--1gkvthi": [
+"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))",
+"var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))"
+]
+}
+},
+{
+"path": [
+1
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+}
+],
+"framer-GFdRC framer-171ja2u framer-v-duefie": [
+{
+"path": [],
+"style": {},
+"class": [
+"framer-GFdRC framer-171ja2u framer-v-duefie",
+"framer-GFdRC framer-171ja2u framer-v-duefie hover"
+]
+},
+{
+"path": [
+0
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+},
+{
+"path": [
+0,
+0
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+},
+{
+"path": [
+0,
+0,
+0
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+},
+{
+"path": [
+1
+],
+"style": {
+"opacity": [
+null,
+"1"
+]
+}
+}
+],
+"framer-g1bt4 framer-1v8oj3u framer-v-1v8oj3u framer-1o1i3aj": [
+{
+"path": [],
+"style": {
+"opacity": [
+null,
+"1"
+]
+},
+"class": [
+"framer-g1bt4 framer-1v8oj3u framer-v-1v8oj3u framer-1o1i3aj",
+"framer-g1bt4 framer-1v8oj3u framer-v-1v8oj3u hover framer-1o1i3aj"
+]
+},
+{
+"path": [
+0
+],
+"style": {
+"--extracted-r6o4lv": [
+"rgb(255, 255, 255)",
+"var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65))"
+],
+"opacity": [
+null,
+"1"
+]
+}
+},
+{
+"path": [
+0,
+0
+],
+"style": {
+"--framer-text-color": [
+"var(--extracted-r6o4lv, rgb(255, 255, 255))",
+"var(--extracted-r6o4lv, var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65)))"
+]
+}
+}
+]
+}
