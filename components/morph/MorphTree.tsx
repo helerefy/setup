@@ -66,6 +66,10 @@ function render(n: MorphNode | string, p: Omit<Props, "node"> & { l: Locale }, k
   }
   if (n.t === "video") {
     props.muted = true;
+    // A still poster can show before the hero's first frame and during the loop handoff.
+    if (/11fQjZ8SBLFtf9GDiGqEbzqKI8|vMHevGIeALFuIZsCH4NOQ9K5FRM|60TSo4WrKzA27Mp4KCDTmVbhc|Egmkpbap1BsPBzttkhndGBGHLQ/.test(n.a?.src ?? "")) {
+      delete props.poster;
+    }
     // The intro animation is scheduled by HeroIntro after hydration. Starting the
     // short clip during SSR can leave it frozen before the black-card animation ends.
     if (/11fQjZ8SBLFtf9GDiGqEbzqKI8|vMHevGIeALFuIZsCH4NOQ9K5FRM/.test(n.a?.src ?? "")) {

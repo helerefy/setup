@@ -10,6 +10,9 @@ const frameworks = [
   { name: "Cloud", image: "cloud.svg", url: "https://aws.amazon.com/" },
   { name: "Mobile development", image: "mobile.svg", url: "https://reactnative.dev/" },
 ] as const;
+const wordmarks = new Set([".Net Core", "Creatio", "Odoo"]);
+
+const imageFor = (item: typeof frameworks[number]) => item.name === "Odoo" ? "/vo/partners/odoo.svg" : `/vo/frameworks/${item.image}`;
 
 export default function Frameworks({ l }: { l: Locale }) {
   return <section className="vo-frameworks" aria-label={l === "ar" ? "تصفح أطر العمل" : "Browse Our Frameworks"}>
@@ -19,8 +22,8 @@ export default function Frameworks({ l }: { l: Locale }) {
     </div>
     <div className="vo-frameworks-window" dir="ltr">
       <div className="vo-frameworks-track">
-        <div className="vo-frameworks-set">{frameworks.map((item) => <a key={item.name} href={item.url} target="_blank" rel="noreferrer" className="vo-framework"><img src={`/vo/frameworks/${item.image}`} alt="" loading="lazy" /><span>{item.name}</span></a>)}</div>
-        <div className="vo-frameworks-set" aria-hidden="true">{frameworks.map((item) => <div key={item.name} className="vo-framework"><img src={`/vo/frameworks/${item.image}`} alt="" loading="lazy" /><span>{item.name}</span></div>)}</div>
+        <div className="vo-frameworks-set">{frameworks.map((item) => <a key={item.name} href={item.url} target="_blank" rel="noreferrer" className={`vo-framework${wordmarks.has(item.name) ? " vo-framework-wordmark" : ""}`}><img src={imageFor(item)} alt={wordmarks.has(item.name) ? item.name : ""} />{!wordmarks.has(item.name) && <span>{item.name}</span>}</a>)}</div>
+        <div className="vo-frameworks-set" aria-hidden="true">{frameworks.map((item) => <div key={item.name} className={`vo-framework${wordmarks.has(item.name) ? " vo-framework-wordmark" : ""}`}><img src={imageFor(item)} alt="" />{!wordmarks.has(item.name) && <span>{item.name}</span>}</div>)}</div>
       </div>
     </div>
   </section>;

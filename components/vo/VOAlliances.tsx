@@ -1,7 +1,7 @@
 import type { Locale } from "@/lib/i18n";
 
 const partners = [
-  { name: "Sorsx", image: "sorsx.png", url: "https://sorsx.com" },
+  { name: "Sorsx", image: "sorsx.webp", url: "https://sorsx.com" },
   { name: "ITIDA", image: "itida.png", url: "https://itida.gov.eg" },
   { name: "MCIT Egypt", image: "mcit.png", url: "https://mcit.gov.eg" },
   { name: "Odoo", image: "odoo.svg", url: "https://www.odoo.com" },
@@ -15,10 +15,10 @@ export default function VOAlliances({ l }: { l: Locale }) {
     <div className="vo-alliances-window" dir="ltr">
       <div className="vo-alliances-track">
         <div className="vo-alliances-set">{partners.map((p) => <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" aria-label={p.name}>
-          <img src={`/vo/partners/${p.image}`} alt={p.name} loading="lazy" />
+          <img src={`/vo/partners/${p.image}`} alt={p.name} />
         </a>)}</div>
         <div className="vo-alliances-set" aria-hidden="true">{partners.map((p) => <span key={p.name}>
-          <img src={`/vo/partners/${p.image}`} alt="" loading="lazy" />
+          <img src={`/vo/partners/${p.image}`} alt="" />
         </span>)}</div>
       </div>
     </div>
