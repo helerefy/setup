@@ -30,6 +30,7 @@
 .framer-QJhm9 .framer-1e0yqm8::after { content: "VO Technology"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; font: 700 16px/1 "Figtree", Arial, sans-serif; font-size: 11cqw; letter-spacing: -.06em; white-space: nowrap; pointer-events: none; }
 .framer-QJhm9 .framer-g5d54 .framer-1lc5sim img { visibility: hidden; }
 .framer-QJhm9 .framer-g5d54 .framer-1lc5sim::after { content: "VO Technology"; color: #fff; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font: 700 19px "Figtree", Arial, sans-serif; white-space: nowrap; letter-spacing: -.06em; }
+.framer-QJhm9 .framer-14dfuir-container { display: none !important; }
 html[lang="ar"] .framer-QJhm9 .framer-1qoor7b p { font-size: 13px !important; line-height: 1.5 !important; }
 
 /* The footer has its own oversized AiiD SVG, replaced by a VO wordmark in the same band. */
@@ -81,6 +82,9 @@ a.vo-framework:hover, a.vo-framework:focus-visible { text-decoration: underline;
 .framer-n4ix6 .framer-1oGtc .framer-pwj1fn { aspect-ratio: 1.5; height: auto; overflow: hidden; }
 .framer-n4ix6 .framer-1oGtc .framer-2wo5y3 { aspect-ratio: auto; height: 100%; }
 .framer-n4ix6 .framer-1oGtc .framer-oz714n { height: 5px; background: #cdabfe !important; transition: background-color .25s ease; }
+.framer-n4ix6 .framer-iuk7lj-container { display: none; }
+.framer-n4ix6 .framer-1oGtc .framer-1ulmgo5 { min-height: 110px; }
+@media (max-width: 767.98px) { .framer-n4ix6 .framer-1oGtc .framer-1ulmgo5 { min-height: 154px; } }
 .framer-n4ix6 .framer-1oGtc:hover, .framer-n4ix6 .framer-1oGtc:focus-visible { border-color: #fe7141; background: #f7f6f4; }
 .framer-n4ix6 .framer-1oGtc:hover .framer-oz714n, .framer-n4ix6 .framer-1oGtc:focus-visible .framer-oz714n { background: #fe7141 !important; }
 .framer-n4ix6 .framer-1oGtc:focus-visible { outline: 2px solid #000; outline-offset: 2px; }

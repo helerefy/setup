@@ -124,6 +124,7 @@ export default function HeroIntro({ bp, active }: { bp: Breakpoint; active: bool
           preload: active ? "auto" : "none",
           autoPlay: active && n.a?.autoplay !== undefined && !/11fQjZ8SBLFtf9GDiGqEbzqKI8|vMHevGIeALFuIZsCH4NOQ9K5FRM/.test(n.a?.src ?? ""),
         } : undefined}
+        replace={(n) => (n.c ?? "").split(" ").includes("framer-14dfuir-container") ? null : undefined}
         slots={{ nav: interactive ? <VONav /> : <MorphTree node={nav} transition={navTransition} /> }}
       />
     </>

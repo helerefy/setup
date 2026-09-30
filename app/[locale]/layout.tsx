@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { LOCALES, dir, isLocale } from "@/lib/i18n";
 import LocaleProvider from "@/components/LocaleProvider";
+import ScrollToTop from "@/components/ScrollToTop";
 import "@/styles/fonts.css";
 import "@/styles/home.css";
 import "@/styles/vo.css";
@@ -22,7 +23,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   return (
     <html lang={locale} dir={dir(locale)} suppressHydrationWarning>
       <body suppressHydrationWarning>
-        <LocaleProvider locale={locale}>{children}</LocaleProvider>
+        <LocaleProvider locale={locale}><ScrollToTop />{children}</LocaleProvider>
       </body>
     </html>
   );
