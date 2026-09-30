@@ -1,6 +1,19 @@
 // Ported from the captured stateofaidesign.com home page markup.
-import { m, ms } from "@/lib/media";
-import { tr, hr, type Locale } from "@/lib/i18n";
+import { tr, type Locale } from "@/lib/i18n";
+
+const clients = [
+  { name: "B.Tech", url: "https://btech.com/en" },
+  { name: "Royal Commission for Riyadh City", url: "https://www.rcrc.gov.sa/" },
+  { name: "Taif Municipality", url: "https://www.taifcity.gov.sa/" },
+  { name: "Holy Makkah Municipality", url: "https://hmm.gov.sa/" },
+  { name: "Kuwait Municipality", url: "https://www.baladia.gov.kw/" },
+  { name: "KACST", url: "https://kacst.gov.sa/en" },
+  { name: "Central Bank of Libya (CBL Care)", url: "https://cbl.gov.ly/" },
+  { name: "Ministry of Environment, Water and Agriculture", url: "https://www.mewa.gov.sa/en/" },
+  { name: "Ministry of Hajj and Umrah", url: "https://haj.gov.sa/en" },
+  { name: "Libyan Ministry of Interior", url: "https://moi.gov.ly/" },
+  { name: "Ministry of Municipalities and Housing", url: "https://momah.gov.sa/en" },
+] as const;
 
 export default function Partners({ l }: { l: Locale }) {
   return (
@@ -21,27 +34,9 @@ export default function Partners({ l }: { l: Locale }) {
             </div>
           </div>
           <div className="framer-9dpxa0" data-framer-name="logos-wrapper">
-            <div className="framer-1g81blm">
-              <img className="vo-client-logo" src="/vo/clients/c1.webp" alt="" />
-            </div>
-            <div className="framer-8c2wzb">
-              <img className="vo-client-logo" src="/vo/clients/c2.webp" alt="" />
-            </div>
-            <div className="framer-e35x93">
-              <img className="vo-client-logo" src="/vo/clients/c3.webp" alt="" />
-            </div>
-            <div className="framer-7fwbee">
-              <img className="vo-client-logo" src="/vo/clients/c4.webp" alt="" />
-            </div>
-            <div className="framer-1vvhddj">
-              <img className="vo-client-logo" src="/vo/clients/c5.webp" alt="" />
-            </div>
-            <div className="framer-1lmf44l">
-              <img className="vo-client-logo" src="/vo/clients/c6.webp" alt="" />
-            </div>
-            <div className="framer-1905t4p">
-              <img className="vo-client-logo" src="/vo/clients/c7.webp" alt="" />
-            </div>
+            {clients.map((client, i) => <a className="vo-client-link" href={client.url} target="_blank" rel="noopener noreferrer" aria-label={client.name} key={client.name}>
+              <img className="vo-client-logo" src={`/vo/clients/c${i + 1}.webp`} alt="" />
+            </a>)}
           </div>
         </div>
       </div>

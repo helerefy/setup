@@ -17,9 +17,9 @@ export default function VOAlliances({ l }: { l: Locale }) {
         <div className="vo-alliances-set">{partners.map((p) => <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" aria-label={p.name}>
           <img src={`/vo/partners/${p.image}`} alt={p.name} />
         </a>)}</div>
-        <div className="vo-alliances-set" aria-hidden="true">{partners.map((p) => <span key={p.name}>
+        <div className="vo-alliances-set" aria-hidden="true">{partners.map((p) => <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" tabIndex={-1}>
           <img src={`/vo/partners/${p.image}`} alt="" />
-        </span>)}</div>
+        </a>)}</div>
       </div>
     </div>
   </section>;

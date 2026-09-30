@@ -23,7 +23,7 @@ export default function Frameworks({ l }: { l: Locale }) {
     <div className="vo-frameworks-window" dir="ltr">
       <div className="vo-frameworks-track">
         <div className="vo-frameworks-set">{frameworks.map((item) => <a key={item.name} href={item.url} target="_blank" rel="noreferrer" className={`vo-framework${wordmarks.has(item.name) ? " vo-framework-wordmark" : ""}`}><img src={imageFor(item)} alt={wordmarks.has(item.name) ? item.name : ""} />{!wordmarks.has(item.name) && <span>{item.name}</span>}</a>)}</div>
-        <div className="vo-frameworks-set" aria-hidden="true">{frameworks.map((item) => <div key={item.name} className={`vo-framework${wordmarks.has(item.name) ? " vo-framework-wordmark" : ""}`}><img src={imageFor(item)} alt="" />{!wordmarks.has(item.name) && <span>{item.name}</span>}</div>)}</div>
+        <div className="vo-frameworks-set" aria-hidden="true">{frameworks.map((item) => <a key={item.name} href={item.url} target="_blank" rel="noopener noreferrer" tabIndex={-1} className={`vo-framework${wordmarks.has(item.name) ? " vo-framework-wordmark" : ""}`}><img src={imageFor(item)} alt="" />{!wordmarks.has(item.name) && <span>{item.name}</span>}</a>)}</div>
       </div>
     </div>
   </section>;
