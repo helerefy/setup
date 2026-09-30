@@ -1,6 +1,8 @@
 # VO for Technology
 
-Next.js App Router site with VO content in English (`/en`) and Arabic (`/ar`). The home page retains the State of AI Design motion/layout system and its animated collage hero; the company, service, product, Creatio and inquiry pages use the same visual language with VO imagery and copy. `/` redirects to `/en`.
+Developed and designed by : Hazem Elerefy for VO Technology.
+
+Next.js App Router site with VO content in English (`/en`) and Arabic (`/ar`). The site includes company, service, product, Creatio and inquiry pages with VO imagery and copy. `/` redirects to `/en`.
 
 ## Develop
 
@@ -23,7 +25,7 @@ The production server listens on port 3000. A Next.js-compatible host can run th
 
 ## Content
 
-- `content/strings.ts`: home page English/Arabic copy mapped to the original layout.
+- `content/strings.ts`: home page English/Arabic copy.
 - `content/vo.ts`: services and products in both languages.
 - `content/creatio.ts`: Creatio's captured 2025 events and news in the source page's order. These are marked as archival, not current upcoming events.
 - `components/home`: home layout and animations.
@@ -37,6 +39,6 @@ The consultant and Ask VO forms are distinct; Join Team has a PDF-only CV picker
 
 ## Credit and rights
 
-developed and designed by : Hazem Elerefy. See `LICENSE.md` for the scope of that notice. The original AiiD layout and motion, VO content and media, partner marks, and third-party fonts/icons are not relicensed by it; obtain the relevant permissions before public redistribution.
+Hazem Elerefy is credited for the website implementation and VO-specific design work. See `LICENSE.md` for the scope of his original contributions. The home page also incorporates State of AI Design layout and motion; VO content and media, partner marks, and third-party fonts/icons are not relicensed by Hazem's notice. Obtain the relevant permissions before public redistribution.
 
-The downloadable company profile is generated from the 2025 source profile, retained in the repository's previous commit for reference. To rebuild it, install `reportlab==4.4.9` for Python 3 and run `python3 scripts/build_profile.py`. The source profile lists organizations and application areas without independently verifiable project results; the replacement keeps those distinctions explicit.
+The downloadable company profile uses the 2025 source profile, retained in the repository's history for reference. PDF layout and editorial work are by Hazem Elerefy for VO Technology. To rebuild it, install `reportlab==4.4.9` for Python 3 and run `python3 scripts/build_profile.py`. Names and marks from the source remain the property of their owners; the profile does not present application areas as verified case studies.

@@ -21,6 +21,7 @@ const products = [
   { path: "/solutions-products/8", en: "Correspondence", ar: "إدارة المراسلات" },
 ];
 const pages = [
+  { path: "", en: "Home", ar: "الرئيسية" },
   { path: "/about", en: "About", ar: "من نحن" },
   { path: "/creatio", en: "Creatio", ar: "كرياشو" },
   { path: "/get-consultant", en: "Consultant", ar: "استشارة" },

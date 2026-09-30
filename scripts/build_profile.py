@@ -6,18 +6,22 @@ Run from any directory: python3 scripts/build_profile.py
 
 from pathlib import Path
 
+from PIL import Image
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_LEFT
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase.pdfmetrics import stringWidth
+from reportlab.lib.utils import ImageReader
 from reportlab.pdfgen import canvas
 from reportlab.platypus import Paragraph
 
 
-OUTPUT = Path(__file__).resolve().parents[1] / "public/vo/VO-Technology-Profile.pdf"
+ROOT = Path(__file__).resolve().parents[1]
+OUTPUT = ROOT / "public/vo/VO-Technology-Profile.pdf"
 W, H = A4
 M = 51
+TOTAL_PAGES = 8
 INK = colors.HexColor("#151515")
 ORANGE = colors.HexColor("#fe7141")
 PAPER = colors.HexColor("#f7f6f4")
@@ -49,6 +53,16 @@ def rule(c, x, y, width, color=LINE, thickness=0.8):
     c.line(x, y, x + width, y)
 
 
+def image_fit(c, path, x, y, width, height):
+    image = Image.open(ROOT / "public/vo" / path).convert("RGBA")
+    if image.getextrema()[3][0] == 0:
+        image = image.crop(image.getbbox())
+    image.thumbnail((1200, 1200), Image.Resampling.LANCZOS)
+    ratio = min(width / image.width, height / image.height)
+    w, h = image.width * ratio, image.height * ratio
+    c.drawImage(ImageReader(image), x + (width - w) / 2, y + (height - h) / 2, w, h, mask="auto")
+
+
 def base(c, number, section):
     c.setFillColor(PAPER)
     c.rect(0, 0, W, H, stroke=0, fill=1)
@@ -59,7 +73,7 @@ def base(c, number, section):
     rule(c, M, H - 56, W - 2 * M)
     rule(c, M, 48, W - 2 * M)
     text(c, "VO FOR TECHNOLOGY  /  COMPANY PROFILE", M, 29, 8, color=MUTED)
-    text(c, f"{number:02d} / 06", W - M - 33, 29, 8, color=MUTED)
+    text(c, f"{number:02d} / {TOTAL_PAGES:02d}", W - M - 33, 29, 8, color=MUTED)
 
 
 def heading(c, eyebrow, title, subtitle=None):
@@ -80,7 +94,7 @@ def item(c, x, y, width, index, title, body, tags=None):
 
 c = canvas.Canvas(str(OUTPUT), pagesize=A4, pageCompression=1)
 c.setTitle("VO for Technology | Company Profile")
-c.setAuthor("VO for Technology")
+c.setAuthor("Hazem Elerefy for VO Technology")
 c.setSubject("Services, capabilities, products and organizations named in the 2025 company profile")
 
 # 1: cover
@@ -90,6 +104,7 @@ c.setFillColor(ORANGE)
 c.rect(0, 0, 13, H, stroke=0, fill=1)
 text(c, "VO / TECHNOLOGY", M + 14, 774, 11, "Helvetica-Bold")
 text(c, "COMPANY PROFILE", M + 14, 718, 10, "Helvetica-Bold", ORANGE)
+image_fit(c, "logo.png", W - M - 98, 708, 88, 100)
 rule(c, M + 14, 696, W - 2 * M - 14, INK, 1)
 text(c, "VO for", M + 9, 575, 67, "Helvetica-Bold")
 text(c, "Technology", M + 9, 501, 67, "Helvetica-Bold")
@@ -206,9 +221,32 @@ for i, product in enumerate(products):
     paragraph(c, product, M + 43, y + 2, W - 2 * M - 45, 13, 16, INK, "Helvetica-Bold")
 c.showPage()
 
-# 6: organizations and contact, attributed to the original profile
-base(c, 6, "Organizations and contact")
-heading(c, "Listed in the 2025 profile", "Organizations & alliances", "Organizations and technology relationships named in the 2025 company profile.")
+# 6: selected marks also present in the website's client artwork
+base(c, 6, "Selected organizations")
+heading(c, "Organizations", "Selected marks", "A selection of organizations listed in VO's 2025 profile. Their names and marks are shown for identification, not as project case studies.")
+client_marks = [
+    ("clients/c1.webp", "B.Tech"),
+    ("clients/c2.webp", "Royal Commission for Riyadh"),
+    ("clients/c3.webp", "Amanah Al-Taif"),
+    ("clients/c4.webp", "Amanah Makkah Al-Mukarramah"),
+    ("clients/c5.webp", "Kuwait Municipality"),
+    ("clients/c6.webp", "KACST"),
+]
+for i, (path, name) in enumerate(client_marks):
+    col, row = i % 2, i // 2
+    x, top = M + col * 252, 586 - row * 153
+    rule(c, x, top + 13, 216)
+    c.setFillColor(WHITE)
+    c.rect(x, top - 105, 216, 95, stroke=0, fill=1)
+    image_width = 130 if path.endswith("c1.webp") else 184
+    image_fit(c, path, x + (216 - image_width) / 2, top - 94, image_width, 70)
+    paragraph(c, name, x, top - 111, 216, 9, 12, MUTED)
+text(c, "Names and marks are retained from the source profile and website; usage remains subject to their owners' rights.", M, 67, 8, color=MUTED)
+c.showPage()
+
+# 7: the original document's full organization list
+base(c, 7, "Organizations")
+heading(c, "Listed in the 2025 profile", "Organizations", "The 2025 company profile names organizations across the public and private sectors.")
 groups = [
     ("GOVERNMENT & PUBLIC SECTOR", [
         "Royal Commission for Riyadh", "Amanah Makkah Al-Mukarramah", "Amanah Al-Taif",
@@ -227,13 +265,33 @@ for col, (label, names) in enumerate(groups):
     for i, name in enumerate(names):
         paragraph(c, name, x, 551 - i * 27, 216, 10, 13)
 rule(c, M, 253, W - 2 * M, INK)
-text(c, "RELATIONSHIPS NAMED IN THE PROFILE", M, 229, 9, "Helvetica-Bold", ORANGE)
-paragraph(c, "SorsX  /  ITIDA  /  Egypt's Ministry of Communications &amp; Information Technology  /  Odoo  /  Creatio", M, 212, W - 2 * M, 10, 15)
-rule(c, M, 151, W - 2 * M, INK)
-text(c, "CONTACT", M, 131, 9, "Helvetica-Bold", ORANGE)
-text(c, "info@vo.technology", M, 107, 11)
-text(c, "+(966) 59 008 8250", M + 220, 107, 11)
-text(c, "vo.technology", M, 84, 10)
+paragraph(c, "These names are reproduced from VO's 2025 profile. The document does not provide project scope or current relationship status.", M, 232, W - 2 * M, 10, 15, MUTED)
+c.showPage()
+
+# 8: platform and institutional marks, with the document's contact details
+base(c, 8, "Relationships and contact")
+heading(c, "Named relationships", "Technology & institutions", "Organizations identified on the relationships page of VO's 2025 company profile.")
+relationships = [
+    ("partners/sorsx.webp", "SorsX"),
+    ("partners/itida.png", "ITIDA"),
+    ("partners/mcit.png", "MCIT Egypt"),
+    ("partners/odoo-logo.webp", "Odoo"),
+    ("partners/creatio.png", "Creatio"),
+]
+for i, (path, name) in enumerate(relationships):
+    col, row = i % 2, i // 2
+    x, top = M + col * 252, 586 - row * 119
+    rule(c, x, top + 11, 216)
+    c.setFillColor(WHITE)
+    c.rect(x, top - 77, 216, 70, stroke=0, fill=1)
+    image_fit(c, path, x + 16, top - 67, 184, 48)
+    text(c, name, x, top - 92, 9, color=MUTED)
+rule(c, M, 210, W - 2 * M, INK)
+text(c, "CONTACT", M, 189, 9, "Helvetica-Bold", ORANGE)
+text(c, "info@vo.technology", M, 167, 11)
+text(c, "+(966) 59 008 8250", M + 220, 167, 11)
+text(c, "vo.technology", M, 145, 10)
+text(c, "Names and marks belong to their respective owners; inclusion is not an endorsement.", M, 74, 8, color=MUTED)
 c.showPage()
 
 c.save()
