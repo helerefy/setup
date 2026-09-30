@@ -229,8 +229,7 @@ html[dir="rtl"] .vo-creatio-hero-title { inset: auto 0 0 auto; }
 .vo-upload { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
 .vo-upload input { position: absolute; width: 1px; height: 1px; opacity: 0; }
 .vo-upload > p { font-size: 13px; line-height: 1.3; max-width: 460px; }
-.vo-upload::after { content: "Preview only: CVs are not uploaded and no report is sent by email."; display: block; max-width: 460px; font: 12px/1.4 "Geist Mono", monospace; }
-html[lang="ar"] .vo-upload::after { content: "نسخة استعراضية: لا تُرفع السيرة الذاتية ولا يُرسل تقرير بالبريد."; }
+.vo-upload-notice { font: 12px/1.4 "Geist Mono", monospace; }
 .vo-jobs { padding: 90px 16px 120px; background: #fff; }
 .vo-jobs-header { border-top: 1px solid #000; padding-top: 22px; display: flex; flex-direction: column; gap: 24px; }
 .vo-jobs-header h2 { font-size: clamp(46px, 5vw, 90px); line-height: 1; }

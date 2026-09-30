@@ -31,7 +31,9 @@ export default function HomeEffects() {
     };
     const resume = () => {
       if (document.hidden) return;
-      document.querySelectorAll<HTMLVideoElement>("#main video[loop][autoplay]").forEach((v) => v.paused && v.play().catch(() => {}));
+      document.querySelectorAll<HTMLVideoElement>("#main .framer-QJhm9 video").forEach((v) => {
+        if (v.paused && !v.ended && v.getBoundingClientRect().width) v.play().catch(() => {});
+      });
     };
     document.addEventListener("pause", keepPlaying, true);
     document.addEventListener("visibilitychange", resume);
