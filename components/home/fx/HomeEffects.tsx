@@ -59,20 +59,6 @@ export default function HomeEffects() {
       window.location.href = el.dataset.href!;
     };
     document.addEventListener("click", onClick);
-    // newsletter form: submit, then show the confirmation page (as the original does)
-    const onSubmit = async (e: SubmitEvent) => {
-      const form = e.target as HTMLFormElement;
-      if (!form.matches(".framer-13asb5g")) return;
-      e.preventDefault();
-      const res = await fetch("/api/subscribe", { method: "POST", body: new FormData(form) }).catch(() => null);
-      if (res?.ok) window.location.href = `/${window.location.pathname.split("/")[1]}/confirmation-page`;
-    };
-    document.addEventListener("submit", onSubmit);
-    const onInput = (e: Event) => {
-      const el = e.target as HTMLInputElement;
-      if (el.classList?.contains("framer-form-input")) el.classList.toggle("framer-form-input-empty", !el.value);
-    };
-    document.addEventListener("input", onInput);
     const main = document.getElementById("main")!;
     let stopCarousels = setupCarousels(main);
     const onResize = () => { stopCarousels(); stopCarousels = setupCarousels(main); };
@@ -85,8 +71,6 @@ export default function HomeEffects() {
       document.removeEventListener("pause", keepPlaying, true);
       document.removeEventListener("visibilitychange", resume);
       document.removeEventListener("click", onClick);
-      document.removeEventListener("submit", onSubmit);
-      document.removeEventListener("input", onInput);
     };
   }, []);
   return null;

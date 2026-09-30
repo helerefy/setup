@@ -2,14 +2,24 @@
 
 Next.js App Router site with VO content in English (`/en`) and Arabic (`/ar`). The home page retains the State of AI Design motion/layout system and its animated collage hero; the company, service, product, Creatio and inquiry pages use the same visual language with VO imagery and copy. `/` redirects to `/en`.
 
-## Run
+## Develop
 
 ```sh
-npm install
+npm ci
 npm run dev
 ```
 
-Open `http://localhost:3000/en` or `http://localhost:3000/ar`. For an Alloy session, run `docker compose -f docker-compose.alloy.yaml up -d`; the container runs the same development command on port 3000.
+Use Node.js 22 or newer. Open `http://localhost:3000/en` or `http://localhost:3000/ar`.
+
+## Deploy
+
+```sh
+npm ci
+npm run build
+npm start
+```
+
+The production server listens on port 3000. A Next.js-compatible host can run the same build and start scripts. No environment variables or external services are needed to display the site. The inquiry forms and CV selection are preview-only, not production intake.
 
 ## Content
 
@@ -24,3 +34,7 @@ Open `http://localhost:3000/en` or `http://localhost:3000/ar`. For an Alloy sess
 The transparent framework marks use Simple Icons brand artwork and the official Creatio wordmark; Cloud and Cybersecurity use Lucide category icons (`public/vo/frameworks/lucide-LICENSE`). Brand marks remain the property of their respective owners. Creatio event and news images are locally saved copies of the media referenced by VO's original Creatio page.
 
 The consultant and Ask VO forms are distinct; Join Team has a PDF-only CV picker and an archival job listing with working filters. Inquiry, CV, and profile interactions are preview-only: they **do not send or store submissions or files**. Connect a backend and add a privacy policy before accepting actual inquiries. The company profile download works without submitting personal information.
+
+## Credit and rights
+
+Website design adaptation and development: Hazem Elerefy. See `LICENSE.md` for the scope of that notice. The original AiiD layout and motion, VO content and media, partner marks, and third-party fonts/icons are not relicensed by it; obtain the relevant permissions before public redistribution.

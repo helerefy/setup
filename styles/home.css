@@ -1952,7 +1952,7 @@ p.framer-text[data-text-fill]{display:var(--text-truncation-display-inline-for-s
   }
 
 
-    /* Slides section / Home */ 
+    /* Slides section / Home */
     @media (max-width: 1800px) and (max-height: 780px),
        (min-width: 1801px) and (max-height: 960px) {
         [data-framer-name="cont"] > div > div { position: relative !important; }
