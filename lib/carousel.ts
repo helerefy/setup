@@ -1,238 +1,316 @@
-/**
- * Horizontal case-study carousel (port of the original site's custom carousel code):
- * drag with momentum + snapping on the scroller, arrow buttons stepping one item.
- */
-const CONFIG = {
-  arrowInactiveOpacity: 0.5,
-  arrowTransitionMs: 200,
-  disableDragOnTouchDevices: true,
-  dragThresholdPx: 5,
-  momentumFriction: 0.95,
-  momentumStopThreshold: 0.9,
-  edgeEpsilonPx: 0.5,
-  visibilityEpsilonPx: 1,
-  leftSnapInsetPx: 0,
-  itemResolveMaxDepth: 4,
-};
+/** Continuous, full-bleed case-study carousel with one accessible copy per card. */
+const DRAG_THRESHOLD = 5;
+const FRICTION = 0.95;
 
-const padX = (e: Element) => {
-  const s = getComputedStyle(e);
-  return { pl: parseFloat(s.paddingLeft) || 0, pr: parseFloat(s.paddingRight) || 0 };
-};
-const contentRect = (e: Element) => {
-  const r = e.getBoundingClientRect(), { pl, pr } = padX(e);
-  return { left: r.left + pl, right: r.right - pr };
-};
-const leftSnapOffset = (e: Element) => padX(e).pl + CONFIG.leftSnapInsetPx;
-const visibleChildren = (e: Element) =>
-  [...e.children].filter((c): c is HTMLElement => {
-    if (!(c instanceof HTMLElement) || c.tagName === "STYLE") return false;
-    const s = getComputedStyle(c);
-    return s.display !== "none" && s.visibility !== "hidden";
-  });
-function metricRect(e: Element) {
+const visible = (e: Element) => {
   const r = e.getBoundingClientRect();
-  if (r.width > 0 || r.height > 0) return r;
-  const kids = [...e.querySelectorAll("*")].map((k) => k.getBoundingClientRect()).filter((k) => k.width > 0 || k.height > 0);
-  if (!kids.length) return r;
-  const left = Math.min(...kids.map((k) => k.left)), right = Math.max(...kids.map((k) => k.right));
-  return { left, right, width: right - left } as DOMRect;
-}
-function itemsHost(e: Element) {
-  let t = e;
-  for (let i = 0; i < CONFIG.itemResolveMaxDepth; i++) {
-    const kids = visibleChildren(t);
-    if (kids.length !== 1 || visibleChildren(kids[0]).length === 0) break;
-    t = kids[0];
-  }
-  return t;
-}
-function items(e: HTMLElement) {
-  const box = e.getBoundingClientRect();
-  return visibleChildren(itemsHost(e)).map((item) => {
-    const s = getComputedStyle(item);
-    const ml = parseFloat(s.marginLeft) || 0, mr = parseFloat(s.marginRight) || 0;
-    const r = metricRect(item);
-    const left = r.left - box.left + e.scrollLeft + ml;
-    const width = r.width + ml + mr;
-    return { left, right: left + width, width };
-  });
-}
-const clamp = (i: number, n: number) => Math.max(0, Math.min(n - 1, i));
-function nearestIndex(e: HTMLElement) {
-  const m = items(e);
-  if (!m.length) return -1;
-  const x = e.scrollLeft + leftSnapOffset(e);
-  let best = 0, d = Math.abs(m[0].left - x);
-  m.forEach((it, i) => { const dd = Math.abs(it.left - x); if (dd < d) { best = i; d = dd; } });
-  return best;
-}
-const maxScroll = (e: HTMLElement) => Math.max(0, e.scrollWidth - e.clientWidth);
-const scrollable = (e: HTMLElement) => e.scrollWidth > e.clientWidth + CONFIG.visibilityEpsilonPx;
-function scrollToIndex(e: HTMLElement, i: number) {
-  const m = items(e);
-  if (!m.length) return;
-  const max = maxScroll(e);
-  const target = Math.max(0, Math.min(max, m[clamp(i, m.length)].left - leftSnapOffset(e)));
-  const avg = m.reduce((a, it) => a + it.width, 0) / m.length;
-  e.scrollTo({ left: max - target < avg * 0.3 ? max : target, behavior: "smooth" });
-}
-function step(e: HTMLElement, dir: 1 | -1) {
-  const m = items(e);
-  if (!m.length) return;
-  if (Math.abs(e.scrollLeft - maxScroll(e)) < CONFIG.edgeEpsilonPx && dir > 0) return;
-  const i = clamp(Math.max(0, nearestIndex(e)) + dir, m.length);
-  if (i === 0) e.scrollTo({ left: 0, behavior: "smooth" });
-  else scrollToIndex(e, i);
-}
-function snap(e: HTMLElement) {
-  if (Math.abs(e.scrollLeft - maxScroll(e)) < CONFIG.edgeEpsilonPx) return;
-  const i = nearestIndex(e);
-  if (i >= 0) scrollToIndex(e, i);
-}
-function firstVisible(e: HTMLElement) {
-  const m = items(e);
-  return !m.length || e.getBoundingClientRect().left + (m[0].left - e.scrollLeft) >= contentRect(e).left - CONFIG.visibilityEpsilonPx;
-}
-function lastVisible(e: HTMLElement) {
-  const m = items(e);
-  return !m.length || e.getBoundingClientRect().left + (m[m.length - 1].right - e.scrollLeft) <= contentRect(e).right + CONFIG.visibilityEpsilonPx;
-}
-const canScroll = (e: HTMLElement, dir: "left" | "right") =>
-  scrollable(e) && (dir === "right" ? !lastVisible(e) : e.scrollLeft > CONFIG.edgeEpsilonPx || !firstVisible(e));
+  return r.width > 0 && r.height > 0;
+};
 
-/** Makes the scroller full-bleed (content keeps its column alignment) and draggable. */
 function setupScroller(e: HTMLElement) {
-  const cleanups: (() => void)[] = [];
+  const original = [...e.children].filter((c): c is HTMLElement => c instanceof HTMLElement && c.tagName !== "STYLE");
+  if (!original.length) return { step: (_dir: number) => {}, scrollable: () => false, cleanup: () => {} };
+  const parent = e.parentElement;
+  const grandparent = parent?.parentElement;
+  const styles = [e, parent, grandparent].map((node) => node?.getAttribute("style"));
+  const rtl = getComputedStyle(e).direction === "rtl";
+  const sign = rtl ? -1 : 1;
+  const position = () => sign * e.scrollLeft;
+  const setPosition = (x: number) => { e.scrollLeft = sign * x; };
+  const start = (item: Element) => {
+    const box = e.getBoundingClientRect(), rect = item.getBoundingClientRect();
+    return position() + (rtl ? box.right - rect.right : rect.left - box.left);
+  };
+  const inset = () => {
+    const s = getComputedStyle(e);
+    return parseFloat(rtl ? s.paddingRight : s.paddingLeft) || 0;
+  };
+
   e.style.setProperty("overflow-x", "auto", "important");
   e.style.setProperty("overflow-y", "hidden", "important");
-  Object.assign(e.style, { cursor: "grab", whiteSpace: "nowrap", scrollbarWidth: "none" });
-  const parent = e.parentElement;
+  Object.assign(e.style, { cursor: "grab", whiteSpace: "nowrap", scrollbarWidth: "none", scrollBehavior: "auto" });
+  const bleed = () => {
+    if (!e.isConnected || !parent) return;
+    e.style.paddingLeft = e.style.paddingRight = "";
+    const s = getComputedStyle(e);
+    const pl = parseFloat(s.paddingLeft) || 0, pr = parseFloat(s.paddingRight) || 0;
+    const r = parent.getBoundingClientRect();
+    const left = r.left, right = window.innerWidth - r.right;
+    Object.assign(e.style, {
+      position: "relative", width: "100vw", marginLeft: `calc(-1 * ${left}px)`,
+      marginRight: `calc(-1 * ${right}px)`, left: "0", transform: "none",
+      paddingLeft: `${left + pl}px`, paddingRight: `${right + pr}px`, boxSizing: "border-box",
+    });
+  };
   if (parent) {
     parent.style.setProperty("overflow", "visible", "important");
     parent.style.setProperty("position", "relative", "important");
-    parent.parentElement?.style.setProperty("overflow", "visible", "important");
-    const bleed = () => {
-      if (!e.isConnected) return;
-      e.style.paddingLeft = e.style.paddingRight = "";
-      const s = getComputedStyle(e);
-      const pl = parseFloat(s.paddingLeft) || 0, pr = parseFloat(s.paddingRight) || 0;
-      const r = parent.getBoundingClientRect();
-      const left = r.left, right = window.innerWidth - r.right;
-      Object.assign(e.style, {
-        position: "relative", width: "100vw", marginLeft: `calc(-1 * ${left}px)`, marginRight: `calc(-1 * ${right}px)`,
-        left: "0", transform: "none", paddingLeft: `${left + pl}px`, paddingRight: `${right + pr}px`, boxSizing: "border-box",
-      });
-    };
-    requestAnimationFrame(bleed);
-    window.addEventListener("resize", bleed);
-    cleanups.push(() => window.removeEventListener("resize", bleed));
+    grandparent?.style.setProperty("overflow", "visible", "important");
+    bleed();
   }
-  const touch = CONFIG.disableDragOnTouchDevices && ("ontouchstart" in window || navigator.maxTouchPoints > 0);
-  if (!touch) {
-    let down = false, dragged = false, startX = 0, startLeft = 0, velocity = 0, raf = 0;
-    const draggable = (on: boolean) => e.querySelectorAll("a, img").forEach((n) => (on ? n.removeAttribute("draggable") : n.setAttribute("draggable", "false")));
-    const onDown = (ev: PointerEvent) => { down = true; dragged = false; startX = ev.clientX; startLeft = e.scrollLeft; velocity = 0; cancelAnimationFrame(raf); draggable(false); };
-    const onMove = (ev: PointerEvent) => {
-      if (!down) return;
-      const dx = ev.clientX - startX;
-      if (Math.abs(dx) > CONFIG.dragThresholdPx) {
-        if (!dragged) try { e.setPointerCapture(ev.pointerId); } catch {}
-        dragged = true;
-        const next = startLeft - dx;
-        velocity = next - e.scrollLeft;
-        e.scrollLeft = next;
+
+  const clone = (item: HTMLElement) => {
+    const copy = item.cloneNode(true) as HTMLElement;
+    copy.setAttribute("aria-hidden", "true");
+    copy.querySelectorAll<HTMLElement>("[id]").forEach((n) => n.removeAttribute("id"));
+    copy.removeAttribute("id");
+    copy.querySelectorAll<HTMLElement>("a, button, input, select, textarea, [tabindex]")
+      .forEach((n) => { n.tabIndex = -1; });
+    return copy;
+  };
+  const before = original.map(clone), after = original.map(clone);
+  e.prepend(...before);
+  e.append(...after);
+
+  const focusable = "a, button, input, select, textarea, summary, [tabindex], [contenteditable]";
+  const controls = (card: HTMLElement) => [
+    ...(card.matches(focusable) ? [card] : []),
+    ...card.querySelectorAll<HTMLElement>(focusable),
+  ];
+  const copies = original.map((card, i) => [before[i], card, after[i]]);
+  const attributes = original.map((card) => ({
+    hidden: card.getAttribute("aria-hidden"),
+    tabs: controls(card).map((node) => node.getAttribute("tabindex")),
+  }));
+  const selected = original.map(() => 1);
+  const setAccessible = (i: number, copy: number, enabled: boolean) => {
+    const card = copies[i][copy];
+    if (enabled) {
+      if (attributes[i].hidden === null) card.removeAttribute("aria-hidden");
+      else card.setAttribute("aria-hidden", attributes[i].hidden);
+    } else card.setAttribute("aria-hidden", "true");
+    controls(card).forEach((node, j) => {
+      const tab = enabled ? attributes[i].tabs[j] : "-1";
+      if (tab == null) node.removeAttribute("tabindex");
+      else node.setAttribute("tabindex", tab);
+    });
+  };
+  const updateAccessible = () => {
+    const viewport = e.getBoundingClientRect();
+    for (let i = 0; i < copies.length; i++) {
+      const coverage = copies[i].map((card) => {
+        const r = card.getBoundingClientRect();
+        const overlap = Math.min(r.right, viewport.right) - Math.max(r.left, viewport.left);
+        return overlap > 0 ? overlap : -Math.max(viewport.left - r.right, r.left - viewport.right, 0);
+      });
+      let best = selected[i];
+      for (let j = 0; j < 3; j++) {
+        if (coverage[j] > coverage[best] + 0.5) best = j;
       }
+      const focused = copies[i].findIndex((card) => card.contains(document.activeElement));
+      if (focused >= 0 && coverage[focused] > 0) best = focused;
+      if (best === selected[i]) continue;
+      const oldControls = controls(copies[i][selected[i]]);
+      const focusIndex = focused === selected[i] ? oldControls.findIndex((node) => node === document.activeElement) : -1;
+      setAccessible(i, best, true);
+      if (focusIndex >= 0) controls(copies[i][best])[focusIndex]?.focus({ preventScroll: true });
+      setAccessible(i, selected[i], false);
+      selected[i] = best;
+    }
+  };
+
+  // Compare matching rendered wrappers, not summed widths: this includes flex gaps.
+  const period = () => start(after[0]) - start(original[0]);
+  const center = () => start(original[0]) - inset();
+  setPosition(center());
+  updateAccessible();
+  let dragging = false, moved = false, down = false, lastX = 0, lastTime = 0, activePointer = -1;
+  let velocity = 0, raf = 0, snapTimer = 0, animating = false;
+  const wrap = () => {
+    const p = period();
+    if (p <= 0) return;
+    const mid = center();
+    const x = position();
+    // Rebase at the halfway point so both sides retain a viewport's buffer.
+    const shift = Math.floor((x - mid + p / 2) / p);
+    if (shift) setPosition(x - shift * p);
+    updateAccessible();
+  };
+  const nearest = () => {
+    const x = position() + inset();
+    const starts = [...before, ...original, ...after].map(start);
+    let best = 0;
+    starts.forEach((v, i) => { if (Math.abs(v - x) < Math.abs(starts[best] - x)) best = i; });
+    return best;
+  };
+  const stop = () => { cancelAnimationFrame(raf); animating = false; window.clearTimeout(snapTimer); };
+  const animate = (target: number) => {
+    stop();
+    const from = position(), distance = target - from;
+    if (Math.abs(distance) < 0.5) { wrap(); return; }
+    animating = true;
+    const begun = performance.now();
+    const frame = (now: number) => {
+      const t = Math.min(1, (now - begun) / 320);
+      const ease = 1 - Math.pow(1 - t, 3);
+      setPosition(from + distance * ease);
+      updateAccessible();
+      if (t < 1) raf = requestAnimationFrame(frame);
+      else { animating = false; wrap(); }
     };
-    const onUp = (ev?: PointerEvent) => {
-      if (!down) return;
-      down = false;
-      if (ev) try { e.releasePointerCapture(ev.pointerId); } catch {}
-      if (dragged) {
-        const glide = () => {
-          if (Math.abs(velocity) <= CONFIG.momentumStopThreshold) { velocity = 0; snap(e); return; }
-          const max = maxScroll(e), before = e.scrollLeft;
-          if ((before <= 0 && velocity < 0) || (before >= max && velocity > 0)) { velocity = 0; snap(e); return; }
-          e.scrollLeft += velocity;
-          if (e.scrollLeft <= 0 || e.scrollLeft >= max) { velocity = 0; return; }
-          if (e.scrollLeft === before) { velocity = 0; snap(e); return; }
-          velocity *= CONFIG.momentumFriction;
-          raf = requestAnimationFrame(glide);
-        };
-        glide();
-      }
-      draggable(true);
-    };
-    const onClickCapture = (ev: MouseEvent) => { if (dragged) { ev.stopPropagation(); ev.preventDefault(); dragged = false; } };
-    const up = (ev: PointerEvent) => onUp(ev), leave = () => onUp();
-    e.addEventListener("pointerdown", onDown);
-    e.addEventListener("pointermove", onMove);
-    e.addEventListener("pointerup", up);
-    e.addEventListener("pointerleave", leave);
-    e.addEventListener("click", onClickCapture, true);
-    cleanups.push(() => {
-      cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(frame);
+  };
+  const snap = () => {
+    if (down || animating) return;
+    const all = [...before, ...original, ...after];
+    animate(start(all[nearest()]) - inset());
+  };
+  const step = (dir: number) => {
+    const all = [...before, ...original, ...after];
+    const i = nearest();
+    const next = Math.max(0, Math.min(all.length - 1, i + dir * sign));
+    animate(start(all[next]) - inset());
+  };
+  const onScroll = () => {
+    if (!e.isConnected) return;
+    // Animation and pointer movement use their own coordinates; native touch scroll rebases here.
+    if (!animating) wrap();
+    else updateAccessible();
+    if (!down && !animating) {
+      window.clearTimeout(snapTimer);
+      snapTimer = window.setTimeout(snap, 160);
+    }
+  };
+  const onDown = (ev: PointerEvent) => {
+    if (ev.pointerType === "touch" || ev.button !== 0 || down) return;
+    stop();
+    down = true; dragging = false; moved = false; velocity = 0;
+    activePointer = ev.pointerId;
+    lastX = ev.clientX; lastTime = performance.now();
+    try { e.setPointerCapture(ev.pointerId); } catch {}
+  };
+  const onMove = (ev: PointerEvent) => {
+    if (!down || ev.pointerId !== activePointer) return;
+    const dx = ev.clientX - lastX;
+    const now = performance.now();
+    if (!dragging && Math.abs(dx) <= DRAG_THRESHOLD) return;
+    if (!dragging) {
+      dragging = true;
+      e.style.cursor = "grabbing";
+    }
+    moved = true;
+    velocity = -sign * dx * Math.min(3, 16 / Math.max(1, now - lastTime));
+    setPosition(position() - sign * dx);
+    wrap();
+    lastX = ev.clientX; lastTime = now;
+  };
+  const onUp = (ev: PointerEvent) => {
+    if (!down || ev.pointerId !== activePointer) return;
+    down = false;
+    activePointer = -1;
+    try { e.releasePointerCapture(ev.pointerId); } catch {}
+    if (dragging) {
+      e.style.cursor = "grab";
+      const glide = () => {
+        if (Math.abs(velocity) < 0.9) { snap(); return; }
+        setPosition(position() + velocity);
+        wrap();
+        velocity *= FRICTION;
+        raf = requestAnimationFrame(glide);
+      };
+      raf = requestAnimationFrame(glide);
+    }
+    dragging = false;
+  };
+  const onCancel = (ev: PointerEvent) => {
+    if (!down || ev.pointerId !== activePointer) return;
+    down = false; dragging = false; moved = false; activePointer = -1; velocity = 0;
+    stop();
+    e.style.cursor = "grab";
+    try { e.releasePointerCapture(ev.pointerId); } catch {}
+  };
+  const onLostCapture = (ev: PointerEvent) => { if (down) onCancel(ev); };
+  const onClick = (ev: MouseEvent) => {
+    if (moved) { ev.preventDefault(); ev.stopPropagation(); moved = false; }
+  };
+  const onDragStart = (ev: DragEvent) => { if (down || moved) ev.preventDefault(); };
+  const onResize = () => { stop(); bleed(); setPosition(center()); wrap(); };
+  e.addEventListener("scroll", onScroll, { passive: true });
+  e.addEventListener("pointerdown", onDown);
+  e.addEventListener("pointermove", onMove);
+  e.addEventListener("pointerup", onUp);
+  e.addEventListener("pointercancel", onCancel);
+  e.addEventListener("lostpointercapture", onLostCapture);
+  window.addEventListener("pointerup", onUp);
+  window.addEventListener("pointercancel", onCancel);
+  e.addEventListener("click", onClick, true);
+  e.addEventListener("dragstart", onDragStart);
+  window.addEventListener("resize", onResize);
+  return {
+    step,
+    scrollable: () => period() > 1 && e.scrollWidth > e.clientWidth + 1,
+    cleanup: () => {
+      stop();
+      window.removeEventListener("resize", onResize);
+      e.removeEventListener("scroll", onScroll);
       e.removeEventListener("pointerdown", onDown);
       e.removeEventListener("pointermove", onMove);
-      e.removeEventListener("pointerup", up);
-      e.removeEventListener("pointerleave", leave);
-      e.removeEventListener("click", onClickCapture, true);
+      e.removeEventListener("pointerup", onUp);
+      e.removeEventListener("pointercancel", onCancel);
+      e.removeEventListener("lostpointercapture", onLostCapture);
+      window.removeEventListener("pointerup", onUp);
+      window.removeEventListener("pointercancel", onCancel);
+      e.removeEventListener("click", onClick, true);
+      e.removeEventListener("dragstart", onDragStart);
+      const focusedClone = [...before, ...after].find((card) => card.contains(document.activeElement));
+      const focusedIndex = focusedClone && controls(focusedClone).findIndex((node) => node === document.activeElement);
+      original.forEach((_, i) => setAccessible(i, 1, true));
+      if (focusedClone && focusedIndex !== undefined && focusedIndex >= 0) {
+        const i = [...before, ...after].indexOf(focusedClone) % original.length;
+        if (visible(original[i])) controls(original[i])[focusedIndex]?.focus({ preventScroll: true });
+      }
+      [...before, ...after].forEach((n) => n.remove());
+      [e, parent, grandparent].forEach((node, i) => {
+        if (node) { if (styles[i] === null) node.removeAttribute("style"); else if (styles[i] !== undefined) node.setAttribute("style", styles[i]); }
+      });
+    },
+  };
+}
+
+/** Wire only the visible responsive variant and its own arrows. */
+export function setupCarousels(root: ParentNode, sel = { scroller: ".framer-qiwajr", left: ".framer-gafstv", right: ".framer-1bv66m5" }) {
+  const scrollers = new Map<HTMLElement, ReturnType<typeof setupScroller>>();
+  root.querySelectorAll<HTMLElement>(sel.scroller).forEach((s) => { if (visible(s)) scrollers.set(s, setupScroller(s)); });
+  const cleanups: (() => void)[] = [];
+  for (const [selector, dir] of [[sel.left, -1], [sel.right, 1]] as const) {
+    root.querySelectorAll<HTMLElement>(selector).forEach((arrow) => {
+      if (!visible(arrow)) return;
+      let scroller: HTMLElement | undefined;
+      for (let node: HTMLElement | null = arrow; node && !scroller; node = node.parentElement) {
+        scroller = [...scrollers.keys()].find((s) => node!.contains(s));
+      }
+      if (!scroller) return;
+      const controller = scrollers.get(scroller)!;
+      const previous = arrow.getAttribute("style");
+      const holder = arrow.parentElement, holderStyle = holder?.getAttribute("style");
+      arrow.style.userSelect = "none";
+      arrow.style.touchAction = "manipulation";
+      const update = () => {
+        const enabled = controller.scrollable();
+        arrow.style.opacity = enabled ? "1" : "0.5";
+        arrow.style.pointerEvents = enabled ? "auto" : "none";
+        arrow.style.cursor = enabled ? "pointer" : "default";
+      };
+      const click = () => { if (controller.scrollable()) controller.step(dir); };
+      const key = (ev: KeyboardEvent) => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); click(); } };
+      arrow.addEventListener("click", click);
+      arrow.addEventListener("keydown", key);
+      window.addEventListener("resize", update);
+      const ro = new ResizeObserver(update);
+      ro.observe(scroller);
+      update();
+      cleanups.push(() => {
+        arrow.removeEventListener("click", click);
+        arrow.removeEventListener("keydown", key);
+        window.removeEventListener("resize", update);
+        ro.disconnect();
+        if (previous === null) arrow.removeAttribute("style"); else arrow.setAttribute("style", previous);
+        if (holder) { if (holderStyle === null) holder.removeAttribute("style"); else if (holderStyle !== undefined) holder.setAttribute("style", holderStyle); }
+      });
     });
   }
-  return () => cleanups.forEach((c) => c());
-}
-
-function setupArrow(arrow: HTMLElement, scroller: HTMLElement, dir: "left" | "right") {
-  arrow.style.userSelect = "none";
-  arrow.style.touchAction = "manipulation";
-  arrow.style.transition = `${arrow.style.transition ? arrow.style.transition + ", " : ""}opacity ${CONFIG.arrowTransitionMs}ms ease`;
-  const display = getComputedStyle(arrow).display === "none" ? "block" : getComputedStyle(arrow).display;
-  const holder = arrow.parentElement;
-  const holderDisplay = holder ? (getComputedStyle(holder).display === "none" ? "block" : getComputedStyle(holder).display) : "block";
-  const update = () => {
-    if (!scrollable(scroller)) { arrow.style.display = "none"; if (holder) holder.style.display = "none"; return; }
-    if (holder) holder.style.display = holderDisplay;
-    const on = canScroll(scroller, dir);
-    Object.assign(arrow.style, { display, opacity: on ? "1" : String(CONFIG.arrowInactiveOpacity), pointerEvents: on ? "auto" : "none", cursor: on ? "pointer" : "default" });
-  };
-  const click = () => { if (canScroll(scroller, dir)) { step(scroller, dir === "right" ? 1 : -1); update(); } };
-  arrow.addEventListener("click", click);
-  scroller.addEventListener("scroll", update, { passive: true });
-  window.addEventListener("resize", update);
-  const ro = new ResizeObserver(update);
-  ro.observe(scroller);
-  requestAnimationFrame(update);
-  [0, 50, 200, 800].forEach((t) => setTimeout(update, t));
   return () => {
-    arrow.removeEventListener("click", click);
-    scroller.removeEventListener("scroll", update);
-    window.removeEventListener("resize", update);
-    ro.disconnect();
+    cleanups.forEach((c) => c());
+    scrollers.forEach((c) => c.cleanup());
   };
-}
-
-const visible = (e: Element) => { const r = e.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
-
-/** Wires every carousel inside `root`. */
-export function setupCarousels(root: ParentNode, sel = { scroller: ".framer-qiwajr", left: ".framer-gafstv", right: ".framer-1bv66m5" }) {
-  const cleanups: (() => void)[] = [];
-  root.querySelectorAll<HTMLElement>(sel.scroller).forEach((s) => {
-    if (!visible(s)) return;
-    s.setAttribute("data-hscroll-owner", "true");
-    cleanups.push(setupScroller(s));
-  });
-  const nearest = (arrow: HTMLElement) => {
-    for (let n: HTMLElement | null = arrow; n; n = n.parentElement) {
-      const found = [...n.querySelectorAll<HTMLElement>('[data-hscroll-owner="true"]')].filter(visible);
-      if (found.length) return found[0];
-    }
-    return null;
-  };
-  for (const [s, dir] of [[sel.left, "left"], [sel.right, "right"]] as const)
-    root.querySelectorAll<HTMLElement>(s).forEach((a) => {
-      if (!visible(a)) return;
-      const sc = nearest(a);
-      if (sc) cleanups.push(setupArrow(a, sc, dir));
-    });
-  return () => cleanups.forEach((c) => c());
 }

@@ -31,6 +31,7 @@
 .framer-QJhm9 .framer-g5d54 .framer-1lc5sim img { visibility: hidden; }
 .framer-QJhm9 .framer-g5d54 .framer-1lc5sim::after { content: "VO Technology"; color: #fff; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font: 700 19px "Figtree", Arial, sans-serif; white-space: nowrap; letter-spacing: -.06em; }
 .framer-QJhm9 .framer-14dfuir-container { display: none !important; }
+.framer-QJhm9.framer-v-clp1ub .framer-1gr8y9h { min-height: 0; }
 html[lang="ar"] .framer-QJhm9 .framer-1qoor7b p { font-size: 13px !important; line-height: 1.5 !important; }
 
 /* The footer has its own oversized AiiD SVG, replaced by a VO wordmark in the same band. */

@@ -62,11 +62,11 @@ export default function HomeEffects() {
     const main = document.getElementById("main")!;
     let stopCarousels = setupCarousels(main);
     const onResize = () => { stopCarousels(); stopCarousels = setupCarousels(main); };
-    const mq = window.matchMedia("(max-width: 767.98px), (min-width: 768px) and (max-width: 1199.98px)");
-    mq.addEventListener("change", onResize);
+    const breakpoints = ["(max-width: 767.98px)", "(min-width: 1200px)", "(min-width: 2560px)"].map((query) => window.matchMedia(query));
+    breakpoints.forEach((mq) => mq.addEventListener("change", onResize));
     return () => {
       stopCarousels();
-      mq.removeEventListener("change", onResize);
+      breakpoints.forEach((mq) => mq.removeEventListener("change", onResize));
       io.disconnect();
       document.removeEventListener("pause", keepPlaying, true);
       document.removeEventListener("visibilitychange", resume);
