@@ -20,20 +20,18 @@ const NAV: Record<Breakpoint, MorphNode[]> = { dsk: heroNav_dsk, tab: heroNav_ta
 const ease = [0.68, 0, 0.36, 1] as const;
 const t = (duration: number): Transition => ({ duration, ease: [...ease] });
 
-/** Intro timeline per breakpoint: when each captured state starts (ms) and how it animates in.
- * Timings/easings come from the original HeroIntro + NavContainer components; the first step waits
- * as long as the original page does before its intro starts. */
+/** Captured motion intervals, starting the first visible card transition with video playback. */
 const TIMELINE: Record<Breakpoint, [number, Transition][]> = {
-  dsk: [[0, t(0)], [680, t(1)], [2213, t(1)], [3751, t(1)], [4697, t(0.2)]],
-  tab: [[0, t(0)], [680, t(1)], [2244, t(1)], [3791, t(1)], [4667, t(0.3)]],
-  mob: [[0, t(0)], [680, t(1)], [2219, t(1)], [3777, t(1)], [3834, t(0.2)]],
+  dsk: [[0, t(0)], [0, t(1)], [1533, t(1)], [3071, t(1)], [4017, t(0.2)]],
+  tab: [[0, t(0)], [0, t(1)], [1564, t(1)], [3111, t(1)], [3987, t(0.3)]],
+  mob: [[0, t(0)], [0, t(1)], [1539, t(1)], [3097, t(1)], [3154, t(0.2)]],
 };
 
-/** The intro navbar (NavContainer) runs on its own clock: [start ms, transition] per captured state. */
+/** Keep the navbar handoff synchronized with the earlier start. */
 const NAV_TIMELINE: Record<Breakpoint, [number, Transition][]> = {
-  dsk: [[0, t(0)], [3700, t(0.7)], [4396, t(0)]],
-  tab: [[0, t(0)], [3890, t(0.7)], [4590, t(0)]],
-  mob: [[0, t(0)], [4040, t(0.7)], [4740, t(0)]],
+  dsk: [[0, t(0)], [3020, t(0.7)], [3716, t(0)]],
+  tab: [[0, t(0)], [3210, t(0.7)], [3910, t(0)]],
+  mob: [[0, t(0)], [3360, t(0.7)], [4060, t(0)]],
 };
 
 const INTRO = "framer-6fryqe-container";

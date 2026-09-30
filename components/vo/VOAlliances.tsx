@@ -4,7 +4,7 @@ const partners = [
   { name: "Sorsx", image: "sorsx.webp", url: "https://sorsx.com" },
   { name: "ITIDA", image: "itida.png", url: "https://itida.gov.eg" },
   { name: "MCIT Egypt", image: "mcit.png", url: "https://mcit.gov.eg" },
-  { name: "Odoo", image: "odoo.svg", url: "https://www.odoo.com" },
+  { name: "Odoo", image: "odoo-official.svg", url: "https://www.odoo.com" },
   { name: "Creatio", image: "creatio.png", url: "https://www.creatio.com" },
 ] as const;
 
