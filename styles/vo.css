@@ -24,12 +24,10 @@
 @keyframes vo-nav-open { from { opacity: 0; clip-path: inset(0 0 100% 0); } to { opacity: 1; clip-path: inset(0); } }
 @media (prefers-reduced-motion: reduce) { .vo-nav-panel { animation: none; } }
 
-/* Let the captured black card animate untouched; its wordmark stays anchored to the card. */
-.framer-QJhm9 .framer-1e0yqm8 > div, .framer-QJhm9 .framer-arwvfe { visibility: hidden; }
-.framer-QJhm9 .framer-1hwb8o5 { height: 100dvh; min-height: 0; }
-.framer-QJhm9 .framer-5h0iao { max-width: calc(100vw - 32px); }
-.framer-QJhm9 .framer-5h0iao::after { content: "VO Technology"; position: absolute; inset: 0; display: none; place-items: center; color: #fff; font: 700 clamp(25px, 4vw, 42px)/1 "Figtree", Arial, sans-serif; letter-spacing: -.06em; white-space: nowrap; pointer-events: none; }
-.framer-QJhm9.framer-v-1c0atch .framer-5h0iao::after, .framer-QJhm9.framer-v-cnj4sl .framer-5h0iao::after, .framer-QJhm9.framer-v-1dmvnc6 .framer-5h0iao::after, .framer-QJhm9.framer-v-1sjlve3 .framer-5h0iao::after { display: grid; }
+/* The captured AiiD card and its logo slot keep their original dimensions and motion. */
+.framer-QJhm9 .framer-1e0yqm8 > div { visibility: hidden; }
+.framer-QJhm9 .framer-1e0yqm8 { container-type: inline-size; }
+.framer-QJhm9 .framer-1e0yqm8::after { content: "VO Technology"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; font: 700 16px/1 "Figtree", Arial, sans-serif; font-size: 11cqw; letter-spacing: -.06em; white-space: nowrap; pointer-events: none; }
 .framer-QJhm9 .framer-g5d54 .framer-1lc5sim img { visibility: hidden; }
 .framer-QJhm9 .framer-g5d54 .framer-1lc5sim::after { content: "VO Technology"; color: #fff; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font: 700 19px "Figtree", Arial, sans-serif; white-space: nowrap; letter-spacing: -.06em; }
 html[lang="ar"] .framer-QJhm9 .framer-1qoor7b p { font-size: 13px !important; line-height: 1.5 !important; }
@@ -43,25 +41,23 @@ html[lang="ar"] .framer-QJhm9 .framer-1qoor7b p { font-size: 13px !important; li
 .framer-984q0m::before { content: "2025"; position: absolute; color: #fff; font: 500 clamp(42px, 7vw, 110px)/1 "Beausite Classic Medium", Arial, sans-serif; bottom: 45px; right: 0; }
 .vo-client-logo { display: block; width: min(100%, 140px); max-height: 84px; object-fit: contain; }
 
-.vo-frameworks { width: 100%; background: #f7f6f4; color: #000; overflow: hidden; padding: 0 0 32px; }
-.vo-frameworks-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; border-top: 1px solid #000; margin: 0 16px; padding: 22px 0 20px; }
-.vo-frameworks-heading h2 { font: 500 clamp(24px, 3vw, 46px)/1 "Beausite Classic Medium", Arial, sans-serif; letter-spacing: -.05em; margin: 10px 0 0; }
+.vo-frameworks { width: 100%; background: transparent; color: #000; overflow: hidden; padding: 32px 0 56px; }
+.vo-frameworks-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; padding: 0 16px 26px; }
+.vo-frameworks-heading h2 { font: 500 clamp(25px, 3vw, 46px)/1 "Beausite Classic Medium", Arial, sans-serif; letter-spacing: -.05em; margin: 0; }
 .vo-frameworks-heading-end { display: flex; align-items: center; gap: 24px; }
 .vo-frameworks-heading-end p { font: 13px "Geist Mono", monospace; margin: 0; }
 .vo-frameworks-window { overflow: hidden; }
 .vo-frameworks-track { display: flex; width: max-content; animation: vo-framework-scroll 36s linear infinite; }
-.vo-frameworks-set { display: flex; gap: 12px; padding-right: 12px; }
-.vo-framework { display: flex; align-items: center; gap: 14px; width: 218px; height: 82px; padding: 12px 14px; border: 1px solid #000; background: #fff; color: #000; font: 500 15px "Beausite Classic Medium", Arial, sans-serif; text-decoration: none; transition: background .2s; }
-a.vo-framework:hover, a.vo-framework:focus-visible { background: #cdabfe; }
+.vo-frameworks-set { display: flex; gap: 56px; padding-right: 56px; }
+.vo-framework { display: flex; align-items: center; justify-content: center; gap: 14px; width: clamp(150px, 15vw, 215px); height: 84px; color: #000; font: 500 15px "Beausite Classic Medium", Arial, sans-serif; text-decoration: none; }
+a.vo-framework:hover, a.vo-framework:focus-visible { text-decoration: underline; text-underline-offset: 5px; }
 .vo-framework img { display: block; width: 42px; height: 42px; object-fit: contain; }
-.vo-framework span:nth-child(2) { flex: 1; }
-.vo-framework span:last-child { font-size: 17px; }
 @keyframes vo-framework-scroll { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .vo-frameworks-track { animation: none; } }
-@media (max-width: 767.98px) { .vo-frameworks-heading { align-items: start; flex-direction: column; } .vo-framework { width: 185px; height: 72px; font-size: 13px; } .vo-framework img { width: 35px; height: 35px; } }
+@media (max-width: 767.98px) { .vo-frameworks-heading { align-items: start; flex-direction: column; } .vo-frameworks-set { gap: 32px; padding-right: 32px; } .vo-framework { width: 160px; font-size: 13px; } .vo-framework img { width: 35px; height: 35px; } }
 
 .vo-alliances { width: 100%; padding: 32px 0 56px; overflow: hidden; background: transparent; color: #000; }
-.vo-alliances-heading { display: flex; align-items: baseline; gap: 30px; padding: 0 16px 26px; }
+.vo-alliances-heading { padding: 0 16px 26px; }
 .vo-alliances h2 { margin: 0; font: 500 clamp(25px, 3vw, 46px)/1 "Beausite Classic Medium", Arial, sans-serif; letter-spacing: -.05em; }
 .vo-alliances-window { overflow: hidden; }
 .vo-alliances-track { display: flex; width: max-content; animation: vo-framework-scroll 30s linear infinite; }
@@ -71,7 +67,7 @@ a.vo-framework:hover, a.vo-framework:focus-visible { background: #cdabfe; }
 .vo-alliances-set :is(a, span):nth-child(1) img, .vo-alliances-set :is(a, span):nth-child(4) img { filter: brightness(0); }
 .vo-alliances-set a:focus-visible { outline: 2px solid #000; outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) { .vo-alliances-track { animation: none; } }
-@media (max-width: 767.98px) { .vo-alliances-heading { flex-direction: column; align-items: flex-start; gap: 8px; } .vo-alliances-set { gap: 32px; padding-right: 32px; } .vo-alliances-set a, .vo-alliances-set > span { width: 160px; } }
+@media (max-width: 767.98px) { .vo-alliances-set { gap: 32px; padding-right: 32px; } .vo-alliances-set a, .vo-alliances-set > span { width: 160px; } }
 .framer-QZX0P article[role="presentation"] { cursor: pointer; }
 
 .vo-home-footer { background: #000; color: #fff; padding: 0 16px 18px; font-family: "Beausite Classic Regular", Arial, sans-serif; }

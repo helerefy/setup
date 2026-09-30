@@ -14,13 +14,13 @@ const frameworks = [
 export default function Frameworks({ l }: { l: Locale }) {
   return <section className="vo-frameworks" aria-label={l === "ar" ? "تصفح أطر العمل" : "Browse Our Frameworks"}>
     <div className="vo-frameworks-heading">
-      <div><span className="vo-eyebrow">{l === "ar" ? "ما نعمل به" : "OUR TOOLKIT"}</span><h2>{l === "ar" ? "تصفح أطر العمل" : "Browse Our Frameworks"}</h2></div>
+      <div><h2>{l === "ar" ? "تصفح أطر العمل" : "Browse Our Frameworks"}</h2></div>
       <div className="vo-frameworks-heading-end"><p>{l === "ar" ? "استكشف خبراتنا عبر أكثر من ١٨٠٠ مهارة" : "Explore the technologies behind 1800+ skills"}</p></div>
     </div>
     <div className="vo-frameworks-window" dir="ltr">
       <div className="vo-frameworks-track">
-        <div className="vo-frameworks-set">{frameworks.map((item) => <a key={item.name} href={item.url} target="_blank" rel="noreferrer" className="vo-framework"><img src={`/vo/frameworks/${item.image}`} alt="" loading="lazy" /><span>{item.name}</span><span aria-hidden="true">↗</span></a>)}</div>
-        <div className="vo-frameworks-set" aria-hidden="true">{frameworks.map((item) => <div key={item.name} className="vo-framework"><img src={`/vo/frameworks/${item.image}`} alt="" loading="lazy" /><span>{item.name}</span><span>↗</span></div>)}</div>
+        <div className="vo-frameworks-set">{frameworks.map((item) => <a key={item.name} href={item.url} target="_blank" rel="noreferrer" className="vo-framework"><img src={`/vo/frameworks/${item.image}`} alt="" loading="lazy" /><span>{item.name}</span></a>)}</div>
+        <div className="vo-frameworks-set" aria-hidden="true">{frameworks.map((item) => <div key={item.name} className="vo-framework"><img src={`/vo/frameworks/${item.image}`} alt="" loading="lazy" /><span>{item.name}</span></div>)}</div>
       </div>
     </div>
   </section>;
