@@ -12,7 +12,7 @@ const frameworks = [
 ] as const;
 const wordmarks = new Set([".Net Core", "Creatio", "Odoo"]);
 
-const imageFor = (item: typeof frameworks[number]) => item.name === "Odoo" ? "/vo/partners/odoo-official.svg" : `/vo/frameworks/${item.image}`;
+const imageFor = (item: typeof frameworks[number]) => item.name === "Odoo" ? "/vo/partners/odoo-logo.webp" : `/vo/frameworks/${item.image}`;
 
 export default function Frameworks({ l }: { l: Locale }) {
   return <section className="vo-frameworks" aria-label={l === "ar" ? "تصفح أطر العمل" : "Browse Our Frameworks"}>
