@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale, LOCALES, type Locale } from "@/lib/i18n";
 import { products, services, local } from "@/content/vo";
-import { AboutPage, ConfirmationPage, CreatioPage, InquiryPage, ProductPage, ServicePage } from "@/components/vo/Pages";
+import { AboutPage, ConfirmationPage, InquiryPage, ProductPage, ServicePage } from "@/components/vo/Pages";
+import CreatioPage from "@/components/vo/CreatioPage";
+import JoinTeamPage from "@/components/vo/JoinTeamPage";
 
 const routes = ["about", "creatio", "get-consultant", "join-team", "request-product", "ask", "confirmation-page", ...services.map((s) => s.path), ...products.map((p) => `solutions-products/${p.id}`)];
 export const dynamicParams = false;
@@ -32,8 +34,9 @@ export default async function Page({ params }: Props) {
   const route = slug.join("/");
   if (route === "about") return <AboutPage l={l} />;
   if (route === "creatio") return <CreatioPage l={l} />;
+  if (route === "join-team") return <JoinTeamPage l={l} />;
   if (route === "confirmation-page") return <ConfirmationPage l={l} />;
-  const kind = { "get-consultant": "consultant", "join-team": "team", "request-product": "product", ask: "ask" } as const;
+  const kind = { "get-consultant": "consultant", "request-product": "product", ask: "ask" } as const;
   if (route in kind) return <InquiryPage l={l} kind={kind[route as keyof typeof kind]} />;
   if (services.some((s) => s.path === route)) return <ServicePage l={l} slug={route} />;
   if (slug[0] === "solutions-products" && products.some((p) => p.id === slug[1])) return <ProductPage l={l} id={slug[1]} />;

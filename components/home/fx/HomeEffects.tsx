@@ -12,7 +12,7 @@ import type { Locale } from "@/lib/i18n";
  *  - the VO consultant teaser in the highlight section */
 export default function HomeEffects() {
   useEffect(() => {
-    const videos = [...document.querySelectorAll<HTMLVideoElement>("#main video")].filter((v) => !v.autoplay);
+    const videos = [...document.querySelectorAll<HTMLVideoElement>("#main video")].filter((v) => !v.autoplay && !v.closest(".framer-QJhm9"));
     const io = new IntersectionObserver(
       (entries) =>
         entries.forEach(({ target, isIntersecting }) => {

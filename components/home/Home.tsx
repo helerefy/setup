@@ -2,6 +2,7 @@ import type { Locale } from "@/lib/i18n";
 import NavContainer from "./nav/NavContainer";
 import HeroWrapper from "./hero/HeroWrapper";
 import Partners from "./sections/Partners";
+import Frameworks from "@/components/vo/Frameworks";
 import PrefaceTop from "./sections/PrefaceTop";
 import PrefaceTop2 from "./sections/PrefaceTop2";
 import PrefaceTop3 from "./sections/PrefaceTop3";
@@ -23,6 +24,7 @@ export default function Home({ l }: { l: Locale }) {
           <NavContainer />
           <HeroWrapper />
           <Partners l={l} />
+          <Frameworks l={l} />
           <PrefaceTop l={l} />
           <PrefaceTop2 l={l} />
           <PrefaceTop3 l={l} />

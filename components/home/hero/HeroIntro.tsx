@@ -24,16 +24,16 @@ const t = (duration: number): Transition => ({ duration, ease: [...ease] });
  * Timings/easings come from the original HeroIntro + NavContainer components; the first step waits
  * as long as the original page does before its intro starts. */
 const TIMELINE: Record<Breakpoint, [number, Transition][]> = {
-  dsk: [[0, t(0)], [980, t(1)], [2513, t(1)], [4051, t(1)], [4997, t(0.2)]],
-  tab: [[0, t(0)], [980, t(1)], [2544, t(1)], [4091, t(1)], [4967, t(0.3)]],
-  mob: [[0, t(0)], [980, t(1)], [2519, t(1)], [4077, t(1)], [4134, t(0.2)]],
+  dsk: [[0, t(0)], [680, t(1)], [2213, t(1)], [3751, t(1)], [4697, t(0.2)]],
+  tab: [[0, t(0)], [680, t(1)], [2244, t(1)], [3791, t(1)], [4667, t(0.3)]],
+  mob: [[0, t(0)], [680, t(1)], [2219, t(1)], [3777, t(1)], [3834, t(0.2)]],
 };
 
 /** The intro navbar (NavContainer) runs on its own clock: [start ms, transition] per captured state. */
 const NAV_TIMELINE: Record<Breakpoint, [number, Transition][]> = {
-  dsk: [[0, t(0)], [4000, t(0.7)], [4696, t(0)]],
-  tab: [[0, t(0)], [4190, t(0.7)], [4890, t(0)]],
-  mob: [[0, t(0)], [4340, t(0.7)], [5040, t(0)]],
+  dsk: [[0, t(0)], [3700, t(0.7)], [4396, t(0)]],
+  tab: [[0, t(0)], [3890, t(0.7)], [4590, t(0)]],
+  mob: [[0, t(0)], [4040, t(0.7)], [4740, t(0)]],
 };
 
 const INTRO = "framer-6fryqe-container";
@@ -82,13 +82,17 @@ export default function HeroIntro({ bp }: { bp: Breakpoint }) {
   const [looping, setLooping] = useState(false);
   useEffect(() => {
     const video = root.current?.parentElement?.querySelector<HTMLVideoElement>(`.${INTRO} video`);
-    if (!video) return;
+    if (!video || !root.current?.parentElement?.getBoundingClientRect().width) return;
     const toLoop = () => {
       video.src = m(LOOP_CLIP[bp]);
       video.loop = true;
+      video.autoplay = true;
       video.play().catch(() => {});
       setLooping(true);
     };
+    video.muted = true;
+    video.currentTime = 0;
+    video.play().catch(() => {});
     if (video.ended) toLoop();
     video.addEventListener("ended", toLoop);
     return () => video.removeEventListener("ended", toLoop);

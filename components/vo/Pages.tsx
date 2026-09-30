@@ -7,7 +7,7 @@ import InquiryForm from "./InquiryForm";
 const text = (l: Locale, en: string, ar: string) => l === "ar" ? ar : en;
 const url = (l: Locale, path: string) => `/${l}${path}`;
 
-function PageShell({ l, children }: { l: Locale; children: React.ReactNode }) {
+export function PageShell({ l, children }: { l: Locale; children: React.ReactNode }) {
   return <div className="vo-page"><header className="vo-page-header"><VONav /></header>{children}<footer className="vo-page-footer"><div className="vo-page-footer-top"><Link href={url(l, "")} className="vo-page-footer-brand">VO Technology</Link><div><p>{text(l, "Let’s build what’s next.", "لنبنِ المستقبل معًا.")}</p><a href="mailto:info@vo.technology">info@vo.technology ↗</a><a href="tel:+966590088250">+966 59 008 8250</a></div></div><div className="vo-page-footer-bottom"><span>© 2025 VO for Technology</span><Link href={url(l, "/ask")}>{text(l, "Ask VO", "اسأل فو")}</Link><a href="/vo/VO-Technology-Profile.pdf" download>{text(l, "Download company profile", "حمّل ملف الشركة")}</a></div></footer></div>;
 }
 
@@ -57,27 +57,15 @@ export function AboutPage({ l }: { l: Locale }) {
   </PageShell>;
 }
 
-export function CreatioPage({ l }: { l: Locale }) {
-  return <PageShell l={l}>
-    <PageHero l={l} label="CREATIO" headline={text(l, "A new era of digital talent.", "عصر جديد من المواهب الرقمية.")} description={text(l, "Creatio is a no-code and low-code platform for automating workflows, enhancing productivity and accelerating digital transformation.", "تُمكّن كرياشو أعمالك بمنصة دون كود ومنخفضة الكود لأتمتة العمليات ورفع الإنتاجية وتسريع التحول الرقمي.")} image="/vo/creatio.webp" />
-    <section className="vo-feature-section vo-feature-orange"><div className="vo-section-heading"><span className="vo-eyebrow">{text(l, "THE PLATFORM", "المنصة")}</span><h2>{text(l, "Make room for what’s next.", "افتح المجال للخطوة القادمة.")}</h2></div><div className="vo-feature-list">{[
-      ["Automate processes without heavy development", "أتمت العمليات دون تطوير برمجي مكثف"],
-      ["Connect customer journeys across your business", "اربط رحلات العملاء عبر أعمالك"],
-      ["Build and adapt applications with no-code tools", "أنشئ التطبيقات وطوّرها بأدوات دون كود"],
-    ].map(([en, ar], i) => <div className="vo-feature-row" key={en}><span>0{i + 1}</span><h3>{text(l, en, ar)}</h3></div>)}</div></section>
-    <CallToAction l={l} title={text(l, "Explore what Creatio could do for you.", "اكتشف إمكانات كرياشو لأعمالك.")} to="/get-consultant" />
-  </PageShell>;
-}
 
-export function InquiryPage({ l, kind }: { l: Locale; kind: "consultant" | "team" | "product" | "ask" }) {
+export function InquiryPage({ l, kind }: { l: Locale; kind: "consultant" | "product" | "ask" }) {
   const copy = {
-    consultant: { label: ["GET CONSULTANT", "احصل على استشارة"], title: ["Find the right way forward.", "ابحث عن الخطوة الأنسب."], desc: ["Tell us about your technology challenge. Our consultants can help you solve problems, improve performance and make confident decisions.", "أخبرنا عن تحديك التقني. يساعدك مستشارونا على حل المشكلات وتحسين الأداء واتخاذ قرارات واثقة."], image: "/vo/consultant.png" },
-    team: { label: ["JOIN VO TEAM", "انضم إلى فريق فو"], title: ["Build the next chapter with us.", "ابنِ الفصل القادم معنا."], desc: ["Join a team working on intelligent software, data systems and digital transformation. Share your experience and CV to start the conversation.", "انضم إلى فريق يعمل على البرمجيات الذكية وأنظمة البيانات والتحول الرقمي. شارك خبراتك وسيرتك الذاتية لبدء الحديث."], image: "/vo/team.png" },
+    consultant: { label: ["GET CONSULTANT", "احصل على استشارة"], title: ["Get Consultant", "احصل على استشارة"], desc: ["A consultant is a professional who provides expert advice in a particular field, such as business, finance, marketing, or technology. They are hired by organizations or individuals to help solve specific problems, improve performance, or offer guidance for strategic decisions.", "المستشار هو محترف يقدم نصائح متخصصة في مجال معين مثل الأعمال، التمويل، التسويق أو التكنولوجيا. يتم التعاقد معه من قبل الشركات أو الأفراد للمساعدة في حل مشكلات محددة، تحسين الأداء، أو تقديم إرشاد للقرارات الاستراتيجية."], image: "/vo/consultant.png" },
     product: { label: ["REQUEST A PRODUCT", "اطلب منتجًا"], title: ["Let’s find the right solution.", "لنجد الحل المناسب."], desc: ["Tell us which VO product you’re interested in and what your organization needs.", "أخبرنا بالمنتج الذي يهمك من منتجات فو وما تحتاجه مؤسستك."], image: "/vo/solutions.png" },
-    ask: { label: ["ASK VO", "اسأل فو"], title: ["Tell us what’s on your mind.", "أخبرنا بما يدور في ذهنك."], desc: ["We’d love to talk about how we can help you. Tell us about your project, challenge or question.", "يسعدنا الحديث عن كيفية مساعدتك. أخبرنا بمشروعك أو تحديك أو سؤالك."], image: "/vo/data-ai.jpeg" },
+    ask: { label: ["ASK VO", "اسأل VO"], title: ["Ask VO", "اسأل VO"], desc: ["We’d love to talk about how we can help you.", "يسعدنا التحدث عن كيفية مساعدتنا لك."], image: "/vo/data-ai.jpeg" },
   }[kind];
   const part = (arr: string[]) => arr[l === "ar" ? 1 : 0];
-  return <PageShell l={l}><PageHero l={l} label={part(copy.label)} headline={part(copy.title)} description={part(copy.desc)} image={copy.image} /><section className="vo-inquiry"><div><span className="vo-eyebrow">{text(l, "START A CONVERSATION", "لنبدأ الحديث")}</span><h2>{text(l, "How can we help?", "كيف يمكننا مساعدتك؟")}</h2><p>{text(l, "Prefer to write directly? Our team is at info@vo.technology.", "تفضل المراسلة المباشرة؟ فريقنا عبر info@vo.technology.")}</p></div><InquiryForm l={l} kind={kind} products={products.map((p) => local(l, p.name))} /></section></PageShell>;
+  return <PageShell l={l}><PageHero l={l} label={part(copy.label)} headline={part(copy.title)} description={part(copy.desc)} image={copy.image} /><section className="vo-inquiry"><div><span className="vo-eyebrow">{text(l, "START A CONVERSATION", "لنبدأ الحديث")}</span><h2>{kind === "consultant" ? text(l, "Tell us about your need", "أخبرنا عن احتياجاتك") : kind === "ask" ? text(l, "Tell us about yourself", "أخبرنا عن نفسك") : text(l, "Request Your Product", "اطلب منتجك")}</h2><p>{kind === "product" ? text(l, "Fill in your details and let us know which product you are interested in.", "أدخل بياناتك وأخبرنا بالمنتج الذي يهمك.") : text(l, "Whether you have questions or you would just like to say hello, contact us.", "سواء كانت لديك أسئلة أو ترغب فقط في إلقاء التحية، تواصل معنا.")}</p></div><InquiryForm l={l} kind={kind} /></section></PageShell>;
 }
 
 export function ConfirmationPage({ l }: { l: Locale }) {

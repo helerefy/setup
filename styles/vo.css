@@ -1,3 +1,4 @@
+@font-face { font-family: "Figtree"; src: url("/fonts/Figtree.woff2") format("woff2"); font-style: normal; font-weight: 300 900; font-display: swap; }
 .vo-nav { position: relative; z-index: 12; display: flex; align-items: stretch; width: 100%; height: 56px; background: #fff; color: #000; font-family: "Beausite Classic Medium", Arial, sans-serif; direction: ltr; }
 .vo-nav[dir="rtl"] { direction: rtl; }
 .vo-nav a { color: inherit; text-decoration: none; }
@@ -21,12 +22,16 @@
 
 /* The animated black box keeps its original layout/transition; only its lettering changes. */
 .framer-QJhm9 .framer-1e0yqm8 > div, .framer-QJhm9 .framer-arwvfe { visibility: hidden; }
-.framer-QJhm9 .framer-1e0yqm8::after { content: "VO Technology"; position: absolute; left: 0; top: 0; width: max-content; color: #fff; font: 500 57px/1 "Beausite Classic Medium", Arial, sans-serif; letter-spacing: -.075em; white-space: nowrap; }
+.framer-QJhm9 .framer-1e0yqm8::after { content: "VO Technology"; position: absolute; left: 0; top: 0; width: max-content; color: #fff; font: 700 48px/1 "Figtree", Arial, sans-serif; letter-spacing: -.07em; white-space: nowrap; }
+.framer-QJhm9 .framer-5h0iao::after { content: "2026"; position: absolute; inset: auto 12px 12px auto; color: #fff; font: 700 clamp(38px, 6vw, 84px)/1 "Figtree", Arial, sans-serif; letter-spacing: -.075em; }
+.framer-QJhm9 .framer-1hwb8o5 { align-items: center; justify-content: center; }
 .framer-QJhm9.framer-v-1hyjnzp .framer-1e0yqm8::after, .framer-QJhm9.framer-v-gr9bga .framer-1e0yqm8::after, .framer-QJhm9.framer-v-g5nwg1 .framer-1e0yqm8::after { opacity: 0; }
-.framer-QJhm9.framer-v-1c0atch .framer-1e0yqm8::after, .framer-QJhm9.framer-v-cnj4sl .framer-1e0yqm8::after, .framer-QJhm9.framer-v-1sjlve3 .framer-1e0yqm8::after { font-size: clamp(32px, 4vw, 76px); }
+.framer-QJhm9.framer-v-1c0atch .framer-1e0yqm8::after, .framer-QJhm9.framer-v-cnj4sl .framer-1e0yqm8::after, .framer-QJhm9.framer-v-1sjlve3 .framer-1e0yqm8::after { font-size: clamp(52px, 7vw, 100px); }
+.framer-QJhm9.framer-v-1c0atch .framer-5h0iao::after, .framer-QJhm9.framer-v-cnj4sl .framer-5h0iao::after { font-size: clamp(64px, 8vw, 112px); }
 .framer-QJhm9.framer-v-15dtwsz .framer-1e0yqm8::after, .framer-QJhm9.framer-v-1dt8dk0 .framer-1e0yqm8::after, .framer-QJhm9.framer-v-ie36tj .framer-1e0yqm8::after, .framer-QJhm9.framer-v-clp1ub .framer-1e0yqm8::after, .framer-QJhm9.framer-v-16y8mld .framer-1e0yqm8::after { font-size: 19px; }
+.framer-QJhm9.framer-v-15dtwsz .framer-5h0iao::after, .framer-QJhm9.framer-v-1dt8dk0 .framer-5h0iao::after, .framer-QJhm9.framer-v-ie36tj .framer-5h0iao::after, .framer-QJhm9.framer-v-clp1ub .framer-5h0iao::after, .framer-QJhm9.framer-v-16y8mld .framer-5h0iao::after { display: none; }
 .framer-QJhm9 .framer-g5d54 .framer-1lc5sim img { visibility: hidden; }
-.framer-QJhm9 .framer-g5d54 .framer-1lc5sim::after { content: "VO Technology"; color: #fff; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font: 500 19px "Beausite Classic Medium", Arial, sans-serif; white-space: nowrap; letter-spacing: -.06em; }
+.framer-QJhm9 .framer-g5d54 .framer-1lc5sim::after { content: "VO Technology"; color: #fff; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font: 700 19px "Figtree", Arial, sans-serif; white-space: nowrap; letter-spacing: -.06em; }
 html[lang="ar"] .framer-QJhm9 .framer-1qoor7b p { font-size: 13px !important; line-height: 1.5 !important; }
 
 /* The footer has its own oversized AiiD SVG, replaced by a VO wordmark in the same band. */
@@ -37,6 +42,25 @@ html[lang="ar"] .framer-QJhm9 .framer-1qoor7b p { font-size: 13px !important; li
 .framer-bzre03 { visibility: hidden; }
 .framer-984q0m::before { content: "2025"; position: absolute; color: #fff; font: 500 clamp(42px, 7vw, 110px)/1 "Beausite Classic Medium", Arial, sans-serif; bottom: 45px; right: 0; }
 .vo-client-logo { display: block; width: min(100%, 140px); max-height: 84px; object-fit: contain; }
+
+.vo-frameworks { width: 100%; background: #f7f6f4; color: #000; overflow: hidden; padding: 0 0 32px; }
+.vo-frameworks-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; border-top: 1px solid #000; margin: 0 16px; padding: 22px 0 20px; }
+.vo-frameworks-heading h2 { font: 500 clamp(24px, 3vw, 46px)/1 "Beausite Classic Medium", Arial, sans-serif; letter-spacing: -.05em; margin: 10px 0 0; }
+.vo-frameworks-heading-end { display: flex; align-items: center; gap: 24px; }
+.vo-frameworks-heading-end p { font: 13px "Geist Mono", monospace; margin: 0; }
+.vo-frameworks-heading-end button { display: grid; place-items: center; width: 30px; height: 30px; border: 1px solid #000; border-radius: 50%; color: #000; background: transparent; cursor: pointer; }
+.vo-frameworks-window { overflow: hidden; }
+.vo-frameworks-track { display: flex; width: max-content; animation: vo-framework-scroll 36s linear infinite; }
+.vo-frameworks-window:hover .vo-frameworks-track, .vo-frameworks-window:focus-within .vo-frameworks-track { animation-play-state: paused !important; }
+.vo-frameworks-set { display: flex; gap: 12px; padding-right: 12px; }
+.vo-framework { display: flex; align-items: center; gap: 14px; width: 218px; height: 82px; padding: 12px 14px; border: 1px solid #000; background: #fff; color: #000; font: 500 15px "Beausite Classic Medium", Arial, sans-serif; text-decoration: none; transition: background .2s; }
+a.vo-framework:hover, a.vo-framework:focus-visible { background: #cdabfe; }
+.vo-framework img { display: block; width: 42px; height: 42px; object-fit: contain; }
+.vo-framework span:nth-child(2) { flex: 1; }
+.vo-framework span:last-child { font-size: 17px; }
+@keyframes vo-framework-scroll { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .vo-frameworks-track { animation: none; } }
+@media (max-width: 767.98px) { .vo-frameworks-heading { align-items: start; flex-direction: column; } .vo-framework { width: 185px; height: 72px; font-size: 13px; } .vo-framework img { width: 35px; height: 35px; } }
 .framer-QZX0P article[role="presentation"] { cursor: pointer; }
 .framer-QZX0P article[role="presentation"] button[aria-label="Play"], .framer-QZX0P article[role="presentation"] iframe { display: none !important; }
 
@@ -83,6 +107,8 @@ html[lang="ar"] .framer-QJhm9 .framer-1qoor7b p { font-size: 13px !important; li
   .vo-nav-service { display: none; }
   .vo-nav-mobile { margin-inline-start: auto; }
   .framer-QJhm9 .framer-1e0yqm8::after { font-size: 30px; }
+  .framer-QJhm9.framer-v-1sjlve3 .framer-1e0yqm8::after { font-size: 36px; }
+  .framer-QJhm9 .framer-5h0iao::after { font-size: 39px; }
   .framer-QJhm9.framer-v-16y8mld .framer-1e0yqm8::after { font-size: 18px; }
   .vo-home-footer-stats { grid-template-columns: repeat(2, 1fr); }
   .vo-home-footer-stats > div { min-height: 155px; }
@@ -147,6 +173,13 @@ html[lang="ar"] .framer-QJhm9 .framer-1qoor7b p { font-size: 13px !important; li
 .vo-form input:focus, .vo-form select:focus, .vo-form textarea:focus { outline: 2px solid #000; outline-offset: 2px; }
 .vo-form-wide, .vo-form .vo-action, .vo-form-note { grid-column: 1 / -1; }
 .vo-form-note { font: 12px "Geist Mono", monospace !important; }
+.vo-form-error { font: 13px "Geist Mono", monospace; color: #6e0e00; }
+.vo-requirement { display: flex; flex-direction: column; gap: 8px; position: relative; font-size: 16px; }
+.vo-requirement-toggle { display: flex; justify-content: space-between; align-items: center; min-height: 55px; text-align: start; padding: 12px; background: #fff; border: 0; border-bottom: 1px solid #000; font: inherit; cursor: pointer; }
+.vo-requirement-options { position: absolute; top: 100%; inset-inline: 0; z-index: 6; max-height: 230px; overflow-y: auto; background: #fff; border: 1px solid #000; box-shadow: 6px 6px 0 #000; }
+.vo-requirement-options label { display: flex; flex-direction: row; gap: 12px; align-items: center; padding: 10px 12px; cursor: pointer; }
+.vo-requirement-options label:hover { background: #d5e0d7; }
+.vo-requirement-options input { width: 18px; height: 18px; accent-color: #000; }
 .vo-form-success { grid-column: 1 / -1; padding: 60px 25px; background: #000; color: #fff; }
 .vo-form-success h2 { margin: 30px 0 !important; }
 .vo-form-success a { color: #fff; }
@@ -161,6 +194,61 @@ html[lang="ar"] .framer-QJhm9 .framer-1qoor7b p { font-size: 13px !important; li
 .vo-page-footer-top > div { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
 .vo-page-footer-bottom { border-top: 1px solid #777; display: flex; justify-content: space-between; gap: 20px; padding-top: 15px; margin-top: 50px; font: 12px "Geist Mono", monospace; }
 
+.vo-creatio-hero { position: relative; min-height: min(850px, calc(100vh - 56px)); overflow: hidden; background: #d5e0d7; }
+.vo-creatio-hero > img { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; }
+.vo-creatio-hero-title { position: absolute; inset: auto auto 0 0; display: flex; flex-direction: column; gap: 12px; max-width: min(820px, 90vw); padding: 28px 36px; background: #000; color: #fff; }
+html[dir="rtl"] .vo-creatio-hero-title { inset: auto 0 0 auto; }
+.vo-creatio-hero h1 { font-size: clamp(64px, 8.5vw, 160px); line-height: .85; }
+.vo-creatio-events, .vo-creatio-news { padding: 70px 16px 110px; background: #fff; }
+.vo-creatio-section-label { border-top: 1px solid #000; padding: 20px 0 60px; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; }
+.vo-creatio-section-label h2 { font-size: clamp(40px, 5.5vw, 100px); line-height: .95; }
+.vo-creatio-divider { display: flex; justify-content: space-between; border-top: 1px solid #000; padding: 14px 0; }
+.vo-creatio-event-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.vo-creatio-event { display: flex; flex-direction: column; min-width: 0; border-top: 1px solid #000; }
+.vo-creatio-event-image { position: relative; aspect-ratio: 1.65; background: #cdabfe; }
+.vo-creatio-event-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.vo-creatio-event-image > span { position: absolute; top: 10px; inset-inline-start: 10px; padding: 7px 10px; background: #fff; color: #000; font: 12px "Geist Mono", monospace; }
+.vo-creatio-event-copy { display: flex; flex: 1; flex-direction: column; align-items: flex-start; gap: 18px; padding: 20px 12px 26px 0; }
+.vo-creatio-event-copy h3 { font-size: clamp(25px, 2.6vw, 42px); line-height: 1; }
+.vo-creatio-event-copy a { color: #000; text-decoration: none; border-bottom: 1px solid #000; display: flex; justify-content: space-between; width: 100%; margin-top: auto; padding: 15px 0; font: 15px "Beausite Classic Medium", Arial, sans-serif; }
+.vo-creatio-event-copy a:hover { background: #fe7141; }
+.vo-creatio-featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1.6fr 1fr; background: #cdabfe; }
+.vo-creatio-featured .vo-creatio-event-image { aspect-ratio: 1.7; }
+.vo-creatio-featured .vo-creatio-event-copy { padding: 36px; }
+.vo-creatio-featured h3 { font-size: clamp(46px, 5vw, 88px); }
+.vo-creatio-news { background: #d5e0d7; }
+.vo-creatio-news-item { display: grid; grid-template-columns: minmax(190px, 25%) 1fr; gap: clamp(18px, 5vw, 85px); border-top: 1px solid #000; padding: 20px 0; }
+.vo-creatio-news-item > img { width: 100%; aspect-ratio: 1.9; object-fit: cover; background: #fff; }
+.vo-creatio-news-item > div { display: flex; flex-direction: column; gap: 15px; }
+.vo-creatio-news-item h3 { max-width: 1050px; font-size: clamp(25px, 3.5vw, 58px); line-height: 1.05; }
+.vo-creatio-news-item p { max-width: 680px; font-size: 18px; }
+.vo-creatio-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 38px; padding: 100px 16px; background: #000; color: #fff; }
+.vo-creatio-cta h2 { font-size: clamp(55px, 8vw, 140px); max-width: 1100px; }
+
+.vo-join-hero .vo-page-intro > p { margin-bottom: 25px; }
+.vo-upload { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+.vo-upload input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.vo-upload > p { font-size: 13px; line-height: 1.3; max-width: 460px; }
+.vo-upload::after { content: "Preview only: CVs are not uploaded and no report is sent by email."; display: block; max-width: 460px; font: 12px/1.4 "Geist Mono", monospace; }
+html[lang="ar"] .vo-upload::after { content: "نسخة استعراضية: لا تُرفع السيرة الذاتية ولا يُرسل تقرير بالبريد."; }
+.vo-jobs { padding: 90px 16px 120px; background: #fff; }
+.vo-jobs-header { border-top: 1px solid #000; padding-top: 22px; display: flex; flex-direction: column; gap: 24px; }
+.vo-jobs-header h2 { font-size: clamp(46px, 5vw, 90px); line-height: 1; }
+.vo-jobs-header p { font: 14px "Geist Mono", monospace; margin-bottom: 35px; }
+.vo-jobs-layout { display: grid; grid-template-columns: minmax(250px, 28%) 1fr; gap: clamp(24px, 6vw, 100px); }
+.vo-job-filters { display: flex; flex-direction: column; gap: 22px; align-self: start; padding: 24px; background: #cdabfe; }
+.vo-job-filters summary { font: 20px "Beausite Classic Medium", Arial, sans-serif; cursor: pointer; }
+.vo-job-filters label, .vo-job-salary { display: flex; flex-direction: column; gap: 8px; font-size: 16px; }
+.vo-job-filters input, .vo-job-filters select { width: 100%; padding: 12px; border: 1px solid #000; border-radius: 0; background: #fff; color: #000; font: inherit; }
+.vo-job-salary > div { display: flex; gap: 12px; }
+.vo-job-salary label { width: 50%; }
+.vo-job-filters > button { align-self: flex-start; border: 0; border-bottom: 1px solid #000; background: transparent; font: 16px "Beausite Classic Medium", Arial, sans-serif; cursor: pointer; }
+.vo-job-card { display: flex; justify-content: space-between; gap: 20px; padding: 30px 15px; border-top: 1px solid #000; border-bottom: 1px solid #000; color: #000; text-decoration: none; }
+.vo-job-card:hover { background: #fe7141; }
+.vo-job-card h3 { font-size: clamp(32px, 4vw, 70px); margin: 20px 0; }
+.vo-job-meta { display: flex; flex-direction: column; gap: 12px; align-items: flex-end; font: 14px "Geist Mono", monospace; }
+.vo-jobs-empty { padding: 50px 20px; border-top: 1px solid #000; }
+
 @media (max-width: 800px) {
   .vo-page-hero, .vo-feature-section, .vo-story-grid, .vo-inquiry { grid-template-columns: 1fr; }
   .vo-page-hero { min-height: 0; }
@@ -171,6 +259,9 @@ html[lang="ar"] .framer-QJhm9 .framer-1qoor7b p { font-size: 13px !important; li
   .vo-value-grid { grid-template-columns: repeat(2, 1fr); }
   .vo-chip-grid { grid-template-columns: repeat(2, 1fr); }
   .vo-page-footer-brand { font-size: 8vw; }
+  .vo-creatio-event-grid { grid-template-columns: repeat(2, 1fr); }
+  .vo-creatio-news-item { grid-template-columns: 1fr 2fr; }
+  .vo-jobs-layout { grid-template-columns: 1fr; }
 }
 @media (max-width: 520px) {
   .vo-page-intro h1 { font-size: clamp(48px, 13vw, 72px); }
@@ -181,4 +272,16 @@ html[lang="ar"] .framer-QJhm9 .framer-1qoor7b p { font-size: 13px !important; li
   .vo-cta h2, .vo-profile-band h2 { font-size: 42px; }
   .vo-page-footer-brand { font-size: 16vw; overflow-wrap: anywhere; }
   .vo-page-footer-bottom { flex-wrap: wrap; }
+  .vo-creatio-hero { min-height: 650px; }
+  .vo-creatio-hero-title { max-width: 100%; padding: 22px 16px; }
+  .vo-creatio-hero h1 { font-size: clamp(48px, 12vw, 72px); }
+  .vo-creatio-events, .vo-creatio-news { padding: 50px 16px 70px; }
+  .vo-creatio-section-label { flex-direction: column; align-items: flex-start; }
+  .vo-creatio-event-grid, .vo-creatio-featured, .vo-creatio-news-item { grid-template-columns: 1fr; }
+  .vo-creatio-featured .vo-creatio-event-copy { padding: 20px; }
+  .vo-creatio-featured h3 { font-size: 40px; }
+  .vo-job-card { flex-direction: column; }
+  .vo-job-meta { flex-direction: row; flex-wrap: wrap; align-items: center; }
+  .vo-job-salary > div { flex-direction: column; }
+  .vo-job-salary label { width: 100%; }
 }
