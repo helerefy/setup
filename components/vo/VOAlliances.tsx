@@ -11,7 +11,7 @@ const partners = [
 export default function VOAlliances({ l }: { l: Locale }) {
   const ar = l === "ar";
   return <section className="vo-alliances" aria-labelledby="vo-alliances-title">
-    <div className="vo-alliances-heading"><h2 id="vo-alliances-title">{ar ? "شركاؤنا" : "Our partners"}</h2></div>
+    <div className="vo-alliances-heading"><h2 id="vo-alliances-title" style={{ font: '500 13px/1 "Geist Mono", monospace', letterSpacing: "normal", textTransform: "uppercase" }}>{ar ? "شركاؤنا" : "Our partners"}</h2></div>
     <div className="vo-alliances-window" dir="ltr">
       <div className="vo-alliances-track">
         <div className="vo-alliances-set">{partners.map((p) => <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" aria-label={p.name}>

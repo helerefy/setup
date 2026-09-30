@@ -118,8 +118,8 @@ export default function HeroIntro({ bp, active }: { bp: Breakpoint; active: bool
         node={hero}
         transition={transition}
         bind={(n) => n.t === "video" ? {
-          // The SSR breakpoint variants keep their posters but do not fetch video.
-          poster: "/vo/hero-poster.svg",
+          // Only the active breakpoint fetches video; no still appears behind the intro.
+          poster: undefined,
           src: active ? m(n.a?.src ?? "") : undefined,
           preload: active ? "auto" : "none",
           autoPlay: active && n.a?.autoplay !== undefined && !/11fQjZ8SBLFtf9GDiGqEbzqKI8|vMHevGIeALFuIZsCH4NOQ9K5FRM/.test(n.a?.src ?? ""),
