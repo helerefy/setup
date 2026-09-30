@@ -10,7 +10,7 @@ export default function VOFooter({ l }: { l: Locale }) {
   const [confirmed, setConfirmed] = useState(false);
   const ar = l === "ar";
   const submit = (e: FormEvent<HTMLFormElement>) => { e.preventDefault(); setConfirmed(true); };
-  return <footer className="vo-home-footer" id="scroll-to-subscribe">
+  return <footer className="vo-home-footer" id="scroll-to-subscribe" style={{ width: "100%", alignSelf: "stretch" }}>
     <div className="vo-home-footer-form">
       <span className="vo-eyebrow">{ar ? "الملف التعريفي" : "COMPANY PROFILE"}</span>
       <h2>{ar ? "تعرّف على فو للتكنولوجيا" : "Get to know VO Technology"}</h2>

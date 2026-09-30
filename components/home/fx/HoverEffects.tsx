@@ -14,7 +14,6 @@ const TRANSITIONS: [string, Transition][] = [
   ["framer-alTDd", { duration: 0.4, ease: [0.59, 0, 0.38, 1] }],
   ["framer-vE4nx", { duration: 0.4, ease: [0.59, 0, 0.38, 1] }],
   ["framer-CFeAC", ease(0.2)],
-  ["framer-1oGtc", { type: "spring", bounce: 0, duration: 0.6 }],
   ["framer-AkUGB", ease(0.3)],
   ["framer-NvcHQ", ease(0.3)],
   ["framer-GFdRC", ease(0.3)],

@@ -12,10 +12,10 @@ export default function CreatioPage({ l }: { l: Locale }) {
     <section className="vo-creatio-events" aria-labelledby="events-heading">
       <div className="vo-creatio-section-label"><span className="vo-eyebrow">01 / CREATIO</span><h2 id="events-heading">{ar ? "فعاليات الـ No-Code" : "NO-CODE EVENTS"}</h2></div>
       <div className="vo-creatio-divider"><span className="vo-eyebrow">{ar ? "القادمة" : "UPCOMING"}</span><span className="vo-eyebrow">2025 {ar ? "· الأرشيف" : "· ARCHIVE"}</span></div>
-      <div className="vo-creatio-event-grid">{events.map((event, i) => <article className={`vo-creatio-event ${i === 0 ? "vo-creatio-featured" : ""}`} key={event.image}>
+      <div className="vo-creatio-event-grid">{events.map((event, i) => <article className={`vo-creatio-event ${i === 0 ? "vo-creatio-featured" : ""}`} key={event.image}><a className="vo-creatio-event-link" href="https://www.creatio.com/events" target="_blank" rel="noopener noreferrer">
         <div className="vo-creatio-event-image"><img src={`/vo/creatio/${event.image}`} alt="" loading="lazy" /><span>{event.type[l]}</span></div>
-        <div className="vo-creatio-event-copy"><p className="vo-eyebrow">{event.date}{event.location && `  |  ${event.location}`}</p><h3>{event.title[l]}</h3><a href="https://www.creatio.com/events" target="_blank" rel="noreferrer">{ar ? "عرض المزيد" : "Show more"} <span>↗</span></a></div>
-      </article>)}</div>
+        <div className="vo-creatio-event-copy"><p className="vo-eyebrow">{event.date}{event.location && `  |  ${event.location}`}</p><h3>{event.title[l]}</h3><span className="vo-creatio-event-more">{ar ? "عرض المزيد" : "Show more"} <span aria-hidden="true">↗</span></span></div>
+      </a></article>)}</div>
     </section>
     <section className="vo-creatio-news" aria-labelledby="news-heading"><div className="vo-creatio-section-label"><span className="vo-eyebrow">02 / CREATIO</span><h2 id="news-heading">{ar ? "آخر الأخبار" : "Latest News"}</h2></div>
       <div className="vo-creatio-news-list">{news.map((item) => <article className="vo-creatio-news-item" key={item.image}><img src={`/vo/creatio/${item.image}`} alt="" loading="lazy" /><div><span className="vo-eyebrow">{item.date}</span><h3>{item.title[l]}</h3><p>{item.summary[l]}</p></div></article>)}</div>
