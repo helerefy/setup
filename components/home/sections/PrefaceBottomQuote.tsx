@@ -170,7 +170,7 @@ export default function PrefaceBottomQuote({ l }: { l: Locale }) {
                             <img decoding="async" loading="lazy" width="176" height="176" src={m("https://framerusercontent.com/images/ILvJ4Wz4i6yJ8F12oB7DbSiYhI.png?width=176&height=176")} alt="" style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", objectPosition: "center", objectFit: "cover" }} />
                           </div>
                         </div>
-                        <div className="framer-emfloz" data-framer-name="author-info" style={{ willChange: "transform", opacity: "0", transform: "translateY(80px)" }}>
+                        <div className="framer-emfloz" data-framer-name="author-info">
                           <div className="framer-13sae3n" data-framer-name="author-name" style={{ "--extracted-r6o4lv": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))", "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>{tr(l, "Katie Dill")}</p>
                           </div>
@@ -216,7 +216,7 @@ export default function PrefaceBottomQuote({ l }: { l: Locale }) {
                             <img decoding="async" loading="lazy" width="176" height="176" src={m("https://framerusercontent.com/images/ILvJ4Wz4i6yJ8F12oB7DbSiYhI.png?width=176&height=176")} alt="" style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", objectPosition: "center", objectFit: "cover" }} />
                           </div>
                         </div>
-                        <div className="framer-emfloz" data-framer-name="author-info" style={{ willChange: "transform", opacity: "0", transform: "translateY(80px)" }}>
+                        <div className="framer-emfloz" data-framer-name="author-info">
                           <div className="framer-13sae3n" data-framer-name="author-name" style={{ "--extracted-r6o4lv": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))", "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>{tr(l, "Katie Dill")}</p>
                           </div>
@@ -254,7 +254,7 @@ export default function PrefaceBottomQuote({ l }: { l: Locale }) {
                             <img decoding="async" loading="lazy" width="176" height="176" src={m("https://framerusercontent.com/images/ILvJ4Wz4i6yJ8F12oB7DbSiYhI.png?width=176&height=176")} alt="" style={{ display: "block", width: "100%", height: "100%", borderRadius: "inherit", objectPosition: "center", objectFit: "cover" }} />
                           </div>
                         </div>
-                        <div className="framer-emfloz" data-framer-name="author-info" style={{ willChange: "transform", opacity: "0", transform: "translateY(80px)" }}>
+                        <div className="framer-emfloz" data-framer-name="author-info">
                           <div className="framer-13sae3n" data-framer-name="author-name" style={{ "--extracted-r6o4lv": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))", "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Beausite Classic Medium\", \"Beausite Classic Medium Placeholder\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>{tr(l, "Katie Dill")}</p>
                           </div>

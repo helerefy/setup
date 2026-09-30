@@ -4,7 +4,7 @@ import { useMotionValue, type Transition } from "motion/react";
 import MorphTree, { type Bind } from "@/components/morph/MorphTree";
 import type { MorphNode } from "@/components/morph/types";
 import type { Breakpoint } from "@/lib/breakpoint";
-import { useScrollLinked, useScrollTarget } from "@/lib/scrollTarget";
+import { useScrollTarget } from "@/lib/scrollTarget";
 import CountUp from "../fx/CountUp";
 import { prefaceGrid_dsk } from "../data/prefaceGrid_dsk";
 import { prefaceGrid_tab } from "../data/prefaceGrid_tab";
@@ -25,24 +25,14 @@ const EXPAND: [string, Transition][] = [
 ];
 const COLLAPSE_DEFAULT = tween(1, [0.62, -0.01, 0.36, 0.99]);
 const EXPAND_DEFAULT = tween(1, [0.62, -0.01, 0.38, 1]);
-const IMAGE_SPRING: Transition = { type: "spring", stiffness: 351, damping: 60, mass: 1 };
-
-/** Preface image + stats. The image rises into place (scroll-linked) as #preface-target-2 enters
- * the viewport; on desktop the stat cards slide in once it reaches the top. */
+/** Keep the image in place while the stat cards expand at the scroll target. */
 export default function PrefaceGrid({ bp }: { bp: Breakpoint }) {
   const states = STATES[bp];
   const top = useScrollTarget("#preface-target-2", 0);
   const expanded = states.length > 1 && top;
 
-  const y = useMotionValue(600);
-  const scale = useMotionValue(1.5);
-  useScrollLinked(
-    "#preface-target-2",
-    1,
-    [{ value: y, from: 600, to: 0 }, { value: scale, from: 1.5, to: 1 }],
-    IMAGE_SPRING,
-    !expanded,
-  );
+  const y = useMotionValue(0);
+  const scale = useMotionValue(1);
 
   const bind: Bind = (n) => ((n.c ?? "").split(" ").includes("framer-bfnstw") ? { style: { y, scale } as never } : undefined);
 

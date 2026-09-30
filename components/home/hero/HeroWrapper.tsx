@@ -11,20 +11,20 @@ export default function HeroWrapper() {
     <div className="framer-1pvi92h" data-framer-name="Hero Wrapper">
       {(bp === null || bp === "dsk") && (
         <div className="framer-u5ru7r-container hidden-t69d6d hidden-12sschj">
-          <HeroIntro bp="dsk" />
+          <HeroIntro bp="dsk" active={bp === "dsk"} />
         </div>
       )}
       {(bp === null || bp === "tab") && (
         <div className="ssr-variant">
           <div className="framer-1uo1g5e-container hidden-72rtr7 hidden-12sschj hidden-miin9m">
-            <HeroIntro bp="tab" />
+            <HeroIntro bp="tab" active={bp === "tab"} />
           </div>
         </div>
       )}
       {(bp === null || bp === "mob") && (
         <div className="ssr-variant">
           <div className="framer-154x0up-container hidden-72rtr7 hidden-t69d6d hidden-miin9m">
-            <HeroIntro bp="mob" />
+            <HeroIntro bp="mob" active={bp === "mob"} />
           </div>
         </div>
       )}

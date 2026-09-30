@@ -54,7 +54,7 @@ function continuous(n: MorphNode): MorphNode {
 /** The intro plays once per page lifetime (the original skips it on in-app navigation). */
 let introShown = false;
 
-export default function HeroIntro({ bp }: { bp: Breakpoint }) {
+export default function HeroIntro({ bp, active }: { bp: Breakpoint; active: boolean }) {
   const states = HERO[bp];
   const last = states.length - 1;
   const navLast = NAV_TIMELINE[bp].length - 1;
@@ -62,7 +62,7 @@ export default function HeroIntro({ bp }: { bp: Breakpoint }) {
   const [navStep, setNavStep] = useState(() => (introShown ? navLast : 0));
 
   useEffect(() => {
-    if (step === last) return;
+    if (!active || step === last) return;
     const timers = [
       ...TIMELINE[bp].map(([at], i) => (i === 0 ? 0 : window.setTimeout(() => setStep(i), at))),
       ...NAV_TIMELINE[bp].map(([at], i) => (i === 0 ? 0 : window.setTimeout(() => setNavStep(i), at))),
@@ -70,7 +70,7 @@ export default function HeroIntro({ bp }: { bp: Breakpoint }) {
     return () => timers.forEach((id) => id && clearTimeout(id));
     // run once per breakpoint mount
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [bp]);
+  }, [bp, active]);
   useEffect(() => {
     if (step === last && navStep === navLast) introShown = true;
   }, [step, last, navStep, navLast]);
@@ -79,6 +79,7 @@ export default function HeroIntro({ bp }: { bp: Breakpoint }) {
   const root = useRef<HTMLSpanElement>(null);
   const [looping, setLooping] = useState(false);
   useEffect(() => {
+    if (!active) return;
     const video = root.current?.parentElement?.querySelector<HTMLVideoElement>(`.${INTRO} video`);
     if (!video || !root.current?.parentElement?.getBoundingClientRect().width) return;
     const toLoop = () => {
@@ -94,7 +95,7 @@ export default function HeroIntro({ bp }: { bp: Breakpoint }) {
     if (video.ended) toLoop();
     video.addEventListener("ended", toLoop);
     return () => video.removeEventListener("ended", toLoop);
-  }, [bp]);
+  }, [bp, active]);
 
   const hero = useMemo(() => (looping ? continuous(states[step]) : states[step]), [looping, states, step]);
   const navTransition = NAV_TIMELINE[bp][navStep][1];
@@ -114,8 +115,15 @@ export default function HeroIntro({ bp }: { bp: Breakpoint }) {
     <>
       <span ref={root} hidden />
       <MorphTree
-      node={hero}
-      transition={transition}
+        node={hero}
+        transition={transition}
+        bind={(n) => n.t === "video" ? {
+          // The SSR breakpoint variants keep their posters but do not fetch video.
+          poster: "/vo/hero-poster.svg",
+          src: active ? m(n.a?.src ?? "") : undefined,
+          preload: active ? "auto" : "none",
+          autoPlay: active && n.a?.autoplay !== undefined && !/11fQjZ8SBLFtf9GDiGqEbzqKI8|vMHevGIeALFuIZsCH4NOQ9K5FRM/.test(n.a?.src ?? ""),
+        } : undefined}
         slots={{ nav: interactive ? <VONav /> : <MorphTree node={nav} transition={navTransition} /> }}
       />
     </>

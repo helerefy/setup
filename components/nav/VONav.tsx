@@ -43,25 +43,25 @@ export default function VONav() {
   const label = (item: { en: string; ar: string }) => item[locale];
   return (
     <nav className="vo-nav" aria-label={locale === "en" ? "Main navigation" : "القائمة الرئيسية"} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <Link className="vo-nav-logo" href={`/${locale}`} onClick={() => setOpen(null)} aria-label="VO Technology home">VO <span>Technology</span></Link>
+      <Link className="vo-nav-logo" href={`/${locale}`} prefetch={false} onClick={() => setOpen(null)} aria-label="VO Technology home">VO <span>Technology</span></Link>
       <button className="vo-nav-service" type="button" onClick={() => toggle("services")} aria-expanded={open === "services"}>
         {locale === "en" ? "Our Services" : "خدماتنا"}<span aria-hidden="true">{open === "services" ? "×" : "+"}</span>
       </button>
       <div className="vo-nav-links">
-        {pages.map((item) => <Link href={`/${locale}${item.path}`} key={item.path} onClick={() => setOpen(null)}>{label(item)}</Link>)}
+        {pages.map((item) => <Link href={`/${locale}${item.path}`} key={item.path} prefetch={false} onClick={() => setOpen(null)}>{label(item)}</Link>)}
         <button type="button" onClick={() => toggle("products")} aria-expanded={open === "products"}>{locale === "en" ? "Products" : "المنتجات"} <span aria-hidden="true">{open === "products" ? "×" : "+"}</span></button>
-        <Link href={`/${other}${currentPath}`} hrefLang={other} aria-label={other === "ar" ? "العربية" : "English"}>{other === "ar" ? "عربي" : "EN"}</Link>
+        <Link href={`/${other}${currentPath}`} hrefLang={other} prefetch={false} aria-label={other === "ar" ? "العربية" : "English"}>{other === "ar" ? "عربي" : "EN"}</Link>
       </div>
       <button className="vo-nav-mobile" type="button" onClick={() => toggle("menu")} aria-expanded={open !== null}>{locale === "en" ? "Menu" : "القائمة"} <span aria-hidden="true">{open ? "×" : "+"}</span></button>
       {open && <div className={`vo-nav-panel vo-nav-panel-${open}`}>
         {open === "menu" ? <>
           <button type="button" onClick={() => setOpen("services")}>{locale === "en" ? "Our Services" : "خدماتنا"} <span>+</span></button>
           <button type="button" onClick={() => setOpen("products")}>{locale === "en" ? "Products" : "المنتجات"} <span>+</span></button>
-          {pages.map((item) => <Link href={`/${locale}${item.path}`} key={item.path} onClick={() => setOpen(null)}>{label(item)}</Link>)}
-          <Link href={`/${other}${currentPath}`} hrefLang={other}>{other === "ar" ? "عربي" : "English"}</Link>
+          {pages.map((item) => <Link href={`/${locale}${item.path}`} key={item.path} prefetch={false} onClick={() => setOpen(null)}>{label(item)}</Link>)}
+          <Link href={`/${other}${currentPath}`} hrefLang={other} prefetch={false}>{other === "ar" ? "عربي" : "English"}</Link>
         </> : <>
           <button className="vo-nav-back" type="button" onClick={() => setOpen("menu")}>{locale === "en" ? "← Back" : "رجوع →"}</button>
-          {(open === "services" ? services : products).map((item, i) => <Link href={`/${locale}${item.path}`} key={item.path} onClick={() => setOpen(null)}>{label(item)}<span>{String(i + 1).padStart(2, "0")}</span></Link>)}
+          {(open === "services" ? services : products).map((item, i) => <Link href={`/${locale}${item.path}`} key={item.path} prefetch={false} onClick={() => setOpen(null)}>{label(item)}<span>{String(i + 1).padStart(2, "0")}</span></Link>)}
         </>}
       </div>}
     </nav>

@@ -37,4 +37,6 @@ The consultant and Ask VO forms are distinct; Join Team has a PDF-only CV picker
 
 ## Credit and rights
 
-Website design adaptation and development: Hazem Elerefy. See `LICENSE.md` for the scope of that notice. The original AiiD layout and motion, VO content and media, partner marks, and third-party fonts/icons are not relicensed by it; obtain the relevant permissions before public redistribution.
+developed and designed by : Hazem Elerefy. See `LICENSE.md` for the scope of that notice. The original AiiD layout and motion, VO content and media, partner marks, and third-party fonts/icons are not relicensed by it; obtain the relevant permissions before public redistribution.
+
+The downloadable company profile is generated from the 2025 source profile, retained in the repository's previous commit for reference. To rebuild it, install `reportlab==4.4.9` for Python 3 and run `python3 scripts/build_profile.py`. The source profile lists organizations and application areas without independently verifiable project results; the replacement keeps those distinctions explicit.

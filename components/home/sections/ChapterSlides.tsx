@@ -17,12 +17,12 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                       <div className="framer-1y6msah" data-framer-name="col-left">
                         <div className="framer-1hykogi">
                           <div className="framer-10nd62r" data-framer-name="index" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                            <h2 className="framer-text framer-styles-preset-1um6mjc" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "01")}</h2>
+                             <h2 className="framer-text framer-styles-preset-1um6mjc" dir="auto">{tr(l, "01")}</h2>
                           </div>
                         </div>
                         <div className="framer-12x1jex">
                           <div className="framer-1pylp8o" data-framer-name="title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                            <h2 className="framer-text framer-styles-preset-1um6mjc" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "Tools")}</h2>
+                             <h2 className="framer-text framer-styles-preset-1um6mjc" dir="auto">{tr(l, "Tools")}</h2>
                           </div>
                         </div>
                       </div>
@@ -40,7 +40,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                     <div className="framer-16llmzp" data-framer-name="grid">
                       <div className="framer-6i432s" data-framer-name="col-left">
                         <div className="framer-1zz4wc-container" data-framer-name="video">
-                          <img src="/vo/outsourcing.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
+                          <img decoding="async" src="/vo/outsourcing.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
                         </div>
                       </div>
                       <div className="framer-rtgpeb" data-framer-name="col-right">
@@ -125,12 +125,12 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                       <div className="framer-1y6msah" data-framer-name="col-left">
                         <div className="framer-1hykogi">
                           <div className="framer-10nd62r" data-framer-name="index" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                            <h2 className="framer-text framer-styles-preset-1g5cll" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(128px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "01")}</h2>
+                             <h2 className="framer-text framer-styles-preset-1g5cll" dir="auto">{tr(l, "01")}</h2>
                           </div>
                         </div>
                         <div className="framer-12x1jex">
                           <div className="framer-1pylp8o" data-framer-name="title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                            <h2 className="framer-text framer-styles-preset-1g5cll" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(128px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "Tools")}</h2>
+                             <h2 className="framer-text framer-styles-preset-1g5cll" dir="auto">{tr(l, "Tools")}</h2>
                           </div>
                         </div>
                       </div>
@@ -148,7 +148,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                     <div className="framer-16llmzp" data-framer-name="grid">
                       <div className="framer-6i432s" data-framer-name="col-left">
                         <div className="framer-1zz4wc-container" data-framer-name="video">
-                          <img src="/vo/outsourcing.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
+                          <img decoding="async" src="/vo/outsourcing.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
                         </div>
                       </div>
                       <div className="framer-rtgpeb" data-framer-name="col-right">
@@ -236,12 +236,12 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                     <div className="framer-1y6msah" data-framer-name="col-left">
                       <div className="framer-1hykogi">
                         <div className="framer-10nd62r" data-framer-name="index" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                          <h2 className="framer-text framer-styles-preset-6nu57p" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "01")}</h2>
+                           <h2 className="framer-text framer-styles-preset-6nu57p" dir="auto">{tr(l, "01")}</h2>
                         </div>
                       </div>
                       <div className="framer-12x1jex">
                         <div className="framer-1pylp8o" data-framer-name="title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                          <h2 className="framer-text framer-styles-preset-6nu57p" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "Tools")}</h2>
+                           <h2 className="framer-text framer-styles-preset-6nu57p" dir="auto">{tr(l, "Tools")}</h2>
                         </div>
                       </div>
                     </div>
@@ -259,7 +259,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                   <div className="framer-16llmzp" data-framer-name="grid">
                     <div className="framer-6i432s" data-framer-name="col-left">
                       <div className="framer-1zz4wc-container" data-framer-name="video">
-                        <img src="/vo/outsourcing.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
+                        <img decoding="async" src="/vo/outsourcing.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
                       </div>
                     </div>
                     <div className="framer-rtgpeb" data-framer-name="col-right">
@@ -346,12 +346,12 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                     <div className="framer-1y6msah" data-framer-name="col-left">
                       <div className="framer-1hykogi">
                         <div className="framer-10nd62r" data-framer-name="index" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                          <h2 className="framer-text framer-styles-preset-l4cs3" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "01")}</h2>
+                           <h2 className="framer-text framer-styles-preset-l4cs3" dir="auto">{tr(l, "01")}</h2>
                         </div>
                       </div>
                       <div className="framer-12x1jex">
                         <div className="framer-1pylp8o" data-framer-name="title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                          <h2 className="framer-text framer-styles-preset-l4cs3" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "Tools")}</h2>
+                           <h2 className="framer-text framer-styles-preset-l4cs3" dir="auto">{tr(l, "Tools")}</h2>
                         </div>
                       </div>
                     </div>
@@ -369,7 +369,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                   <div className="framer-16llmzp" data-framer-name="grid">
                     <div className="framer-6i432s" data-framer-name="col-left">
                       <div className="framer-1zz4wc-container" data-framer-name="video">
-                        <img src="/vo/outsourcing.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
+                        <img decoding="async" src="/vo/outsourcing.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
                       </div>
                     </div>
                     <div className="framer-rtgpeb" data-framer-name="col-right">
@@ -457,12 +457,12 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                       <div className="framer-1y6msah" data-framer-name="col-left">
                         <div className="framer-1hykogi">
                           <div className="framer-10nd62r" data-framer-name="index" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                            <h2 className="framer-text framer-styles-preset-1um6mjc" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "02")}</h2>
+                             <h2 className="framer-text framer-styles-preset-1um6mjc" dir="auto">{tr(l, "02")}</h2>
                           </div>
                         </div>
                         <div className="framer-12x1jex">
                           <div className="framer-1pylp8o" data-framer-name="title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                            <h2 className="framer-text framer-styles-preset-1um6mjc" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "Craft")}</h2>
+                             <h2 className="framer-text framer-styles-preset-1um6mjc" dir="auto">{tr(l, "Craft")}</h2>
                           </div>
                         </div>
                       </div>
@@ -480,7 +480,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                     <div className="framer-16llmzp" data-framer-name="grid">
                       <div className="framer-6i432s" data-framer-name="col-left">
                         <div className="framer-1zz4wc-container" data-framer-name="video">
-                          <img src="/vo/solutions.png" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
+                          <img decoding="async" src="/vo/solutions.png" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
                         </div>
                       </div>
                       <div className="framer-rtgpeb" data-framer-name="col-right">
@@ -588,7 +588,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                     <div className="framer-16llmzp" data-framer-name="grid">
                       <div className="framer-6i432s" data-framer-name="col-left">
                         <div className="framer-1zz4wc-container" data-framer-name="video">
-                          <img src="/vo/solutions.png" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
+                          <img decoding="async" src="/vo/solutions.png" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
                         </div>
                       </div>
                       <div className="framer-rtgpeb" data-framer-name="col-right">
@@ -676,12 +676,12 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                     <div className="framer-1y6msah" data-framer-name="col-left">
                       <div className="framer-1hykogi">
                         <div className="framer-10nd62r" data-framer-name="index" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                          <h2 className="framer-text framer-styles-preset-6nu57p" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "02")}</h2>
+                           <h2 className="framer-text framer-styles-preset-6nu57p" dir="auto">{tr(l, "02")}</h2>
                         </div>
                       </div>
                       <div className="framer-12x1jex">
                         <div className="framer-1pylp8o" data-framer-name="title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                          <h2 className="framer-text framer-styles-preset-6nu57p" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "Craft")}</h2>
+                           <h2 className="framer-text framer-styles-preset-6nu57p" dir="auto">{tr(l, "Craft")}</h2>
                         </div>
                       </div>
                     </div>
@@ -699,7 +699,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                   <div className="framer-16llmzp" data-framer-name="grid">
                     <div className="framer-6i432s" data-framer-name="col-left">
                       <div className="framer-1zz4wc-container" data-framer-name="video">
-                        <img src="/vo/solutions.png" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
+                        <img decoding="async" src="/vo/solutions.png" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
                       </div>
                     </div>
                     <div className="framer-rtgpeb" data-framer-name="col-right">
@@ -786,12 +786,12 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                     <div className="framer-1y6msah" data-framer-name="col-left">
                       <div className="framer-1hykogi">
                         <div className="framer-10nd62r" data-framer-name="index" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                          <h2 className="framer-text framer-styles-preset-l4cs3" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "02")}</h2>
+                           <h2 className="framer-text framer-styles-preset-l4cs3" dir="auto">{tr(l, "02")}</h2>
                         </div>
                       </div>
                       <div className="framer-12x1jex">
                         <div className="framer-1pylp8o" data-framer-name="title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                          <h2 className="framer-text framer-styles-preset-l4cs3" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "Craft")}</h2>
+                           <h2 className="framer-text framer-styles-preset-l4cs3" dir="auto">{tr(l, "Craft")}</h2>
                         </div>
                       </div>
                     </div>
@@ -809,7 +809,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                   <div className="framer-16llmzp" data-framer-name="grid">
                     <div className="framer-6i432s" data-framer-name="col-left">
                       <div className="framer-1zz4wc-container" data-framer-name="video">
-                        <img src="/vo/solutions.png" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
+                        <img decoding="async" src="/vo/solutions.png" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
                       </div>
                     </div>
                     <div className="framer-rtgpeb" data-framer-name="col-right">
@@ -897,12 +897,12 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                       <div className="framer-1y6msah" data-framer-name="col-left">
                         <div className="framer-1hykogi">
                           <div className="framer-10nd62r" data-framer-name="index" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                            <h2 className="framer-text framer-styles-preset-1um6mjc" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "03")}</h2>
+                             <h2 className="framer-text framer-styles-preset-1um6mjc" dir="auto">{tr(l, "03")}</h2>
                           </div>
                         </div>
                         <div className="framer-12x1jex">
                           <div className="framer-1pylp8o" data-framer-name="title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                            <h2 className="framer-text framer-styles-preset-1um6mjc" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "Teams")}</h2>
+                             <h2 className="framer-text framer-styles-preset-1um6mjc" dir="auto">{tr(l, "Teams")}</h2>
                           </div>
                         </div>
                       </div>
@@ -920,7 +920,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                     <div className="framer-16llmzp" data-framer-name="grid">
                       <div className="framer-6i432s" data-framer-name="col-left">
                         <div className="framer-1zz4wc-container" data-framer-name="video">
-                          <img src="/vo/data-ai.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
+                          <img decoding="async" src="/vo/data-ai.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
                         </div>
                       </div>
                       <div className="framer-rtgpeb" data-framer-name="col-right">
@@ -1030,7 +1030,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                     <div className="framer-16llmzp" data-framer-name="grid">
                       <div className="framer-6i432s" data-framer-name="col-left">
                         <div className="framer-1zz4wc-container" data-framer-name="video">
-                          <img src="/vo/data-ai.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
+                          <img decoding="async" src="/vo/data-ai.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
                         </div>
                       </div>
                       <div className="framer-rtgpeb" data-framer-name="col-right">
@@ -1120,12 +1120,12 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                     <div className="framer-1y6msah" data-framer-name="col-left">
                       <div className="framer-1hykogi">
                         <div className="framer-10nd62r" data-framer-name="index" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                          <h2 className="framer-text framer-styles-preset-6nu57p" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "03")}</h2>
+                           <h2 className="framer-text framer-styles-preset-6nu57p" dir="auto">{tr(l, "03")}</h2>
                         </div>
                       </div>
                       <div className="framer-12x1jex">
                         <div className="framer-1pylp8o" data-framer-name="title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                          <h2 className="framer-text framer-styles-preset-6nu57p" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "Teams")}</h2>
+                           <h2 className="framer-text framer-styles-preset-6nu57p" dir="auto">{tr(l, "Teams")}</h2>
                         </div>
                       </div>
                     </div>
@@ -1143,7 +1143,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                   <div className="framer-16llmzp" data-framer-name="grid">
                     <div className="framer-6i432s" data-framer-name="col-left">
                       <div className="framer-1zz4wc-container" data-framer-name="video">
-                        <img src="/vo/data-ai.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
+                        <img decoding="async" src="/vo/data-ai.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
                       </div>
                     </div>
                     <div className="framer-rtgpeb" data-framer-name="col-right">
@@ -1232,12 +1232,12 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                     <div className="framer-1y6msah" data-framer-name="col-left">
                       <div className="framer-1hykogi">
                         <div className="framer-10nd62r" data-framer-name="index" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                          <h2 className="framer-text framer-styles-preset-l4cs3" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "03")}</h2>
+                           <h2 className="framer-text framer-styles-preset-l4cs3" dir="auto">{tr(l, "03")}</h2>
                         </div>
                       </div>
                       <div className="framer-12x1jex">
                         <div className="framer-1pylp8o" data-framer-name="title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
-                          <h2 className="framer-text framer-styles-preset-l4cs3" dir="auto" style={{ opacity: "1", transform: "translateX(0px) translateY(112px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)" }}>{tr(l, "Teams")}</h2>
+                           <h2 className="framer-text framer-styles-preset-l4cs3" dir="auto">{tr(l, "Teams")}</h2>
                         </div>
                       </div>
                     </div>
@@ -1255,7 +1255,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                   <div className="framer-16llmzp" data-framer-name="grid">
                     <div className="framer-6i432s" data-framer-name="col-left">
                       <div className="framer-1zz4wc-container" data-framer-name="video">
-                        <img src="/vo/data-ai.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
+                        <img decoding="async" src="/vo/data-ai.jpeg" alt="" style={{ cursor: "auto", width: "100%", height: "100%", borderRadius: "0px", display: "block", objectFit: "cover", backgroundColor: "rgba(0, 0, 0, 0)", objectPosition: "50% 50%" }} />
                       </div>
                     </div>
                     <div className="framer-rtgpeb" data-framer-name="col-right">
