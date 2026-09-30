@@ -28,7 +28,7 @@ export function ServicePage({ l, slug }: { l: Locale; slug: string }) {
 }
 
 function ProductGrid({ l }: { l: Locale }) {
-  return <section className="vo-detail-section" id="products"><span className="vo-eyebrow">{text(l, "VO PRODUCTS", "منتجات فو")}</span><h2>{text(l, "Products for the work behind the work.", "منتجات تدعم تفاصيل أعمالك.")}</h2><div className="vo-product-grid">{products.map((product, i) => <Link className="vo-product-card" href={url(l, `/solutions-products/${product.id}`)} key={product.id}><img src={product.image} alt="" /><div><span className="vo-eyebrow">{String(i + 1).padStart(2, "0")}</span><h3>{local(l, product.name)}</h3><p>{local(l, product.subtitle)}</p><span aria-hidden="true">↗</span></div></Link>)}</div></section>;
+  return <section className="vo-detail-section" id="products"><span className="vo-eyebrow">{text(l, "VO PRODUCTS", "منتجات فو")}</span><h2>{text(l, "Technology for locations, fleets and operations.", "تقنيات للمواقع والأساطيل والعمليات.")}</h2><div className="vo-product-grid">{products.map((product, i) => <Link className="vo-product-card" href={url(l, `/solutions-products/${product.id}`)} key={product.id}><img src={product.image} alt="" /><div><span className="vo-eyebrow">{String(i + 1).padStart(2, "0")}</span><h3>{local(l, product.name)}</h3><p>{local(l, product.subtitle)}</p><span aria-hidden="true">↗</span></div></Link>)}</div></section>;
 }
 
 export function ProductPage({ l, id }: { l: Locale; id: string }) {

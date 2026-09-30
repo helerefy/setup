@@ -43,7 +43,7 @@ export default function VONav() {
   const label = (item: { en: string; ar: string }) => item[locale];
   return (
     <nav className="vo-nav" aria-label={locale === "en" ? "Main navigation" : "القائمة الرئيسية"} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <Link className="vo-nav-logo" href={`/${locale}`} onClick={() => setOpen(null)} aria-label="VO Technology home"><img src="/vo/phosphor-diamonds-four.svg" alt="" />VO <span>Technology</span></Link>
+      <Link className="vo-nav-logo" href={`/${locale}`} onClick={() => setOpen(null)} aria-label="VO Technology home">VO <span>Technology</span></Link>
       <button className="vo-nav-service" type="button" onClick={() => toggle("services")} aria-expanded={open === "services"}>
         {locale === "en" ? "Our Services" : "خدماتنا"}<span aria-hidden="true">{open === "services" ? "×" : "+"}</span>
       </button>

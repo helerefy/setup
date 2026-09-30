@@ -9,7 +9,7 @@ import PrefaceTop3 from "./sections/PrefaceTop3";
 import PrefaceGridSection from "./sections/PrefaceGridSection";
 import PrefaceBottomQuote from "./sections/PrefaceBottomQuote";
 import ChapterSlides from "./sections/ChapterSlides";
-import ProductShowcase from "@/components/vo/ProductShowcase";
+import CasesHighlight from "./sections/CasesHighlight";
 import VOAlliances from "@/components/vo/VOAlliances";
 import VOFooter from "@/components/vo/VOFooter";
 import SvgTemplates from "@/components/SvgTemplates";
@@ -25,15 +25,15 @@ export default function Home({ l }: { l: Locale }) {
           <NavContainer />
           <HeroWrapper />
           <Partners l={l} />
-          <Frameworks l={l} />
+          <VOAlliances l={l} />
           <PrefaceTop l={l} />
           <PrefaceTop2 l={l} />
           <PrefaceTop3 l={l} />
           <PrefaceGridSection l={l} />
           <PrefaceBottomQuote l={l} />
           <ChapterSlides l={l} />
-        <ProductShowcase l={l} />
-        <VOAlliances l={l} />
+          <CasesHighlight l={l} />
+          <Frameworks l={l} />
         </div>
         <VOFooter l={l} />
       </div>

@@ -49,7 +49,7 @@ const LOOP_CLIP: Record<Breakpoint, string> = {
 function continuous(n: MorphNode): MorphNode {
   const cls = n.c ?? "";
   if (cls.includes(INTRO)) return { ...n, s: { ...n.s, opacity: "1" } };
-  if (cls.includes(LOOP)) return { ...n, s: { ...n.s, opacity: "0" } };
+  if (cls.includes(LOOP)) return { ...n, s: { ...n.s, opacity: "0" }, ch: [] };
   return n.ch ? { ...n, ch: n.ch.map((c) => (typeof c === "string" ? c : continuous(c))) } : n;
 }
 

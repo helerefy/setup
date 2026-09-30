@@ -96,10 +96,10 @@ export const STRINGS: Record<string, T> = {
   },
   "Coming soon": { en: "Featured", ar: "مميز" },
   "Get notified": { en: "View product", ar: "عرض المنتج" },
-  "Video Case Studies": { en: "Our Products", ar: "منتجاتنا" },
+  "Video Case Studies": { en: "Selected products", ar: "منتجات مختارة" },
   "Seven companies. Seven ways of navigating the same shift.": {
-    en: "Products for the work behind the work.",
-    ar: "منتجات تدعم تفاصيل أعمالك.",
+    en: "Technology for locations, fleets and operations.",
+    ar: "تقنيات للمواقع والأساطيل والعمليات.",
   },
 
   // ── Clients / preface ─────────────────────────────────────────────────

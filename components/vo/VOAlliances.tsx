@@ -11,11 +11,16 @@ const partners = [
 export default function VOAlliances({ l }: { l: Locale }) {
   const ar = l === "ar";
   return <section className="vo-alliances" aria-labelledby="vo-alliances-title">
-    <div className="vo-alliances-heading"><span className="vo-eyebrow">{ar ? "شركاؤنا" : "OUR PARTNERS"}</span><h2 id="vo-alliances-title">{ar ? "شراكات توسع إمكاناتنا." : "Partnerships that extend our capabilities."}</h2><p>{ar ? "نتعاون مع جهات تقنية ومؤسسات رائدة لتقديم حلول تلائم احتياجات أعمالك." : "We collaborate with organizations and technology partners to deliver solutions for the work ahead."}</p></div>
-    <div className="vo-alliances-grid">{partners.map((p, i) => <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" aria-label={p.name}>
-      <span className="vo-eyebrow">{String(i + 1).padStart(2, "0")}</span>
-      <img src={`/vo/partners/${p.image}`} alt={p.name} loading="lazy" />
-      <span className="vo-alliances-name">{p.name}<span aria-hidden="true">↗</span></span>
-    </a>)}</div>
+    <div className="vo-alliances-heading"><span className="vo-eyebrow">{ar ? "جهات نتعاون معها" : "COLLABORATORS"}</span><h2 id="vo-alliances-title">{ar ? "شركاؤنا" : "Our partners"}</h2></div>
+    <div className="vo-alliances-window" dir="ltr">
+      <div className="vo-alliances-track">
+        <div className="vo-alliances-set">{partners.map((p) => <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" aria-label={p.name}>
+          <img src={`/vo/partners/${p.image}`} alt={p.name} loading="lazy" />
+        </a>)}</div>
+        <div className="vo-alliances-set" aria-hidden="true">{partners.map((p) => <span key={p.name}>
+          <img src={`/vo/partners/${p.image}`} alt="" loading="lazy" />
+        </span>)}</div>
+      </div>
+    </div>
   </section>;
 }
