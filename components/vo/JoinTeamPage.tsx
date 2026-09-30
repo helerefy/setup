@@ -21,7 +21,7 @@ export default function JoinTeamPage({ l }: { l: Locale }) {
     <section className="vo-page-hero vo-join-hero">
       <div className="vo-page-intro">
         <span className="vo-eyebrow">{t("JOIN VO TEAM", "انضم إلى فريق فو")}</span>
-        <h1>{t("Find Your Perfect Job — Upload Your CV", "اكتشف وظيفتك المثالية — ارفع سيرتك الذاتية")}</h1>
+        <h1>{t("Find Your Perfect Job. Upload Your CV.", "اكتشف وظيفتك المثالية. ارفع سيرتك الذاتية.")}</h1>
         <p>{t("Upload your CV and let us review it to find the most suitable job opportunities for you. You’ll receive a detailed report with matching positions directly to your email.", "ارفع سيرتك الذاتية ودعنا نراجعها لاختيار أفضل فرص العمل المناسبة لك. سنرسل لك تقريرًا تفصيليًا يحتوي على الوظائف المتوافقة مع خبراتك عبر البريد الإلكتروني.")}</p>
         <div className="vo-upload" id="upload-cv">
           <input ref={input} type="file" accept=".pdf" aria-label={t("Upload CV PDF", "ارفع سيرتك الذاتية PDF")} onChange={(e) => setFilename(e.target.files?.[0]?.name ?? "")} />
@@ -49,7 +49,7 @@ export default function JoinTeamPage({ l }: { l: Locale }) {
           <button type="button" onClick={clear}>{t("Clear", "مسح الفلاتر")}</button>
         </details>
         <div className="vo-job-results">
-          {visible ? <a href="#upload-cv" className="vo-job-card"><div><span className="vo-eyebrow">VO TECHNOLOGY / {t("OPEN ROLE", "وظيفة متاحة")}</span><h3>{t("Backend Developer", "مطور Backend")}</h3><p>Vo Technology</p></div><div className="vo-job-meta"><span>$145k–$160k</span><span>Senior</span><span>Remote</span><span>1-5 Days</span><span aria-hidden="true">↗</span></div></a> : <p className="vo-jobs-empty">{t("No roles match these filters. Try clearing your selection.", "لا توجد وظائف مطابقة لهذه الفلاتر. جرّب مسح الخيارات.")}</p>}
+          {visible ? <a href="#upload-cv" className="vo-job-card"><div><span className="vo-eyebrow">VO TECHNOLOGY / {t("SAMPLE ROLE", "وظيفة نموذجية")}</span><h3>{t("Backend Developer", "مطور Backend")}</h3><p>VO Technology</p></div><div className="vo-job-meta"><span>$145k to $160k</span><span>Senior</span><span>Remote</span><span aria-hidden="true">↗</span></div></a> : <p className="vo-jobs-empty">{t("No roles match these filters. Try clearing your selection.", "لا توجد وظائف مطابقة لهذه الفلاتر. جرّب مسح الخيارات.")}</p>}
         </div>
       </div>
     </section>

@@ -98,8 +98,8 @@ export const STRINGS: Record<string, T> = {
   "Get notified": { en: "View product", ar: "عرض المنتج" },
   "Video Case Studies": { en: "Our Products", ar: "منتجاتنا" },
   "Seven companies. Seven ways of navigating the same shift.": {
-    en: "Seven products. Built to transform how businesses work.",
-    ar: "سبعة منتجات. صُممت لتغيير طريقة عمل المؤسسات.",
+    en: "Products for the work behind the work.",
+    ar: "منتجات تدعم تفاصيل أعمالك.",
   },
 
   // ── Clients / preface ─────────────────────────────────────────────────
@@ -126,7 +126,7 @@ export const STRINGS: Record<string, T> = {
     ar: "تقدم فو للتكنولوجيا استشارات تقنية متقدمة وهندسة برمجيات وحلولًا مدعومة بالذكاء الاصطناعي للمؤسسات في الشرق الأوسط وخارجه.",
   },
   "We ran our first AI in Design survey in early 2025 because we consistently heard designers and leaders ask, “How are others doing this, and what’s working?” A year later, we’re attempting to get a sense for what’s changed and share firsthand perspectives.": {
-    en: "Our mission is to empower organizations with intelligent, scalable technology that drives measurable growth and competitive advantage — bridging complex technology and real business results.",
+    en: "Our mission is to help organizations grow with practical software that connects complex systems to everyday work.",
     ar: "مهمتنا تمكين المؤسسات بتقنيات ذكية وقابلة للتوسع تحقق نموًا ملموسًا وميزة تنافسية، وتربط بين التقنية المعقدة ونتائج الأعمال الحقيقية.",
   },
   "The answers come from over 900 designers at startups, enterprises, and agencies who work across disciplines like product design, brand design, research, and design engineering. We also conducted over 20 interviews with leaders at companies actively navigating this shift.": {
@@ -134,12 +134,12 @@ export const STRINGS: Record<string, T> = {
     ar: "رؤيتنا أن نكون الشريك التقني الأكثر ثقة للمؤسسات في رحلة التحول الرقمي في المنطقة، بفريق من كبار المهندسين في .Net Core وNode.js وLaravel وCreatio وOdoo والسحابة والأمن السيبراني وتطبيقات الجوال.",
   },
   "Given how quickly practices are evolving, we’ll continue to release new findings throughout the year, including case studies about design at companies like Anthropic, Sierra, Stripe, Notion, Shopify, Linear, and Framer.": {
-    en: "We live by four values — innovation, integrity, agility and partnership — building long-term relationships, not just one-time projects.",
+    en: "Our four values are innovation, integrity, agility and partnership. We focus on lasting relationships rather than one-time projects.",
     ar: "نلتزم بأربع قيم: الابتكار والنزاهة والمرونة والشراكة، ونبني علاقات طويلة الأمد لا مشاريع لمرة واحدة.",
   },
   "Sign up for new releases.": { en: "Talk to our team.", ar: "تحدث مع فريقنا." },
   "AI is sparking a creative renaissance in design. With new instruments, it’s our chance to compose wholly new music.": {
-    en: "We bridge complex technology and real business results — for enterprises that demand more.",
+    en: "We connect complex technology to the results enterprises need.",
     ar: "نربط بين التقنية المعقدة ونتائج الأعمال الحقيقية، للمؤسسات التي تطلب المزيد.",
   },
   "Katie Dill": { en: "VO for Technology", ar: "فو للتكنولوجيا" },
@@ -151,7 +151,7 @@ export const STRINGS: Record<string, T> = {
     ar: "كفاءات خبيرة ضمن فرقك",
   },
   "AI usage has surged, but the toolstack is still in flux. Designers are using double the number of off-the-shelf tools than they did in 2025, and they’re building custom software with AI that matches how they like to work. As everyone rushes to keep up with new releases, reliable output quality remains the largest area for improvement.": {
-    en: "Dedicated senior engineers and consultants embedded into your teams — without the overhead of full-time hiring. Scale up or down with agility, from staff augmentation to complete engineering teams.",
+    en: "Senior engineers and consultants join your team when you need them, from individual specialists to complete engineering teams.",
     ar: "مهندسون ومستشارون خبراء ينضمون إلى فرقك دون أعباء التوظيف الدائم. توسّع أو قلّص بمرونة، من دعم الكوادر إلى فرق هندسية متكاملة.",
   },
   "In this chapter, we’ll cover:": { en: "What we deliver:", ar: "ما نقدمه:" },
@@ -181,7 +181,7 @@ export const STRINGS: Record<string, T> = {
     ar: "برمجيات متكاملة على أطر عمل موثوقة",
   },
   "Everyone is shipping faster. But is speed good for craft? AI has unlocked a new gear for designers: they’re ideating faster, prototyping more, and learning to code. Half of respondents have pushed AI-generated code to production. At the same time, we hear concerns about craft atrophy and the loneliness of designing alongside AI instead of teammates.": {
-    en: "End-to-end software development using industry-leading frameworks — from CRM and ERP platforms to custom enterprise applications and mobile experiences, plus our own ready-to-deploy products.",
+    en: "We build CRM and ERP platforms, custom enterprise applications and mobile tools using established frameworks. We also offer ready-to-deploy products.",
     ar: "تطوير برمجيات متكامل باستخدام أطر عمل رائدة، من منصات CRM وERP إلى تطبيقات المؤسسات المخصصة وتجارب الجوال، إلى جانب منتجاتنا الجاهزة للتشغيل.",
   },
   "Coding as a core design skill": { en: ".Net Core, Node.js & Laravel platforms", ar: "منصات .Net Core وNode.js وLaravel" },
@@ -196,11 +196,11 @@ export const STRINGS: Record<string, T> = {
     ar: "من البيانات الخام إلى قرارات ذكية",
   },
   "Companies have stepped up their support for AI adoption, but most of the learning is still happening between peers. The organizations seeing the most momentum are creating the conditions for tinkering. They’re also rethinking collaboration rituals for a world where anyone can spin up a prototype, but the AI tools they’re using haven’t yet been designed for multiplayer work.": {
-    en: "Intelligent systems that transform raw data into strategic decisions. Machine learning, automation pipelines and AI-driven analytics at enterprise scale — deployed in the cloud, on-premise or hybrid.",
+    en: "Turn operational data into useful information with machine learning, automation and analytics. Deploy in the cloud, on-premise or both.",
     ar: "أنظمة ذكية تحوّل البيانات الخام إلى قرارات استراتيجية: تعلّم آلي ومسارات أتمتة وتحليلات مدعومة بالذكاء الاصطناعي على مستوى المؤسسات، سحابيًا أو محليًا أو هجينًا.",
   },
   "AI gave designers new powers. Now organizations need to adapt. Roles are blurring as designers take on PM and engineering work, and vice versa. Hiring managers want AI fluency alongside a high bar for craft, vision, and storytelling. But few companies have updated performance reviews, team structures, or hiring practices to match how the work has changed.": {
-    en: "Intelligent systems that transform raw data into strategic decisions. Machine learning, automation pipelines and AI-driven analytics at enterprise scale — deployed in the cloud, on-premise or hybrid.",
+    en: "Turn operational data into useful information with machine learning, automation and analytics. Deploy in the cloud, on-premise or both.",
     ar: "أنظمة ذكية تحوّل البيانات الخام إلى قرارات استراتيجية: تعلّم آلي ومسارات أتمتة وتحليلات مدعومة بالذكاء الاصطناعي على مستوى المؤسسات، سحابيًا أو محليًا أو هجينًا.",
   },
   "How companies support AI adoption": { en: "Data collection & integration", ar: "جمع البيانات وتكاملها" },

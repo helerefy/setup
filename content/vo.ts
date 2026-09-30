@@ -63,6 +63,18 @@ export const products = [
     ],
   },
   {
+    id: "6", image: "/vo/products/6.jpg",
+    name: { en: "Automotive ERP (4SPlus)", ar: "نظام تخطيط موارد قطاع السيارات (4SPlus)" },
+    subtitle: { en: "One system for the automotive business.", ar: "نظام واحد لإدارة أعمال السيارات." },
+    description: { en: "An enterprise resource planning system for the automotive industry. A shared database brings sales, after-sales service, spare parts and surveys together so teams and decision-makers can see the whole operation.", ar: "نظام لتخطيط موارد المؤسسات في قطاع السيارات، يجمع المبيعات وخدمات ما بعد البيع وقطع الغيار والاستبيانات في قاعدة بيانات مشتركة لتوفير رؤية شاملة للعمليات." },
+    features: [
+      { en: "Manage vehicle sales", ar: "إدارة مبيعات المركبات" },
+      { en: "Coordinate after-sales service", ar: "تنسيق خدمات ما بعد البيع" },
+      { en: "Track spare parts", ar: "تتبع قطع الغيار" },
+      { en: "Collect survey feedback for decision-makers", ar: "جمع نتائج الاستبيانات لدعم اتخاذ القرار" },
+    ],
+  },
+  {
     id: "7", image: "/vo/products/7.jpg",
     name: { en: "PMO Cloud", ar: "PMO كلاود" },
     subtitle: { en: "A clearer view of every project.", ar: "رؤية أوضح لكل مشروع." },

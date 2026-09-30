@@ -9,7 +9,8 @@ import PrefaceTop3 from "./sections/PrefaceTop3";
 import PrefaceGridSection from "./sections/PrefaceGridSection";
 import PrefaceBottomQuote from "./sections/PrefaceBottomQuote";
 import ChapterSlides from "./sections/ChapterSlides";
-import CasesHighlight from "./sections/CasesHighlight";
+import ProductShowcase from "@/components/vo/ProductShowcase";
+import VOAlliances from "@/components/vo/VOAlliances";
 import VOFooter from "@/components/vo/VOFooter";
 import SvgTemplates from "@/components/SvgTemplates";
 import HomeEffects from "./fx/HomeEffects";
@@ -31,7 +32,8 @@ export default function Home({ l }: { l: Locale }) {
           <PrefaceGridSection l={l} />
           <PrefaceBottomQuote l={l} />
           <ChapterSlides l={l} />
-          <CasesHighlight l={l} />
+        <ProductShowcase l={l} />
+        <VOAlliances l={l} />
         </div>
         <VOFooter l={l} />
       </div>

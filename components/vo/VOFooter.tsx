@@ -22,7 +22,7 @@ export default function VOFooter({ l }: { l: Locale }) {
       <div><span className="vo-eyebrow">{ar ? "قدراتنا" : "OUR REACH"}</span><p>{ar ? "خبراتنا في أرقام" : "The expertise behind our work"}</p></div>
       <div><strong><CountUp end={1800} />+</strong><span>{ar ? "مهارة عبر أطر العمل" : "Framework skills"}</span></div>
       <div><strong><CountUp end={20} />+</strong><span>{ar ? "عميل حكومي ومؤسسي" : "Enterprise clients"}</span></div>
-      <div><strong><CountUp end={7} /></strong><span>{ar ? "منتجات جاهزة" : "Ready-to-deploy products"}</span></div>
+      <div><strong><CountUp end={products.length} /></strong><span>{ar ? "منتجات جاهزة" : "Ready-to-deploy products"}</span></div>
     </div>
     <div className="vo-home-footer-brand">VO Technology</div>
     <div className="vo-home-footer-links"><div><span className="vo-eyebrow">{ar ? "منتجاتنا" : "OUR PRODUCTS"}</span>{products.map((p) => <Link href={`/${l}/solutions-products/${p.id}`} key={p.id}>{local(l, p.name)}</Link>)}</div><div><span className="vo-eyebrow">{ar ? "الشركة" : "COMPANY"}</span><Link href={`/${l}/about`}>{ar ? "من نحن" : "About"}</Link><Link href={`/${l}/creatio`}>Creatio</Link><Link href={`/${l}/get-consultant`}>{ar ? "استشارة" : "Get consultant"}</Link><Link href={`/${l}/join-team`}>{ar ? "انضم لفريقنا" : "Join team"}</Link><Link href={`/${l}/ask`}>{ar ? "اسأل فو" : "Ask VO"}</Link></div><div><span className="vo-eyebrow">{ar ? "تواصل معنا" : "CONTACT"}</span><a href="mailto:info@vo.technology">info@vo.technology</a><a href="tel:+966590088250">+966 59 008 8250</a></div></div>
