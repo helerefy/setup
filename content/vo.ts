@@ -101,7 +101,7 @@ export const products = [
 
 export const services = [
   {
-    path: "outsourcing", number: "01", image: "/vo/outsourcing.jpeg", color: "#fe7141",
+    path: "outsourcing", number: "01", image: "/vo/outsourcing.jpeg", color: "#14b8a6",
     name: { en: "Outsourcing", ar: "التعهيد" },
     headline: { en: "Senior expertise, exactly when you need it.", ar: "خبرات متقدمة حين تحتاج إليها." },
     description: { en: "Dedicated senior engineers and consultants embedded into your teams, without the overhead of full-time hiring. Scale up or down with the agility your work demands.", ar: "مهندسون ومستشارون خبراء ينضمون إلى فرقك دون أعباء التوظيف الدائم. وسّع قدراتك أو قلّصها بمرونة حسب احتياجات العمل." },
@@ -121,7 +121,7 @@ export const services = [
     ],
   },
   {
-    path: "solutions-products", number: "02", image: "/vo/solutions.png", color: "#cdabfe",
+    path: "solutions-products", number: "02", image: "/vo/solutions.png", color: "#f4f6fa",
     name: { en: "Solutions & Products", ar: "الحلول والمنتجات" },
     headline: { en: "Software that works for the way you work.", ar: "برمجيات تواكب طريقة عملك." },
     description: { en: "End-to-end development with industry-leading frameworks. From CRM and ERP platforms to enterprise applications, mobile experiences and ready-to-deploy products.", ar: "تطوير برمجي متكامل بأطر عمل رائدة، من منصات CRM وERP إلى تطبيقات المؤسسات وتجارب الجوال والمنتجات الجاهزة للتشغيل." },

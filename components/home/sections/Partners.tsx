@@ -24,12 +24,12 @@ export default function Partners({ l }: { l: Locale }) {
           <div className="framer-rqiyv6" data-border="true" data-framer-name="eyebrow-wrapper">
             <div className="ssr-variant hidden-miin9m">
               <div className="framer-16o5y5r" data-framer-name="eyebrow-text" style={{ transform: "none" }}>
-                <p dir="auto" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))", "--framer-text-transform": "uppercase" }} className="framer-text">{tr(l, "Our partners")}</p>
+                <p dir="auto" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))", "--framer-text-transform": "uppercase" }} className="framer-text">{tr(l, "Our partners")}</p>
               </div>
             </div>
             <div className="ssr-variant hidden-t69d6d hidden-72rtr7 hidden-12sschj">
               <div className="framer-16o5y5r" data-framer-name="eyebrow-text" style={{ transform: "none" }}>
-                <h2 dir="auto" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))", "--framer-text-transform": "uppercase" }} className="framer-text">{tr(l, "Our partners")}</h2>
+                <h2 dir="auto" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))", "--framer-text-transform": "uppercase" }} className="framer-text">{tr(l, "Our partners")}</h2>
               </div>
             </div>
           </div>

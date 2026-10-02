@@ -9,7 +9,7 @@ export default function PrefaceTop2({ l }: { l: Locale }) {
         <div className="framer-WGVmM framer-9td1d framer-PJhgy framer-iduj5 framer-r21rmf framer-v-wsfo5l" data-framer-name="Tablet" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))", width: "100%" }}>
           <div className="framer-h91ujm" data-framer-name="px-global">
             <div className="framer-1ot19t3" data-framer-name="container">
-              <div className="framer-4wihjp" data-border="true" data-framer-name="eyebrow-wrapper" style={{ "--border-bottom-width": "0px", "--border-color": "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "1px" }}>
+              <div className="framer-4wihjp" data-border="true" data-framer-name="eyebrow-wrapper" style={{ "--border-bottom-width": "0px", "--border-color": "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))", "--border-left-width": "0px", "--border-right-width": "0px", "--border-style": "solid", "--border-top-width": "1px" }}>
                 <div className="framer-1e9l96h" data-framer-name="eyebrow-title" style={{ "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline", transform: "none" }}>
                   <p className="framer-text framer-styles-preset-1o7iizc" dir="auto">{tr(l, "An Inflection Point")}</p>
                 </div>

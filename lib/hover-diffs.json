@@ -132,7 +132,7 @@ null,
 "style": {
 "--extracted-r6o4lv": [
 null,
-"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))"
+"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))"
 ]
 }
 },
@@ -146,7 +146,7 @@ null,
 "style": {
 "--framer-text-color": [
 null,
-"var(--extracted-r6o4lv, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0)))"
+"var(--extracted-r6o4lv, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58)))"
 ]
 }
 },
@@ -159,7 +159,7 @@ null,
 "style": {
 "--extracted-r6o4lv": [
 null,
-"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))"
+"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))"
 ]
 }
 },
@@ -173,7 +173,7 @@ null,
 "style": {
 "--framer-text-color": [
 null,
-"var(--extracted-r6o4lv, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0)))"
+"var(--extracted-r6o4lv, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58)))"
 ]
 }
 },
@@ -197,8 +197,8 @@ null,
 ],
 "style": {
 "--1gkvthi": [
-"rgb(0, 0, 0)",
-"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))"
+"rgb(11, 31, 58)",
+"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))"
 ],
 "opacity": [
 null,
@@ -259,7 +259,7 @@ null,
 "style": {
 "--extracted-r6o4lv": [
 "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))",
-"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))"
+"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))"
 ]
 }
 },
@@ -272,7 +272,7 @@ null,
 "style": {
 "--framer-text-color": [
 "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))",
-"var(--extracted-r6o4lv, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0)))"
+"var(--extracted-r6o4lv, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58)))"
 ]
 }
 },
@@ -331,8 +331,8 @@ null
 ],
 "style": {
 "background-color": [
-"var(--token-54653423-a788-4b87-99d2-f130e2af5148, rgb(205, 171, 254))",
-"rgb(254, 113, 65)"
+"var(--token-54653423-a788-4b87-99d2-f130e2af5148, rgb(244, 246, 250))",
+"rgb(20, 184, 166)"
 ]
 }
 }
@@ -353,8 +353,8 @@ null
 ],
 "style": {
 "background-color": [
-"var(--token-54653423-a788-4b87-99d2-f130e2af5148, rgb(205, 171, 254))",
-"rgb(254, 113, 65)"
+"var(--token-54653423-a788-4b87-99d2-f130e2af5148, rgb(244, 246, 250))",
+"rgb(20, 184, 166)"
 ]
 }
 },
@@ -414,7 +414,7 @@ null,
 ],
 "style": {
 "--extracted-r6o4lv": [
-"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))",
+"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))",
 "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))"
 ]
 }
@@ -427,7 +427,7 @@ null,
 ],
 "style": {
 "--framer-text-color": [
-"var(--extracted-r6o4lv, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0)))",
+"var(--extracted-r6o4lv, var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58)))",
 "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))"
 ]
 }
@@ -439,7 +439,7 @@ null,
 ],
 "style": {
 "--1gkvthi": [
-"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))",
+"var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))",
 "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))"
 ]
 }
@@ -534,7 +534,7 @@ null,
 "style": {
 "--extracted-r6o4lv": [
 "rgb(255, 255, 255)",
-"var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65))"
+"var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(20, 184, 166))"
 ],
 "opacity": [
 null,
@@ -550,7 +550,7 @@ null,
 "style": {
 "--framer-text-color": [
 "var(--extracted-r6o4lv, rgb(255, 255, 255))",
-"var(--extracted-r6o4lv, var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65)))"
+"var(--extracted-r6o4lv, var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(20, 184, 166)))"
 ]
 }
 }

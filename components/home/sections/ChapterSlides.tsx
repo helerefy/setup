@@ -8,10 +8,10 @@ export default function ChapterSlides({ l }: { l: Locale }) {
       <div className="ssr-variant hidden-t69d6d hidden-12sschj">
         <div className="framer-p061bw-container" data-framer-name="Slide 1">
           <div className="ssr-variant hidden-miin9m">
-            <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-p8xo37" data-framer-name="Desktop" style={{ backgroundColor: "var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65))", width: "100%" }}>
+            <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-p8xo37" data-framer-name="Desktop" style={{ backgroundColor: "var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(20, 184, 166))", width: "100%" }}>
               <div className="framer-b9srm1" data-framer-name="px-global">
                 <div className="framer-rj04xs" data-framer-name="container">
-                  <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                  <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                   <div className="framer-1slzay" data-framer-name="stack min-h-screen">
                     <div className="framer-nz3npf" data-framer-name="grid">
                       <div className="framer-1y6msah" data-framer-name="col-left">
@@ -48,7 +48,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                             <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                               <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                               </p>
                             </div>
                             <div className="framer-1y6o5xl" data-framer-name="list">
@@ -104,7 +104,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                             </div>
                             <div className="framer-upycmt" data-framer-name="BG" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
                               <div className="framer-4izea9" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }} />
-                              <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                              <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                             </div>
                           </a>
                         </div>
@@ -116,10 +116,10 @@ export default function ChapterSlides({ l }: { l: Locale }) {
             </div>
           </div>
           <div className="ssr-variant hidden-72rtr7">
-            <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-111xh6l" data-framer-name="Wide" style={{ backgroundColor: "var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65))", width: "100%" }}>
+            <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-111xh6l" data-framer-name="Wide" style={{ backgroundColor: "var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(20, 184, 166))", width: "100%" }}>
               <div className="framer-b9srm1" data-framer-name="px-global">
                 <div className="framer-rj04xs" data-framer-name="container">
-                  <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                  <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                   <div className="framer-1slzay" data-framer-name="stack min-h-screen">
                     <div className="framer-nz3npf" data-framer-name="grid">
                       <div className="framer-1y6msah" data-framer-name="col-left">
@@ -156,7 +156,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                             <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                               <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                               </p>
                             </div>
                             <div className="framer-1y6o5xl" data-framer-name="list">
@@ -212,7 +212,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                             </div>
                             <div className="framer-upycmt" data-framer-name="BG" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
                               <div className="framer-4izea9" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }} />
-                              <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                              <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                             </div>
                           </a>
                         </div>
@@ -227,10 +227,10 @@ export default function ChapterSlides({ l }: { l: Locale }) {
       </div>
       <div className="ssr-variant hidden-72rtr7 hidden-12sschj hidden-miin9m">
         <div className="framer-p061bw-container" data-framer-name="Slide 1">
-          <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-lic7ra" data-framer-name="Tablet" style={{ backgroundColor: "var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65))", width: "100%" }}>
+          <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-lic7ra" data-framer-name="Tablet" style={{ backgroundColor: "var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(20, 184, 166))", width: "100%" }}>
             <div className="framer-b9srm1" data-framer-name="px-global">
               <div className="framer-rj04xs" data-framer-name="container">
-                <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                 <div className="framer-1slzay" data-framer-name="stack min-h-screen">
                   <div className="framer-nz3npf" data-framer-name="grid">
                     <div className="framer-1y6msah" data-framer-name="col-left">
@@ -267,7 +267,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                         <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                           <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                             </p>
                           </div>
                           <div className="framer-1y6o5xl" data-framer-name="list">
@@ -323,7 +323,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           </div>
                           <div className="framer-upycmt" data-framer-name="BG" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
                             <div className="framer-4izea9" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }} />
-                            <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                            <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                           </div>
                         </a>
                       </div>
@@ -337,10 +337,10 @@ export default function ChapterSlides({ l }: { l: Locale }) {
       </div>
       <div className="ssr-variant hidden-t69d6d hidden-72rtr7 hidden-miin9m">
         <div className="framer-p061bw-container" data-framer-name="Slide 1">
-          <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-11rhzr8" data-framer-name="Phone" style={{ backgroundColor: "var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(254, 113, 65))", width: "100%" }}>
+          <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-11rhzr8" data-framer-name="Phone" style={{ backgroundColor: "var(--token-3412d4dd-2f5f-48c8-b607-f8105a8b7211, rgb(20, 184, 166))", width: "100%" }}>
             <div className="framer-b9srm1" data-framer-name="px-global">
               <div className="framer-rj04xs" data-framer-name="container">
-                <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                 <div className="framer-1slzay" data-framer-name="stack min-h-screen">
                   <div className="framer-nz3npf" data-framer-name="grid">
                     <div className="framer-1y6msah" data-framer-name="col-left">
@@ -377,7 +377,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                         <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                           <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                             </p>
                           </div>
                           <div className="framer-1y6o5xl" data-framer-name="list">
@@ -433,7 +433,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           </div>
                           <div className="framer-upycmt" data-framer-name="BG" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
                             <div className="framer-4izea9" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }} />
-                            <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                            <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                           </div>
                         </a>
                       </div>
@@ -448,10 +448,10 @@ export default function ChapterSlides({ l }: { l: Locale }) {
       <div className="ssr-variant hidden-t69d6d hidden-12sschj">
         <div className="framer-pecccw-container" data-framer-name="Slide 2">
           <div className="ssr-variant hidden-miin9m">
-            <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-p8xo37" data-framer-name="Desktop" style={{ backgroundColor: "var(--token-54653423-a788-4b87-99d2-f130e2af5148, rgb(205, 171, 254))", width: "100%" }}>
+            <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-p8xo37" data-framer-name="Desktop" style={{ backgroundColor: "var(--token-54653423-a788-4b87-99d2-f130e2af5148, rgb(244, 246, 250))", width: "100%" }}>
               <div className="framer-b9srm1" data-framer-name="px-global">
                 <div className="framer-rj04xs" data-framer-name="container">
-                  <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                  <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                   <div className="framer-1slzay" data-framer-name="stack min-h-screen">
                     <div className="framer-nz3npf" data-framer-name="grid">
                       <div className="framer-1y6msah" data-framer-name="col-left">
@@ -488,7 +488,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                             <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                               <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                               </p>
                             </div>
                             <div className="framer-1y6o5xl" data-framer-name="list">
@@ -544,7 +544,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                             </div>
                             <div className="framer-upycmt" data-framer-name="BG" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
                               <div className="framer-4izea9" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }} />
-                              <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                              <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                             </div>
                           </a>
                         </div>
@@ -556,10 +556,10 @@ export default function ChapterSlides({ l }: { l: Locale }) {
             </div>
           </div>
           <div className="ssr-variant hidden-72rtr7">
-            <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-111xh6l" data-framer-name="Wide" style={{ backgroundColor: "var(--token-54653423-a788-4b87-99d2-f130e2af5148, rgb(205, 171, 254))", width: "100%" }}>
+            <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-111xh6l" data-framer-name="Wide" style={{ backgroundColor: "var(--token-54653423-a788-4b87-99d2-f130e2af5148, rgb(244, 246, 250))", width: "100%" }}>
               <div className="framer-b9srm1" data-framer-name="px-global">
                 <div className="framer-rj04xs" data-framer-name="container">
-                  <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                  <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                   <div className="framer-1slzay" data-framer-name="stack min-h-screen">
                     <div className="framer-nz3npf" data-framer-name="grid">
                       <div className="framer-1y6msah" data-framer-name="col-left">
@@ -596,7 +596,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                             <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                               <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                               </p>
                             </div>
                             <div className="framer-1y6o5xl" data-framer-name="list">
@@ -652,7 +652,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                             </div>
                             <div className="framer-upycmt" data-framer-name="BG" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
                               <div className="framer-4izea9" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }} />
-                              <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                              <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                             </div>
                           </a>
                         </div>
@@ -667,10 +667,10 @@ export default function ChapterSlides({ l }: { l: Locale }) {
       </div>
       <div className="ssr-variant hidden-72rtr7 hidden-12sschj hidden-miin9m">
         <div className="framer-pecccw-container" data-framer-name="Slide 2">
-          <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-lic7ra" data-framer-name="Tablet" style={{ backgroundColor: "var(--token-54653423-a788-4b87-99d2-f130e2af5148, rgb(205, 171, 254))", width: "100%" }}>
+          <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-lic7ra" data-framer-name="Tablet" style={{ backgroundColor: "var(--token-54653423-a788-4b87-99d2-f130e2af5148, rgb(244, 246, 250))", width: "100%" }}>
             <div className="framer-b9srm1" data-framer-name="px-global">
               <div className="framer-rj04xs" data-framer-name="container">
-                <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                 <div className="framer-1slzay" data-framer-name="stack min-h-screen">
                   <div className="framer-nz3npf" data-framer-name="grid">
                     <div className="framer-1y6msah" data-framer-name="col-left">
@@ -707,7 +707,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                         <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                           <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                             </p>
                           </div>
                           <div className="framer-1y6o5xl" data-framer-name="list">
@@ -763,7 +763,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           </div>
                           <div className="framer-upycmt" data-framer-name="BG" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
                             <div className="framer-4izea9" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }} />
-                            <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                            <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                           </div>
                         </a>
                       </div>
@@ -777,10 +777,10 @@ export default function ChapterSlides({ l }: { l: Locale }) {
       </div>
       <div className="ssr-variant hidden-t69d6d hidden-72rtr7 hidden-miin9m">
         <div className="framer-pecccw-container" data-framer-name="Slide 2">
-          <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-11rhzr8" data-framer-name="Phone" style={{ backgroundColor: "var(--token-54653423-a788-4b87-99d2-f130e2af5148, rgb(205, 171, 254))", width: "100%" }}>
+          <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-11rhzr8" data-framer-name="Phone" style={{ backgroundColor: "var(--token-54653423-a788-4b87-99d2-f130e2af5148, rgb(244, 246, 250))", width: "100%" }}>
             <div className="framer-b9srm1" data-framer-name="px-global">
               <div className="framer-rj04xs" data-framer-name="container">
-                <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                 <div className="framer-1slzay" data-framer-name="stack min-h-screen">
                   <div className="framer-nz3npf" data-framer-name="grid">
                     <div className="framer-1y6msah" data-framer-name="col-left">
@@ -817,7 +817,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                         <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                           <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                             </p>
                           </div>
                           <div className="framer-1y6o5xl" data-framer-name="list">
@@ -873,7 +873,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           </div>
                           <div className="framer-upycmt" data-framer-name="BG" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
                             <div className="framer-4izea9" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }} />
-                            <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                            <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                           </div>
                         </a>
                       </div>
@@ -888,10 +888,10 @@ export default function ChapterSlides({ l }: { l: Locale }) {
       <div className="ssr-variant hidden-t69d6d hidden-12sschj">
         <div className="framer-1q2lo62-container" data-framer-name="Slide 3">
           <div className="ssr-variant hidden-miin9m">
-            <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-p8xo37" data-framer-name="Desktop" style={{ backgroundColor: "var(--token-dc58878c-6871-4081-9b9a-81f0df31eb6a, rgb(209, 221, 211))", width: "100%" }}>
+            <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-p8xo37" data-framer-name="Desktop" style={{ backgroundColor: "var(--token-dc58878c-6871-4081-9b9a-81f0df31eb6a, rgb(227, 232, 239))", width: "100%" }}>
               <div className="framer-b9srm1" data-framer-name="px-global">
                 <div className="framer-rj04xs" data-framer-name="container">
-                  <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                  <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                   <div className="framer-1slzay" data-framer-name="stack min-h-screen">
                     <div className="framer-nz3npf" data-framer-name="grid">
                       <div className="framer-1y6msah" data-framer-name="col-left">
@@ -928,7 +928,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                             <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                               <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                               </p>
                             </div>
                             <div className="framer-1y6o5xl" data-framer-name="list">
@@ -986,7 +986,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                             </div>
                             <div className="framer-upycmt" data-framer-name="BG" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
                               <div className="framer-4izea9" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }} />
-                              <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                              <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                             </div>
                           </a>
                         </div>
@@ -998,10 +998,10 @@ export default function ChapterSlides({ l }: { l: Locale }) {
             </div>
           </div>
           <div className="ssr-variant hidden-72rtr7">
-            <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-111xh6l" data-framer-name="Wide" style={{ backgroundColor: "var(--token-dc58878c-6871-4081-9b9a-81f0df31eb6a, rgb(209, 221, 211))", width: "100%" }}>
+            <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-111xh6l" data-framer-name="Wide" style={{ backgroundColor: "var(--token-dc58878c-6871-4081-9b9a-81f0df31eb6a, rgb(227, 232, 239))", width: "100%" }}>
               <div className="framer-b9srm1" data-framer-name="px-global">
                 <div className="framer-rj04xs" data-framer-name="container">
-                  <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                  <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                   <div className="framer-1slzay" data-framer-name="stack min-h-screen">
                     <div className="framer-nz3npf" data-framer-name="grid">
                       <div className="framer-1y6msah" data-framer-name="col-left">
@@ -1038,7 +1038,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                             <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                               <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                               </p>
                             </div>
                             <div className="framer-1y6o5xl" data-framer-name="list">
@@ -1096,7 +1096,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                             </div>
                             <div className="framer-upycmt" data-framer-name="BG" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
                               <div className="framer-4izea9" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }} />
-                              <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                              <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                             </div>
                           </a>
                         </div>
@@ -1111,10 +1111,10 @@ export default function ChapterSlides({ l }: { l: Locale }) {
       </div>
       <div className="ssr-variant hidden-72rtr7 hidden-12sschj hidden-miin9m">
         <div className="framer-1q2lo62-container" data-framer-name="Slide 3">
-          <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-lic7ra" data-framer-name="Tablet" style={{ backgroundColor: "var(--token-dc58878c-6871-4081-9b9a-81f0df31eb6a, rgb(209, 221, 211))", width: "100%" }}>
+          <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-lic7ra" data-framer-name="Tablet" style={{ backgroundColor: "var(--token-dc58878c-6871-4081-9b9a-81f0df31eb6a, rgb(227, 232, 239))", width: "100%" }}>
             <div className="framer-b9srm1" data-framer-name="px-global">
               <div className="framer-rj04xs" data-framer-name="container">
-                <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                 <div className="framer-1slzay" data-framer-name="stack min-h-screen">
                   <div className="framer-nz3npf" data-framer-name="grid">
                     <div className="framer-1y6msah" data-framer-name="col-left">
@@ -1151,7 +1151,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                         <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                           <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                             </p>
                           </div>
                           <div className="framer-1y6o5xl" data-framer-name="list">
@@ -1209,7 +1209,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           </div>
                           <div className="framer-upycmt" data-framer-name="BG" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
                             <div className="framer-4izea9" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }} />
-                            <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                            <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                           </div>
                         </a>
                       </div>
@@ -1223,10 +1223,10 @@ export default function ChapterSlides({ l }: { l: Locale }) {
       </div>
       <div className="ssr-variant hidden-t69d6d hidden-72rtr7 hidden-miin9m">
         <div className="framer-1q2lo62-container" data-framer-name="Slide 3">
-          <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-11rhzr8" data-framer-name="Phone" style={{ backgroundColor: "var(--token-dc58878c-6871-4081-9b9a-81f0df31eb6a, rgb(209, 221, 211))", width: "100%" }}>
+          <div className="framer-MVyzU framer-xyeQw framer-0AZcx framer-PJhgy framer-EJYD6 framer-iduj5 framer-AMlM6 framer-8hAYJ framer-p8xo37 framer-v-11rhzr8" data-framer-name="Phone" style={{ backgroundColor: "var(--token-dc58878c-6871-4081-9b9a-81f0df31eb6a, rgb(227, 232, 239))", width: "100%" }}>
             <div className="framer-b9srm1" data-framer-name="px-global">
               <div className="framer-rj04xs" data-framer-name="container">
-                <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                <div className="framer-wz9ka9" data-framer-name="divider" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                 <div className="framer-1slzay" data-framer-name="stack min-h-screen">
                   <div className="framer-nz3npf" data-framer-name="grid">
                     <div className="framer-1y6msah" data-framer-name="col-left">
@@ -1263,7 +1263,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                         <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                           <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Geist Mono\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                             </p>
                           </div>
                           <div className="framer-1y6o5xl" data-framer-name="list">
@@ -1321,7 +1321,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           </div>
                           <div className="framer-upycmt" data-framer-name="BG" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }}>
                             <div className="framer-4izea9" style={{ backgroundColor: "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))" }} />
-                            <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(0, 0, 0))" }} />
+                            <div className="framer-ano7f8" style={{ backgroundColor: "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))" }} />
                           </div>
                         </a>
                       </div>
