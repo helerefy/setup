@@ -172,10 +172,10 @@ export default function PrefaceBottomQuote({ l }: { l: Locale }) {
                         </div>
                         <div className="framer-emfloz" data-framer-name="author-info">
                           <div className="framer-13sae3n" data-framer-name="author-name" style={{ "--extracted-r6o4lv": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))", "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                            <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Sora\", \"IBM Plex Sans Arabic\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>{tr(l, "Katie Dill")}</p>
+                            <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Poppins\", \"IBM Plex Sans Arabic\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>{tr(l, "Katie Dill")}</p>
                           </div>
                           <div className="framer-1qtus3q" data-framer-name="author-title" style={{ "--extracted-r6o4lv": "rgba(255, 255, 255, 0.6)", "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                            <p dir="auto" className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, rgba(255, 255, 255, 0.6))", "--framer-text-transform": "uppercase" }}>{tr(l, "Head of Design, STRIPE")}</p>
+                            <p dir="auto" className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, rgba(255, 255, 255, 0.6))", "--framer-text-transform": "uppercase" }}>{tr(l, "Head of Design, STRIPE")}</p>
                           </div>
                         </div>
                       </div>
@@ -218,10 +218,10 @@ export default function PrefaceBottomQuote({ l }: { l: Locale }) {
                         </div>
                         <div className="framer-emfloz" data-framer-name="author-info">
                           <div className="framer-13sae3n" data-framer-name="author-name" style={{ "--extracted-r6o4lv": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))", "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                            <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Sora\", \"IBM Plex Sans Arabic\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>{tr(l, "Katie Dill")}</p>
+                            <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Poppins\", \"IBM Plex Sans Arabic\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>{tr(l, "Katie Dill")}</p>
                           </div>
                           <div className="framer-1qtus3q" data-framer-name="author-title" style={{ "--extracted-r6o4lv": "rgba(255, 255, 255, 0.6)", "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                            <p dir="auto" className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, rgba(255, 255, 255, 0.6))", "--framer-text-transform": "uppercase" }}>{tr(l, "Head of Design, STRIPE")}</p>
+                            <p dir="auto" className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, rgba(255, 255, 255, 0.6))", "--framer-text-transform": "uppercase" }}>{tr(l, "Head of Design, STRIPE")}</p>
                           </div>
                         </div>
                       </div>
@@ -256,10 +256,10 @@ export default function PrefaceBottomQuote({ l }: { l: Locale }) {
                         </div>
                         <div className="framer-emfloz" data-framer-name="author-info">
                           <div className="framer-13sae3n" data-framer-name="author-name" style={{ "--extracted-r6o4lv": "var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255))", "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                            <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Sora\", \"IBM Plex Sans Arabic\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>{tr(l, "Katie Dill")}</p>
+                            <p dir="auto" className="framer-text" style={{ "--font-selector": "Q1VTVE9NVjI7QmVhdXNpdGUgQ2xhc3NpYyBNZWRpdW0=", "--framer-font-family": "\"Poppins\", \"IBM Plex Sans Arabic\", sans-serif", "--framer-font-weight": "500", "--framer-letter-spacing": "-0.01em", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, var(--token-0d9c52bb-4346-4afb-b8ae-283673444b3f, rgb(255, 255, 255)))" }}>{tr(l, "Katie Dill")}</p>
                           </div>
                           <div className="framer-1qtus3q" data-framer-name="author-title" style={{ "--extracted-r6o4lv": "rgba(255, 255, 255, 0.6)", "--framer-paragraph-spacing": "0px", transform: "none" }}>
-                            <p dir="auto" className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, rgba(255, 255, 255, 0.6))", "--framer-text-transform": "uppercase" }}>{tr(l, "Head of Design, STRIPE")}</p>
+                            <p dir="auto" className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--extracted-r6o4lv, rgba(255, 255, 255, 0.6))", "--framer-text-transform": "uppercase" }}>{tr(l, "Head of Design, STRIPE")}</p>
                           </div>
                         </div>
                       </div>

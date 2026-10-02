@@ -15,6 +15,9 @@ const clients = [
   { name: "Ministry of Municipalities and Housing", url: "https://momah.gov.sa/en" },
 ] as const;
 
+/** Enterprise and private-sector clients named in the 2025 company profile (no logos supplied). */
+const enterprise = ["Bin Dalbah Trading", "AlDahayan Trading", "Saleh Cars Group", "Three S", "AlHamidi Cars", "AlSharaf Cars", "Rotana Cars", "Class Cars", "Dagmal"] as const;
+
 export default function Partners({ l }: { l: Locale }) {
   return (
     <div className="framer-kz3ldf" data-framer-name="Partners">
@@ -24,12 +27,12 @@ export default function Partners({ l }: { l: Locale }) {
           <div className="framer-rqiyv6" data-border="true" data-framer-name="eyebrow-wrapper">
             <div className="ssr-variant hidden-miin9m">
               <div className="framer-16o5y5r" data-framer-name="eyebrow-text" style={{ transform: "none" }}>
-                <p dir="auto" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))", "--framer-text-transform": "uppercase" }} className="framer-text">{tr(l, "Our partners")}</p>
+                <p dir="auto" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))", "--framer-text-transform": "uppercase" }} className="framer-text">{tr(l, "Our partners")}</p>
               </div>
             </div>
             <div className="ssr-variant hidden-t69d6d hidden-72rtr7 hidden-12sschj">
               <div className="framer-16o5y5r" data-framer-name="eyebrow-text" style={{ transform: "none" }}>
-                <h2 dir="auto" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))", "--framer-text-transform": "uppercase" }} className="framer-text">{tr(l, "Our partners")}</h2>
+                <h2 dir="auto" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\", monospace", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-line-height": "100%", "--framer-text-color": "var(--token-a228bc56-904d-4a09-b7f8-6b60e0221982, rgb(11, 31, 58))", "--framer-text-transform": "uppercase" }} className="framer-text">{tr(l, "Our partners")}</h2>
               </div>
             </div>
           </div>
@@ -37,6 +40,10 @@ export default function Partners({ l }: { l: Locale }) {
             {clients.map((client, i) => <a className="vo-client-link" href={client.url} target="_blank" rel="noopener noreferrer" aria-label={client.name} key={client.name}>
               <img className="vo-client-logo" src={`/vo/clients/c${i + 1}.webp`} alt="" />
             </a>)}
+          </div>
+          <div className="vo-enterprise" aria-labelledby="vo-enterprise-title">
+            <div className="vo-enterprise-head"><h3 id="vo-enterprise-title">{l === "ar" ? "عملاء آخرون في ملف 2025" : "Also named in the 2025 profile"}</h3><span>{l === "ar" ? "المؤسسات والقطاع الخاص" : "Enterprise & private sector"}</span></div>
+            <ul className="vo-enterprise-list">{enterprise.map((name) => <li key={name}>{name}</li>)}</ul>
           </div>
         </div>
       </div>

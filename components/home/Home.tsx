@@ -12,6 +12,7 @@ import ChapterSlides from "./sections/ChapterSlides";
 import CasesHighlight from "./sections/CasesHighlight";
 import VOAlliances from "@/components/vo/VOAlliances";
 import VOFooter from "@/components/vo/VOFooter";
+import VOIndustries from "@/components/vo/VOIndustries";
 import SvgTemplates from "@/components/SvgTemplates";
 import HomeEffects from "./fx/HomeEffects";
 import ScrollEffects from "./fx/ScrollEffects";
@@ -32,6 +33,7 @@ export default function Home({ l }: { l: Locale }) {
           <PrefaceGridSection l={l} />
           <PrefaceBottomQuote l={l} />
           <ChapterSlides l={l} />
+          <VOIndustries l={l} />
           <CasesHighlight l={l} />
           <Frameworks l={l} />
         </div>

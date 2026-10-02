@@ -48,7 +48,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                             <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                               <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                               </p>
                             </div>
                             <div className="framer-1y6o5xl" data-framer-name="list">
@@ -156,7 +156,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                             <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                               <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                               </p>
                             </div>
                             <div className="framer-1y6o5xl" data-framer-name="list">
@@ -267,7 +267,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                         <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                           <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                             </p>
                           </div>
                           <div className="framer-1y6o5xl" data-framer-name="list">
@@ -377,7 +377,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                         <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                           <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                             </p>
                           </div>
                           <div className="framer-1y6o5xl" data-framer-name="list">
@@ -488,7 +488,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                             <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                               <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                               </p>
                             </div>
                             <div className="framer-1y6o5xl" data-framer-name="list">
@@ -596,7 +596,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                             <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                               <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                               </p>
                             </div>
                             <div className="framer-1y6o5xl" data-framer-name="list">
@@ -707,7 +707,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                         <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                           <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                             </p>
                           </div>
                           <div className="framer-1y6o5xl" data-framer-name="list">
@@ -817,7 +817,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                         <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                           <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                             </p>
                           </div>
                           <div className="framer-1y6o5xl" data-framer-name="list">
@@ -928,7 +928,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                             <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                               <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                               </p>
                             </div>
                             <div className="framer-1y6o5xl" data-framer-name="list">
@@ -1038,7 +1038,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                           <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                             <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                               <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                                <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                               </p>
                             </div>
                             <div className="framer-1y6o5xl" data-framer-name="list">
@@ -1151,7 +1151,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                         <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                           <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                             </p>
                           </div>
                           <div className="framer-1y6o5xl" data-framer-name="list">
@@ -1263,7 +1263,7 @@ export default function ChapterSlides({ l }: { l: Locale }) {
                         <div className="framer-1q63kfp" data-framer-name="list-wrapper">
                           <div className="framer-10nhr76" data-framer-name="list-title" style={{ "--framer-paragraph-spacing": "0px", transform: "none" }}>
                             <p className="framer-text" style={{ "--framer-font-size": "13px", "--framer-line-height": "100%" }}>
-                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Manrope\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
+                              <span className="framer-text" style={{ "--font-selector": "R0Y7R2Vpc3QgTW9uby01MDA=", "--framer-font-family": "\"Poppins\"", "--framer-font-size": "13px", "--framer-font-weight": "500", "--framer-text-transform": "uppercase" }}>{tr(l, "In this chapter, we’ll cover:")}</span>
                             </p>
                           </div>
                           <div className="framer-1y6o5xl" data-framer-name="list">
