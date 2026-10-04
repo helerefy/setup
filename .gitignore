@@ -6,3 +6,6 @@ next-env.d.ts
 !public/vo/**/*.png
 .next-*
 *.tsbuildinfo
+
+# Separate Next.js project with its own repository
+/spector/
